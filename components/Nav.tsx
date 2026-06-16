@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { NAV, SITE } from "@/lib/site";
 
 export default function Nav() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-40 border-b border-slate/10 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -10,33 +15,106 @@ export default function Nav() {
             {SITE.shortName}
           </span>
           <span className="text-[11px] uppercase tracking-wider text-slate">
-            Debt recovery in Spain
+            Debt collection in Spain
           </span>
         </Link>
-        <nav className="hidden items-center gap-7 md:flex">
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm text-slate transition-colors hover:text-ink"
-            >
-              {item.label}
-            </Link>
-          ))}
-          <Link
-            href="/request-a-proposal"
-            className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
-          >
-            Request a proposal
-          </Link>
+
+        {/* Desktop */}
+        <nav className="hidden items-center gap-6 lg:flex">
+          {NAV.map((item) =>
+            item.children ? (
+              <div key={item.href} className="group relative">
+                <Link
+                  href={item.href}
+                  className="flex items-center gap-1 py-2 text-sm text-slate transition-colors hover:text-ink"
+                >
+                  {item.label}
+                  <span aria-hidden className="text-[10px]">▾</span>
+                </Link>
+                <div className="invisible absolute left-1/2 top-full z-50 w-[22rem] -translate-x-1/2 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100">
+                  <div className="rounded-lg border border-slate/10 bg-white p-2 shadow-lg">
+                    {item.children.map((c) => (
+                      <Link
+                        key={c.href}
+                        href={c.href}
+                        className="block rounded-md px-3 py-2.5 hover:bg-slate/5"
+                      >
+                        <span className="block text-sm font-medium text-ink">
+                          {c.label}
+                        </span>
+                        {c.summary ? (
+                          <span className="mt-0.5 block text-xs leading-snug text-slate">
+                            {c.summary}
+                          </span>
+                        ) : null}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : item.href === "/request-a-proposal" ? (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="py-2 text-sm text-slate transition-colors hover:text-ink"
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </nav>
-        <Link
-          href="/request-a-proposal"
-          className="rounded-md bg-accent px-3 py-2 text-sm font-medium text-white md:hidden"
+
+        {/* Mobile toggle */}
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          className="rounded-md border border-slate/20 px-3 py-2 text-sm lg:hidden"
+          aria-expanded={open}
         >
-          Proposal
-        </Link>
+          Menu
+        </button>
       </div>
+
+      {/* Mobile panel */}
+      {open ? (
+        <div className="border-t border-slate/10 bg-white lg:hidden">
+          <nav className="mx-auto max-w-6xl px-6 py-4">
+            {NAV.map((item) => (
+              <div key={item.href} className="border-b border-slate/10 py-2 last:border-0">
+                <Link
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="block py-1.5 text-sm font-medium text-ink"
+                >
+                  {item.label}
+                </Link>
+                {item.children ? (
+                  <div className="ml-3 mt-1 space-y-1">
+                    {item.children.map((c) => (
+                      <Link
+                        key={c.href}
+                        href={c.href}
+                        onClick={() => setOpen(false)}
+                        className="block py-1 text-sm text-slate"
+                      >
+                        {c.label}
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+            ))}
+          </nav>
+        </div>
+      ) : null}
     </header>
   );
 }

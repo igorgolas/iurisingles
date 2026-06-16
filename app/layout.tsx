@@ -6,19 +6,16 @@ import VersionPill from "@/components/VersionPill";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://iurisingles.vercel.app"),
   title: {
-    default: `${SITE.shortName} — Debt recovery in Spain for international creditors`,
+    default: `${SITE.shortName} — Debt collection in Spain for foreign creditors`,
     template: `%s — ${SITE.shortName}`,
   },
   description:
-    "IJ Creditor helps companies based outside Spain recover debts owed by Spanish debtors. Amicable and judicial recovery, supervised by lawyers.",
+    "IJ Creditor is a Madrid law firm recovering debts owed by Spanish debtors for creditors based outside Spain. Out-of-court and judicial debt collection, supervised by lawyers, operating since 1992.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
