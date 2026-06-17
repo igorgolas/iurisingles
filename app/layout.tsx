@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Playfair_Display } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import VersionPill from "@/components/VersionPill";
 import Analytics from "@/components/Analytics";
 import { SITE } from "@/lib/site";
 import { headers } from "next/headers";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ijcreditor.com"),
@@ -20,15 +29,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const gated = (await headers()).get("x-gate") === "1";
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={playfair.variable}>
       <body>
         {gated ? null : <Nav />}
         <main>{children}</main>
