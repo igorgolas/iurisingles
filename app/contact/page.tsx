@@ -38,7 +38,7 @@ export default function Page() {
           </div>
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">Company identification</h2>
-            <p className="mt-2">Company name: {SITE.name}.<br />Spanish tax ID (NIF): {SITE.nif}.<br />Registered address: {SITE.address}</p>
+            <p className="mt-2">Company name: {SITE.name}, S.L.<br />Spanish tax ID (NIF): {SITE.nif}.<br />Address: {SITE.address}</p>
           </div>
         </div>
         <LeadForm variant="contact" />
