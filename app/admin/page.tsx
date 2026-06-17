@@ -77,7 +77,7 @@ export default async function AdminPage() {
                         <li key={i}>
                           <a
                             className="text-accent underline"
-                            href={`/admin/file?p=${encodeURIComponent(f.pathname)}&n=${encodeURIComponent(f.name)}`}
+                            href={f.url}
                             target="_blank"
                             rel="noreferrer"
                           >

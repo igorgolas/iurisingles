@@ -19,10 +19,12 @@ const label = "block text-sm font-medium text-ink";
 export default function LeadForm({ variant }: { variant: "proposal" | "contact" }) {
   const [status, setStatus] = useState<Status>("idle");
   const [fileError, setFileError] = useState<string | null>(null);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setFileError(null);
+    setErrorMsg(null);
     const form = e.currentTarget;
     if (!(form.elements.namedItem("privacy") as HTMLInputElement)?.checked) {
       return;
@@ -53,7 +55,7 @@ export default function LeadForm({ variant }: { variant: "proposal" | "contact" 
         setStatus("uploading");
         for (const f of selected) {
           const res = await upload(f.name, f, {
-            access: "private",
+            access: "public",
             handleUploadUrl: "/api/blob-upload",
             contentType: f.type || undefined,
           });
@@ -80,7 +82,9 @@ export default function LeadForm({ variant }: { variant: "proposal" | "contact" 
       });
       setStatus(res.ok ? "ok" : "error");
       if (res.ok) form.reset();
-    } catch {
+    } catch (err) {
+      setErrorMsg(err instanceof Error ? err.message : String(err));
+      console.error("[LeadForm] submission failed:", err);
       setStatus("error");
     }
   }
@@ -187,7 +191,7 @@ export default function LeadForm({ variant }: { variant: "proposal" | "contact" 
         <p className="text-sm text-green-700">Thank you. You will receive a confidential first assessment, normally within a few business days.</p>
       ) : null}
       {status === "error" ? (
-        <p className="text-sm text-red-700">Something went wrong. Please email us at ijcreditor@ijcreditor.es.</p>
+        <p className="text-sm text-red-700">Something went wrong. Please email us at ijcreditor@ijcreditor.es.{errorMsg ? <span className="mt-1 block text-xs opacity-70">{errorMsg}</span> : null}</p>
       ) : null}
     </form>
   );
