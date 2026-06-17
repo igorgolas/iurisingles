@@ -20,10 +20,13 @@ h1, h2, h3 {
   font-family: var(--font-serif);
 }
 
-/* Justify body copy across pages, keeping headings, buttons and nav untouched */
-main p,
-main li {
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
+/* Justify body copy only on tablet/desktop; left-align on narrow screens
+   to avoid large inter-word gaps ("rivers") on phones */
+@media (min-width: 768px) {
+  main p,
+  main li {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
 }

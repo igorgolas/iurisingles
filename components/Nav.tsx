@@ -22,7 +22,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop */}
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-5 xl:flex">
           {NAV.map((item) =>
             item.children ? (
               <div key={item.href} className="group relative">
@@ -78,7 +78,7 @@ export default function Nav() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-md border border-slate/20 px-3 py-2 text-sm lg:hidden"
+          className="rounded-md border border-slate/20 px-3 py-2 text-sm xl:hidden"
           aria-expanded={open}
         >
           Menu
@@ -87,7 +87,7 @@ export default function Nav() {
 
       {/* Mobile panel */}
       {open ? (
-        <div className="border-t border-slate/10 bg-white lg:hidden">
+        <div className="border-t border-slate/10 bg-white xl:hidden">
           <nav className="mx-auto max-w-6xl px-6 py-4">
             {NAV.map((item) => (
               <div key={item.href} className="border-b border-slate/10 py-2 last:border-0">
