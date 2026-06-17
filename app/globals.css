@@ -4,6 +4,7 @@
 
 :root {
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 html {
@@ -14,6 +15,10 @@ body {
   @apply bg-white text-ink antialiased;
 }
 
+/* Editorial serif headings, echoing the IJ Creditor logo */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+}
 
 /* Justify body copy across pages, keeping headings, buttons and nav untouched */
 main p,

@@ -3,28 +3,28 @@ import Container from "@/components/Container";
 import { SERVICES, INDUSTRIES } from "@/lib/site";
 
 const KPIS = [
-  "Operating since 1992",
-  "More than 3,000 companies served",
-  "More than 80% of cases resolved out of court",
-  "Madrid head office at Paseo de la Castellana 120",
+  { n: "1992", label: "Operating since" },
+  { n: "3,000+", label: "Companies served" },
+  { n: "80%", label: "Resolved out of court" },
+  { n: "Nationwide", label: "Local lawyers across Spain" },
 ];
 
 const WHY = [
   {
-    t: "We are the Madrid office, not an intermediary.",
-    d: "Your case is handled directly from Paseo de la Castellana 120 by Spanish-qualified lawyers. No subcontracting chains, no information loss between layers.",
+    t: "Handled directly, not through intermediaries.",
+    d: "Your case is run by the firm itself, by Spanish-qualified lawyers. No subcontracting chains, no information loss between layers.",
+  },
+  {
+    t: "Local lawyers anywhere in Spain.",
+    d: "We act before the debtor wherever they are, through our own network of local lawyers across the country, not only in Madrid.",
   },
   {
     t: "Spanish procedural law, in your language.",
-    d: "We coordinate the case with you in English and act before the Spanish debtor in Spanish, applying Spanish procedural rules. The same team handles the amicable phase and any subsequent court proceedings.",
+    d: "We coordinate the case with you in English and act before the Spanish debtor in Spanish. The same team handles the amicable phase and any subsequent court proceedings.",
   },
   {
     t: "Legal supervision of the entire process.",
-    d: "Every communication with the debtor —letters, formal demands, burofaxes— is reviewed by a lawyer of the firm to ensure evidentiary validity, GDPR compliance and, where applicable, the legal effect of interrupting limitation periods.",
-  },
-  {
-    t: "Cross-border judgment enforcement.",
-    d: "Practical experience with Regulation (EU) 1215/2012 (Brussels I bis) for the recognition and enforcement in Spain of judgments from other EU Member States, and with Law 29/2015 on international legal cooperation for judgments from non-EU jurisdictions.",
+    d: "Every formal demand and burofax is reviewed by a lawyer of the firm to ensure evidentiary validity, GDPR compliance and, where applicable, interruption of limitation periods.",
   },
 ];
 
@@ -40,24 +40,31 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="border-b border-slate/10">
-        <Container className="py-24">
-          <p className="text-xs font-semibold uppercase tracking-wider text-accent">
+        <Container className="py-24 text-center">
+          <div className="mx-auto mb-5 flex w-10 flex-col gap-[3px]">
+            <span className="h-[2px] bg-accent" />
+            <span className="h-[2px] bg-accent" />
+            <span className="h-[2px] bg-accent" />
+          </div>
+          <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-accent">
             For creditors based outside Spain
           </p>
-          <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-ink md:text-5xl">
-            Debt collection in Spain for foreign creditors. Operating from Madrid since 1992.
+          <h1 className="mx-auto mt-5 max-w-3xl text-4xl font-medium leading-[1.15] tracking-tight text-ink md:text-5xl">
+            Debt collection in Spain for foreign creditors.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate">
-            Iuris Justitia Creditor (IJ Creditor) is an independent Spanish law firm
-            specialised in commercial debt recovery. We work directly from our office in
-            Madrid —no intermediaries, no subcontracted networks. Success-based fees on the
-            amicable phase and lump-sum fees agreed in writing on legal proceedings.
+          <p className="mt-4 font-serif text-2xl italic text-accent">
+            Operating from Madrid since 1992.
           </p>
-          <div className="mt-9 flex flex-wrap gap-4">
-            <Link href="/request-a-proposal" className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate">
+            Iuris Justitia Creditor (IJ Creditor) is an independent Spanish law firm
+            specialised in commercial debt recovery. We work directly — no intermediaries,
+            no subcontracted networks — with local lawyers anywhere in Spain.
+          </p>
+          <div className="mt-9 flex flex-wrap justify-center gap-4">
+            <Link href="/request-a-proposal" className="rounded-sm bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90">
               Request a proposal
             </Link>
-            <Link href="/services" className="rounded-md border border-slate/20 px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-slate/5">
+            <Link href="/services" className="rounded-sm border border-slate/25 px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-slate/5">
               Submit your case
             </Link>
           </div>
@@ -65,10 +72,13 @@ export default function Home() {
       </section>
 
       {/* KPI strip */}
-      <section className="border-b border-slate/10 bg-ink">
-        <Container className="grid gap-6 py-10 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="border-b border-slate/10">
+        <Container className="grid grid-cols-2 divide-x divide-y divide-slate/10 lg:grid-cols-4 lg:divide-y-0">
           {KPIS.map((k) => (
-            <p key={k} className="text-sm font-medium leading-snug text-white/90">{k}</p>
+            <div key={k.label} className="px-4 py-8 text-center">
+              <div className="font-serif text-3xl text-ink">{k.n}</div>
+              <div className="mt-2 text-[10.5px] uppercase tracking-wider text-slate/70">{k.label}</div>
+            </div>
           ))}
         </Container>
       </section>
@@ -76,13 +86,17 @@ export default function Home() {
       {/* Why */}
       <section className="py-20">
         <Container>
-          <h2 className="max-w-3xl text-2xl font-semibold tracking-tight text-ink">
-            Why foreign creditors trust us with debts in Spain
-          </h2>
-          <div className="mt-10 grid gap-8 md:grid-cols-2">
+          <div className="text-center">
+            <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-accent">Why foreign creditors trust us</p>
+            <h2 className="mx-auto mt-3 max-w-2xl text-3xl font-medium tracking-tight text-ink">
+              The firm itself — wherever your debtor is.
+            </h2>
+          </div>
+          <div className="mx-auto mt-12 grid max-w-4xl gap-x-12 gap-y-10 md:grid-cols-2">
             {WHY.map((w) => (
               <div key={w.t}>
-                <h3 className="text-base font-semibold text-ink">{w.t}</h3>
+                <div className="mb-3 h-[2px] w-7 bg-accent" />
+                <h3 className="font-serif text-xl font-medium text-ink">{w.t}</h3>
                 <p className="mt-2 text-[15px] leading-relaxed text-slate">{w.d}</p>
               </div>
             ))}
@@ -91,14 +105,16 @@ export default function Home() {
       </section>
 
       {/* What we do */}
-      <section className="border-t border-slate/10 bg-slate/[0.03] py-20">
+      <section className="border-t border-slate/10 bg-paper py-20">
         <Container>
-          <h2 className="text-2xl font-semibold tracking-tight text-ink">What we do</h2>
+          <p className="text-center text-[11px] font-medium uppercase tracking-[0.2em] text-accent">What we do</p>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {SERVICES.map((s) => (
-              <Link key={s.href} href={s.href} className="group rounded-lg border border-slate/15 bg-white p-6 transition-colors hover:border-accent/40">
-                <h3 className="text-lg font-semibold text-ink group-hover:text-accent">{s.label}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate">{s.summary}</p>
+              <Link key={s.href} href={s.href} className="group border border-slate/10 bg-white p-6 transition-colors hover:border-accent/40">
+                <h3 className="font-serif text-xl font-medium text-ink">{s.label}</h3>
+                <div className="my-3 h-[2px] w-8 bg-accent" />
+                <p className="text-sm leading-relaxed text-slate">{s.summary}</p>
+                <span className="mt-4 inline-block font-serif text-sm italic text-accent">Learn more →</span>
               </Link>
             ))}
           </div>
@@ -108,12 +124,13 @@ export default function Home() {
       {/* How it works */}
       <section className="py-20">
         <Container>
-          <h2 className="text-2xl font-semibold tracking-tight text-ink">How it works</h2>
-          <ol className="mt-10 grid gap-6 md:grid-cols-4">
+          <p className="text-center text-[11px] font-medium uppercase tracking-[0.2em] text-accent">How it works</p>
+          <ol className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-4">
             {STEPS.map((s, i) => (
-              <li key={i} className="rounded-lg border border-slate/15 p-5">
-                <span className="text-sm font-semibold text-accent">{i + 1}</span>
-                <p className="mt-2 text-sm leading-relaxed text-slate">{s}</p>
+              <li key={i}>
+                <div className="font-serif text-3xl text-accent">{i + 1}</div>
+                <div className="my-3 h-[2px] w-7 bg-slate/15" />
+                <p className="text-sm leading-relaxed text-slate">{s}</p>
               </li>
             ))}
           </ol>
@@ -121,12 +138,12 @@ export default function Home() {
       </section>
 
       {/* Industries */}
-      <section className="border-t border-slate/10 py-20">
+      <section className="border-t border-slate/10 bg-paper py-20">
         <Container>
-          <h2 className="text-2xl font-semibold tracking-tight text-ink">Industries we know</h2>
+          <p className="text-center text-[11px] font-medium uppercase tracking-[0.2em] text-accent">Industries we know</p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {INDUSTRIES.map((s) => (
-              <Link key={s.href} href={s.href} className="rounded-lg border border-slate/15 p-5 text-sm font-medium text-ink transition-colors hover:border-accent/40 hover:text-accent">
+              <Link key={s.href} href={s.href} className="border border-slate/10 bg-white p-5 text-sm font-medium text-ink transition-colors hover:border-accent/40 hover:text-accent">
                 {s.label}
               </Link>
             ))}
@@ -135,14 +152,16 @@ export default function Home() {
       </section>
 
       {/* Closing CTA */}
-      <section className="border-t border-slate/10 bg-ink">
-        <Container className="flex flex-col items-start gap-5 py-14 md:flex-row md:items-center md:justify-between">
-          <p className="max-w-2xl text-lg leading-relaxed text-white">
+      <section className="border-t border-slate/10 py-20">
+        <Container className="text-center">
+          <p className="mx-auto max-w-2xl font-serif text-2xl italic leading-relaxed text-ink">
             Tell us about your case. You will receive a confidential first assessment.
           </p>
-          <Link href="/request-a-proposal" className="flex-none rounded-md bg-white px-6 py-3 text-sm font-medium text-ink transition-opacity hover:opacity-90">
-            Request a proposal
-          </Link>
+          <div className="mt-8">
+            <Link href="/request-a-proposal" className="rounded-sm bg-accent px-7 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90">
+              Request a proposal
+            </Link>
+          </div>
         </Container>
       </section>
     </>
