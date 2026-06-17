@@ -13,3 +13,12 @@ html {
 body {
   @apply bg-white text-ink antialiased;
 }
+
+
+/* Justify body copy across pages, keeping headings, buttons and nav untouched */
+main p,
+main li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}

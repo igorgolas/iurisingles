@@ -10,13 +10,15 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate/10 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex flex-col leading-tight">
-          <span className="text-lg font-semibold tracking-tight text-ink">
-            {SITE.shortName}
-          </span>
-          <span className="text-[11px] uppercase tracking-wider text-slate">
-            Debt collection in Spain
-          </span>
+        <Link href="/" className="flex items-center" aria-label={`${SITE.name} — home`}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.png"
+            alt={SITE.name}
+            width={600}
+            height={163}
+            className="h-10 w-auto md:h-11"
+          />
         </Link>
 
         {/* Desktop */}
