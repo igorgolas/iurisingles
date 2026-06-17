@@ -29,7 +29,7 @@ export default function Page() {
       </Block>
       <Block title="Team and network">
         <Prose paragraphs={[
-          "The team comprises in-house lawyers, case handlers and commercial-information specialists, all integrated at the Madrid head office. The firm is a member of the relevant national and international debt-collection associations, through which its correspondent network across multiple jurisdictions is maintained.",
+          "The team comprises in-house lawyers, case handlers and commercial-information specialists, all integrated at the Madrid head office. The firm is a member of international debt-collection and creditors’ associations — the European Collectors Association (ECA), the League International for Creditors (LIC International) and American Lawyers Quarterly — through which its correspondent network across multiple jurisdictions is maintained.",
         ]} />
       </Block>
       <Block title="Regulatory framework">

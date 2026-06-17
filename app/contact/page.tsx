@@ -33,10 +33,6 @@ export default function Page() {
             <p className="mt-2">For consultations from foreign companies or cross-border matters, communications may be sent to the same general email address; the firm channels them internally to the team in charge of international debt collection.</p>
           </div>
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">Office hours</h2>
-            <p className="mt-2 text-slate/70">[To be confirmed — typically Monday to Friday, Spanish office hours (CET).]</p>
-          </div>
-          <div>
             <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">Company identification</h2>
             <p className="mt-2">Company name: {SITE.name}, S.L.<br />Spanish tax ID (NIF): {SITE.nif}.<br />Address: {SITE.address}</p>
           </div>
