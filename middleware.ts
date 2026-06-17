@@ -38,7 +38,15 @@ export function middleware(req: NextRequest): NextResponse {
     return requireAdminAuth(req);
   }
 
-  if (LAUNCHED) return NextResponse.next();
+  if (LAUNCHED) {
+    // Keep the preview (*.vercel.app) out of search engines even after launch.
+    if (!host.includes(PUBLIC_DOMAIN)) {
+      const res = NextResponse.next();
+      res.headers.set("X-Robots-Tag", "noindex, nofollow");
+      return res;
+    }
+    return NextResponse.next();
+  }
 
   const isPublicDomain = host.includes(PUBLIC_DOMAIN);
   const isAsset = pathname.includes(".");

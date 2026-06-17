@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import { headers } from "next/headers";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://iurisingles.vercel.app"),
+  metadataBase: new URL("https://ijcreditor.com"),
   title: {
     default: `${SITE.shortName} — Debt collection in Spain for foreign creditors`,
     template: `%s — ${SITE.shortName}`,
