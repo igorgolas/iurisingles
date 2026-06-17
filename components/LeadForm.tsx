@@ -93,6 +93,13 @@ export default function LeadForm({ variant }: { variant: "proposal" | "contact" 
 
   return (
     <form onSubmit={onSubmit} className="max-w-2xl space-y-8">
+      {/* Honeypot: hidden from humans; bots that fill it are discarded server-side. */}
+      <div aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-0 w-0 overflow-hidden">
+        <label>
+          Do not fill this field
+          <input type="text" name="company_website" tabIndex={-1} autoComplete="off" />
+        </label>
+      </div>
       {variant === "proposal" ? (
         <>
           <fieldset className="space-y-5">

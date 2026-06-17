@@ -57,6 +57,11 @@ export default async function AdminPage() {
                     <a className="text-accent underline" href={`mailto:${row.email}`}>{row.email}</a>
                   ) : "no email"}
                 </p>
+                {(row.ip || row.user_agent) ? (
+                  <p className="mt-1 text-xs text-slate/70">
+                    IP: {row.ip || "unknown"}{row.user_agent ? ` · ${row.user_agent}` : ""}
+                  </p>
+                ) : null}
 
                 {extra.length > 0 ? (
                   <dl className="mt-3 grid gap-x-6 gap-y-1 text-sm sm:grid-cols-2">

@@ -25,6 +25,8 @@ export async function ensureSchema(): Promise<void> {
     payload jsonb NOT NULL DEFAULT '{}'::jsonb,
     files jsonb NOT NULL DEFAULT '[]'::jsonb
   )`;
+  await sql`ALTER TABLE leads ADD COLUMN IF NOT EXISTS ip text`;
+  await sql`ALTER TABLE leads ADD COLUMN IF NOT EXISTS user_agent text`;
   ensured = true;
 }
 
@@ -37,4 +39,6 @@ export type LeadRow = {
   email: string | null;
   payload: Record<string, unknown>;
   files: Array<{ pathname: string; url: string; name: string; size: number; type: string }>;
+  ip: string | null;
+  user_agent: string | null;
 };

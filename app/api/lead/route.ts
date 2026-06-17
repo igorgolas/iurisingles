@@ -5,6 +5,8 @@ import type { UploadedFile } from "@/lib/uploads";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+const RATE_LIMIT_PER_HOUR = 5;
+
 function str(v: unknown): string | null {
   return typeof v === "string" && v.trim() !== "" ? v : null;
 }
@@ -17,24 +19,49 @@ export async function POST(req: Request): Promise<NextResponse> {
     return NextResponse.json({ error: "Invalid body" }, { status: 400 });
   }
 
+  // Honeypot: a hidden field that humans never fill. If it has a value, it's a bot.
+  // Respond OK so the bot gets no signal, but process nothing.
+  if (str(payload.company_website)) {
+    return NextResponse.json({ ok: true });
+  }
+
+  const fwd = req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || "";
+  const ip = fwd.split(",")[0].trim() || null;
+  const userAgent = req.headers.get("user-agent");
+
   const files: UploadedFile[] = Array.isArray(payload.files)
     ? (payload.files as UploadedFile[])
     : [];
   const fields: Record<string, unknown> = { ...payload };
   delete fields.files;
+  delete fields.company_website;
 
-  // 1) Persist to the database (best-effort: never block the user on a DB error).
+  // 1) Persist + rate-limit (best-effort: never block the user on a DB error).
   try {
     await ensureSchema();
     const sql = getSql();
-    await sql`INSERT INTO leads (variant, name, company, email, payload, files)
+
+    if (ip) {
+      const rows = (await sql`
+        SELECT count(*)::int AS c FROM leads
+        WHERE ip = ${ip} AND created_at > now() - interval '1 hour'
+      `) as Array<{ c: number }>;
+      if (Number(rows[0]?.c ?? 0) >= RATE_LIMIT_PER_HOUR) {
+        // Too many submissions from this IP in the last hour: drop silently.
+        return NextResponse.json({ ok: true });
+      }
+    }
+
+    await sql`INSERT INTO leads (variant, name, company, email, payload, files, ip, user_agent)
       VALUES (
         ${str(fields.variant)},
         ${str(fields.name)},
         ${str(fields.company)},
         ${str(fields.email)},
         ${JSON.stringify(fields)}::jsonb,
-        ${JSON.stringify(files)}::jsonb
+        ${JSON.stringify(files)}::jsonb,
+        ${ip},
+        ${userAgent}
       )`;
   } catch (error) {
     console.error("[lead] database error:", error);
@@ -56,6 +83,7 @@ export async function POST(req: Request): Promise<NextResponse> {
       }
       lines.push("", "The documents are confidential and can be opened from the admin panel.");
     }
+    lines.push("", "—", `Sender IP: ${ip ?? "unknown"}`, `Browser: ${userAgent ?? "unknown"}`);
     lines.push("", `Admin panel: ${origin}/admin`);
     try {
       await fetch("https://api.resend.com/emails", {
