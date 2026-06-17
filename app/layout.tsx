@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import VersionPill from "@/components/VersionPill";
 import { SITE } from "@/lib/site";
+import { headers } from "next/headers";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://iurisingles.vercel.app"),
@@ -15,7 +16,8 @@ export const metadata: Metadata = {
     "IJ Creditor is a Madrid law firm recovering debts owed by Spanish debtors for creditors based outside Spain. Out-of-court and judicial debt collection, supervised by lawyers, operating since 1992.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const gated = (await headers()).get("x-gate") === "1";
   return (
     <html lang="en">
       <head>
@@ -27,10 +29,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <Nav />
+        {gated ? null : <Nav />}
         <main>{children}</main>
-        <Footer />
-        <VersionPill />
+        {gated ? null : <Footer />}
+        {gated ? null : <VersionPill />}
       </body>
     </html>
   );
