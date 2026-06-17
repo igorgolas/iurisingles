@@ -12,7 +12,7 @@ export async function GET(req: Request): Promise<Response> {
 
   let result;
   try {
-    result = await get(pathname, { access: "public" });
+    result = await get(pathname, { access: "private" });
   } catch {
     return new Response("Unable to read file", { status: 502 });
   }

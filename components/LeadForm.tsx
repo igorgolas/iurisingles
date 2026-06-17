@@ -55,7 +55,7 @@ export default function LeadForm({ variant }: { variant: "proposal" | "contact" 
         setStatus("uploading");
         for (const f of selected) {
           const res = await upload(f.name, f, {
-            access: "public",
+            access: "private",
             handleUploadUrl: "/api/blob-upload",
             contentType: f.type || undefined,
           });
