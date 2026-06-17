@@ -9,7 +9,7 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate/10 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center gap-20 px-6 py-5">
+      <div className="mx-auto flex max-w-6xl items-center gap-28 px-6 py-5">
         <Link href="/" className="flex items-center" aria-label={`${SITE.name} — home`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
