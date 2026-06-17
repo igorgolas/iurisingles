@@ -3,6 +3,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import VersionPill from "@/components/VersionPill";
+import Analytics from "@/components/Analytics";
 import { SITE } from "@/lib/site";
 import { headers } from "next/headers";
 
@@ -33,6 +34,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main>{children}</main>
         {gated ? null : <Footer />}
         {gated ? null : <VersionPill />}
+        {gated ? null : <Analytics />}
       </body>
     </html>
   );

@@ -124,7 +124,15 @@ export default function Page() {
         ]} />
       </Block>
 
-      <Block title="12. Acceptance and consent">
+      <Block title="12. Cookies and analytics">
+        <Prose paragraphs={[
+          "This Website uses its own and third-party analytics cookies — specifically Google Analytics (provided by Google) and Microsoft Clarity (provided by Microsoft) — to measure how visitors use the site and to improve it. Microsoft Clarity may capture anonymised usage data such as page interactions and aggregated heatmaps.",
+          "These analytics cookies are only installed if you accept them through the cookie banner shown when you first visit the Website. If you reject them, no analytics cookies are installed and no usage data is sent to these providers. Cookies strictly necessary for the basic functioning of the Website do not require consent.",
+          "You can withdraw or change your choice at any time by clearing this site's data in your browser, which will cause the cookie banner to be shown again.",
+        ]} />
+      </Block>
+
+      <Block title="13. Acceptance and consent">
         <Prose paragraphs={[
           "The User declares that they have been informed of the conditions on the protection of personal data, accepting and consenting to the processing of such data by IURIS JUSTITIA in the manner and for the purposes indicated in this Privacy Policy.",
         ]} />
