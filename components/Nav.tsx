@@ -13,7 +13,7 @@ export default function Nav() {
         <Link href="/" className="flex items-center" aria-label={`${SITE.name} — home`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo.png"
+            src="/logo.svg"
             alt={SITE.name}
             width={600}
             height={163}
