@@ -188,7 +188,7 @@ export default function LeadForm({ variant }: { variant: "proposal" | "contact" 
         {status === "uploading" ? "Uploading documents…" : status === "sending" ? "Sending…" : "Send"}
       </button>
       {status === "ok" ? (
-        <p className="text-sm text-green-700">Thank you. You will receive a confidential first assessment, normally within a few business days.</p>
+        <p className="text-sm text-green-700">Thank you. You will receive a confidential first assessment within two business days.</p>
       ) : null}
       {status === "error" ? (
         <p className="text-sm text-red-700">Something went wrong. Please email us at ijcreditor@ijcreditor.es.{errorMsg ? <span className="mt-1 block text-xs opacity-70">{errorMsg}</span> : null}</p>

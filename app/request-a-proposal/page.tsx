@@ -21,6 +21,9 @@ export default function Page() {
         ]} />
       </Block>
       <Container className="py-6">
+        <p className="mb-6 inline-block rounded-md bg-accent/10 px-4 py-2 text-sm font-medium text-accent">
+          Confidential first assessment within two business days.
+        </p>
         <LeadForm variant="proposal" />
       </Container>
       <Block title="Legal basis for data processing">
@@ -31,7 +34,7 @@ export default function Page() {
       </Block>
       <Block title="What happens after submission">
         <Prose paragraphs={[
-          "IJ Creditor will respond within a reasonable timeframe, normally within a few business days, with a first case assessment, the recommended route and, where appropriate, a fee proposal for the client to decide whether to formalise the engagement.",
+          "IJ Creditor will respond within a reasonable timeframe, normally within two business days, with a first case assessment, the recommended route and, where appropriate, a fee proposal for the client to decide whether to formalise the engagement.",
         ]} />
       </Block>
     </>
