@@ -33,6 +33,7 @@ export const it: Dictionary = {
     reject: "Rifiuta",
     privacy: "informativa sulla privacy",
   },
+  cta: { band: "Ogni caso è diverso. Il modo più rapido per sapere se IJ Creditor può aiutarti è richiedere una proposta personalizzata e riservata." },
   home: {
     eyebrow: "Per creditori con sede fuori dalla Spagna",
     h1: "Recupero crediti in Spagna per creditori esteri.",

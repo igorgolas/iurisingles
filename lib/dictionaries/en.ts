@@ -31,6 +31,7 @@ export const en = {
     reject: "Reject",
     privacy: "privacy policy",
   },
+  cta: { band: "Every case is different. The fastest way to know whether IJ Creditor can help is to request a confidential personalised proposal." },
   home: {
     eyebrow: "For creditors based outside Spain",
     h1: "Debt collection in Spain for foreign creditors.",

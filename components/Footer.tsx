@@ -1,7 +1,19 @@
 import Link from "next/link";
-import { SERVICES, INDUSTRIES, SITE } from "@/lib/site";
+import { SITE } from "@/lib/site";
+import { withLocale, type Locale } from "@/lib/i18n";
+import type { Dictionary } from "@/lib/dictionaries";
+import { navServices, navIndustries } from "@/lib/nav-model";
 
-export default function Footer() {
+export default function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
+  const services = navServices(locale, dict);
+  const industries = navIndustries(locale, dict);
+  const more = [
+    { label: dict.footer.knowledgeBase, href: withLocale(locale, "/knowledge-base") },
+    { label: dict.footer.faq, href: withLocale(locale, "/faq") },
+    { label: dict.footer.contact, href: withLocale(locale, "/contact") },
+    { label: dict.footer.legalNotice, href: withLocale(locale, "/legal-notice") },
+    { label: dict.footer.privacy, href: withLocale(locale, "/privacy") },
+  ];
   return (
     <footer className="mt-24 border-t border-slate/10 bg-ink text-white/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-4">
@@ -13,39 +25,33 @@ export default function Footer() {
           <p className="mt-3 text-xs text-white/50">NIF {SITE.nif}</p>
         </div>
         <div>
-          <p className="text-sm font-semibold text-white">Services</p>
+          <p className="text-sm font-semibold text-white">{dict.footer.services}</p>
           <ul className="mt-3 space-y-2 text-sm">
-            {SERVICES.map((s) => (
-              <li key={s.href}>
-                <Link href={s.href} className="hover:text-white">{s.label}</Link>
-              </li>
+            {services.map((s) => (
+              <li key={s.href}><Link href={s.href} className="hover:text-white">{s.label}</Link></li>
             ))}
           </ul>
         </div>
         <div>
-          <p className="text-sm font-semibold text-white">Industries</p>
+          <p className="text-sm font-semibold text-white">{dict.footer.industries}</p>
           <ul className="mt-3 space-y-2 text-sm">
-            {INDUSTRIES.map((s) => (
-              <li key={s.href}>
-                <Link href={s.href} className="hover:text-white">{s.label}</Link>
-              </li>
+            {industries.map((s) => (
+              <li key={s.href}><Link href={s.href} className="hover:text-white">{s.label}</Link></li>
             ))}
           </ul>
         </div>
         <div>
-          <p className="text-sm font-semibold text-white">More</p>
+          <p className="text-sm font-semibold text-white">{dict.footer.more}</p>
           <ul className="mt-3 space-y-2 text-sm">
-            <li><Link href="/knowledge-base" className="hover:text-white">Knowledge Base</Link></li>
-            <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
-            <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-            <li><Link href="/legal-notice" className="hover:text-white">Legal notice</Link></li>
-            <li><Link href="/privacy" className="hover:text-white">Privacy policy</Link></li>
+            {more.map((m) => (
+              <li key={m.href}><Link href={m.href} className="hover:text-white">{m.label}</Link></li>
+            ))}
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-6xl px-6 py-5 text-xs text-white/50">
-          © {new Date().getFullYear()} {SITE.name}. All rights reserved.
+          © {new Date().getFullYear()} {SITE.name}. {dict.footer.rights}
         </p>
       </div>
     </footer>

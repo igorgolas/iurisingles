@@ -33,6 +33,7 @@ export const de: Dictionary = {
     reject: "Ablehnen",
     privacy: "Datenschutzerklärung",
   },
+  cta: { band: "Jeder Fall ist anders. Am schnellsten erfahren Sie, ob IJ Creditor helfen kann, indem Sie ein vertrauliches, individuelles Angebot anfordern." },
   home: {
     eyebrow: "Für Gläubiger mit Sitz außerhalb Spaniens",
     h1: "Forderungseinzug in Spanien für ausländische Gläubiger.",

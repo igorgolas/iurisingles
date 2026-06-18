@@ -1,13 +1,11 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { LAUNCHED } from "@/lib/flags";
+import { locales, defaultLocale, isLocale, type Locale } from "@/lib/i18n";
 
-// Run on everything except Next internals and obvious static files.
 export const config = {
   matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };
 
-// The public production domain. Until launch, this domain shows the holding page;
-// the *.vercel.app URL keeps serving the full site for internal review.
 const PUBLIC_DOMAIN = "ijcreditor.com";
 
 function requireAdminAuth(req: NextRequest): NextResponse {
@@ -28,56 +26,59 @@ function requireAdminAuth(req: NextRequest): NextResponse {
   });
 }
 
+function detectLocale(req: NextRequest): Locale {
+  const al = req.headers.get("accept-language") || "";
+  for (const part of al.split(",")) {
+    const code = part.split(";")[0].trim().slice(0, 2).toLowerCase();
+    if (isLocale(code)) return code;
+  }
+  return defaultLocale;
+}
+
+function withLocaleHeader(req: NextRequest, locale: Locale, host: string): NextResponse {
+  const headers = new Headers(req.headers);
+  headers.set("x-locale", locale);
+  const res = NextResponse.next({ request: { headers } });
+  if (!host.includes(PUBLIC_DOMAIN)) res.headers.set("X-Robots-Tag", "noindex, nofollow");
+  return res;
+}
+
 export function middleware(req: NextRequest): NextResponse {
   const url = new URL(req.url);
   const { pathname } = url;
   const host = req.headers.get("host") || "";
 
-  // Admin area: always Basic-Auth protected, never gated.
+  // Admin: always Basic-Auth protected, never localized/gated.
   if (pathname === "/admin" || pathname.startsWith("/admin/")) {
     return requireAdminAuth(req);
   }
 
-  if (LAUNCHED) {
-    // Keep the preview (*.vercel.app) out of search engines even after launch.
+  // API, files and special routes: pass through.
+  if (pathname.startsWith("/api") || pathname.includes(".") || pathname === "/robots.txt" || pathname === "/sitemap.xml") {
+    return NextResponse.next();
+  }
+
+  // Pre-launch holding page on the public domain.
+  if (!LAUNCHED) {
     if (!host.includes(PUBLIC_DOMAIN)) {
       const res = NextResponse.next();
       res.headers.set("X-Robots-Tag", "noindex, nofollow");
       return res;
     }
-    return NextResponse.next();
+    if (pathname === "/coming-soon") return NextResponse.next();
+    return NextResponse.rewrite(new URL("/coming-soon", req.url));
   }
 
-  const isPublicDomain = host.includes(PUBLIC_DOMAIN);
-  const isAsset = pathname.includes(".");
-  const isApiOrHolding = pathname.startsWith("/api") || pathname === "/coming-soon";
+  if (pathname === "/coming-soon") return NextResponse.next();
 
-  // Not the public domain (i.e. the vercel.app preview): serve the full site, but
-  // keep it out of search engines until launch.
-  if (!isPublicDomain) {
-    const res = NextResponse.next();
-    res.headers.set("X-Robots-Tag", "noindex, nofollow");
-    return res;
+  // Locale routing.
+  const seg = pathname.split("/")[1];
+  if (isLocale(seg)) {
+    return withLocaleHeader(req, seg, host);
   }
 
-  // Public domain, pre-launch: let API/holding page/assets through, gate the rest.
-  if (isApiOrHolding || isAsset) return NextResponse.next();
-
-  // Optional preview bypass on the public domain: ?preview=<ADMIN_PASSWORD>.
-  const pass = process.env.ADMIN_PASSWORD;
-  const query = url.searchParams.get("preview");
-  if (pass && query === pass) {
-    const res = NextResponse.next();
-    res.cookies.set("preview", pass, { path: "/", httpOnly: true });
-    return res;
-  }
-  if (pass && req.cookies.get("preview")?.value === pass) {
-    return NextResponse.next();
-  }
-
-  // Gate: rewrite to the holding page; flag it so the layout drops nav/footer.
-  const headers = new Headers(req.headers);
-  headers.set("x-gate", "1");
-  const rewriteUrl = new URL("/coming-soon", req.url);
-  return NextResponse.rewrite(rewriteUrl, { request: { headers } });
+  // Not localized → redirect to the localized URL.
+  const locale = detectLocale(req);
+  const dest = new URL(`/${locale}${pathname === "/" ? "" : pathname}${url.search}`, req.url);
+  return NextResponse.redirect(dest, 307);
 }

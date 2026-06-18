@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Script from "next/script";
+import Link from "next/link";
+import { withLocale, type Locale } from "@/lib/i18n";
 
 const GA = process.env.NEXT_PUBLIC_GA_ID;
 const CLARITY = process.env.NEXT_PUBLIC_CLARITY_ID;
@@ -9,7 +11,13 @@ const KEY = "ijc_consent";
 
 type Consent = "granted" | "denied" | "pending" | "init";
 
-export default function Analytics() {
+export default function Analytics({
+  locale,
+  cookie,
+}: {
+  locale: Locale;
+  cookie: { text: string; accept: string; reject: string; privacy: string };
+}) {
   const [consent, setConsent] = useState<Consent>("init");
 
   useEffect(() => {
@@ -17,14 +25,13 @@ export default function Analytics() {
     setConsent(stored === "granted" ? "granted" : stored === "denied" ? "denied" : "pending");
   }, []);
 
-  // Nothing to load and nothing to consent to.
   if (!GA && !CLARITY) return null;
 
   function choose(value: "granted" | "denied") {
     try {
       localStorage.setItem(KEY, value);
     } catch {
-      // ignore storage errors
+      // ignore
     }
     setConsent(value);
   }
@@ -35,10 +42,7 @@ export default function Analytics() {
         <>
           {GA ? (
             <>
-              <Script
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA}`}
-                strategy="afterInteractive"
-              />
+              <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA}`} strategy="afterInteractive" />
               <Script id="ga4-init" strategy="afterInteractive">
                 {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA}',{anonymize_ip:true});`}
               </Script>
@@ -56,24 +60,15 @@ export default function Analytics() {
         <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate/15 bg-white/95 backdrop-blur">
           <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-4 text-sm text-slate sm:flex-row sm:items-center sm:justify-between">
             <p className="max-w-2xl">
-              We use analytics cookies to understand how visitors use the site and to
-              improve it. You can accept or reject them. See our{" "}
-              <a href="/privacy" className="text-accent underline">privacy policy</a>.
+              {cookie.text}{" "}
+              <Link href={withLocale(locale, "/privacy")} className="text-accent underline">{cookie.privacy}</Link>
             </p>
             <div className="flex flex-none gap-3">
-              <button
-                type="button"
-                onClick={() => choose("denied")}
-                className="rounded-md border border-slate/30 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-slate/5"
-              >
-                Reject
+              <button type="button" onClick={() => choose("denied")} className="rounded-md border border-slate/30 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-slate/5">
+                {cookie.reject}
               </button>
-              <button
-                type="button"
-                onClick={() => choose("granted")}
-                className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
-              >
-                Accept
+              <button type="button" onClick={() => choose("granted")} className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90">
+                {cookie.accept}
               </button>
             </div>
           </div>

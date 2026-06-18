@@ -1,11 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import PageHeader from "@/components/PageHeader";
-import Block from "@/components/Block";
 import Prose from "@/components/Prose";
 import Container from "@/components/Container";
 import CtaBand from "@/components/CtaBand";
 import { SERVICES } from "@/lib/site";
+import { isLocale, withLocale } from "@/lib/i18n";
+import { getDictionary } from "@/lib/dictionaries";
 
 export const metadata: Metadata = { title: "Services" };
 
@@ -24,7 +26,10 @@ const DETAIL: Record<string, string[]> = {
   ],
 };
 
-export default function Page() {
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+  const dict = getDictionary(locale);
   return (
     <>
       <PageHeader
@@ -34,17 +39,18 @@ export default function Page() {
       />
       <Container className="py-16">
         <div className="space-y-10">
-          {SERVICES.map((s) => (
-            <div key={s.href} className="border-b border-slate/10 pb-10 last:border-0">
-              <h2 className="text-xl font-semibold tracking-tight text-ink">{s.label}</h2>
-              <div className="mt-4">
-                <Prose paragraphs={DETAIL[s.href] ?? []} />
+          {SERVICES.map((s) => {
+            const slug = s.href.split("/").pop() as keyof typeof dict.services;
+            return (
+              <div key={s.href} className="border-b border-slate/10 pb-10 last:border-0">
+                <h2 className="text-xl font-semibold tracking-tight text-ink">{dict.services[slug].label}</h2>
+                <div className="mt-4"><Prose paragraphs={DETAIL[s.href] ?? []} /></div>
+                <Link href={withLocale(locale, s.href)} className="mt-4 inline-block text-sm font-medium text-accent hover:underline">
+                  {dict.common.learnMore}
+                </Link>
               </div>
-              <Link href={s.href} className="mt-4 inline-block text-sm font-medium text-accent hover:underline">
-                Read more →
-              </Link>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </Container>
       <CtaBand />

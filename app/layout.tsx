@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Playfair_Display } from "next/font/google";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
-import VersionPill from "@/components/VersionPill";
-import Analytics from "@/components/Analytics";
-import { SITE } from "@/lib/site";
 import { headers } from "next/headers";
+import { defaultLocale, isLocale } from "@/lib/i18n";
+import { SITE } from "@/lib/site";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -27,16 +24,11 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const gated = (await headers()).get("x-gate") === "1";
+  const xl = (await headers()).get("x-locale") ?? "";
+  const lang = isLocale(xl) ? xl : defaultLocale;
   return (
-    <html lang="en" className={playfair.variable}>
-      <body>
-        {gated ? null : <Nav />}
-        <main>{children}</main>
-        {gated ? null : <Footer />}
-        {gated ? null : <VersionPill />}
-        {gated ? null : <Analytics />}
-      </body>
+    <html lang={lang} className={playfair.variable}>
+      <body>{children}</body>
     </html>
   );
 }

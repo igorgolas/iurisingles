@@ -33,6 +33,7 @@ export const fr: Dictionary = {
     reject: "Refuser",
     privacy: "politique de confidentialité",
   },
+  cta: { band: "Chaque dossier est différent. Le moyen le plus rapide de savoir si IJ Creditor peut vous aider est de demander une proposition personnalisée et confidentielle." },
   home: {
     eyebrow: "Pour les créanciers établis hors d'Espagne",
     h1: "Recouvrement de créances en Espagne pour les créanciers étrangers.",

@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import PageHeader from "@/components/PageHeader";
 import Block from "@/components/Block";
 import Prose from "@/components/Prose";
 import Container from "@/components/Container";
 import CtaBand from "@/components/CtaBand";
 import { KB_GUIDES } from "@/lib/kb";
+import { isLocale, withLocale } from "@/lib/i18n";
 
 export const metadata: Metadata = { title: "Knowledge Base" };
 
-export default function Page() {
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
   return (
     <>
       <PageHeader
@@ -25,11 +29,7 @@ export default function Page() {
       <Container className="pb-8">
         <div className="grid gap-4 md:grid-cols-2">
           {KB_GUIDES.map((g) => (
-            <Link
-              key={g.slug}
-              href={`/knowledge-base/${g.slug}`}
-              className="group rounded-lg border border-slate/15 p-5 transition-colors hover:border-accent/40"
-            >
+            <Link key={g.slug} href={withLocale(locale, `/knowledge-base/${g.slug}`)} className="group rounded-lg border border-slate/15 p-5 transition-colors hover:border-accent/40">
               <h2 className="text-base font-semibold text-ink group-hover:text-accent">{g.nav}</h2>
               <p className="mt-2 text-sm leading-relaxed text-slate">{g.summary}</p>
               <span className="mt-3 inline-block text-xs font-medium uppercase tracking-wider text-accent">Read guide →</span>

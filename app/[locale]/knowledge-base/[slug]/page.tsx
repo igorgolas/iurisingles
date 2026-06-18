@@ -5,16 +5,13 @@ import PageHeader from "@/components/PageHeader";
 import Block from "@/components/Block";
 import Prose from "@/components/Prose";
 import CtaBand from "@/components/CtaBand";
-import { KB_GUIDES, getGuide } from "@/lib/kb";
-
-export function generateStaticParams() {
-  return KB_GUIDES.map((g) => ({ slug: g.slug }));
-}
+import { getGuide } from "@/lib/kb";
+import { isLocale, withLocale } from "@/lib/i18n";
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
   const guide = getGuide(slug);
@@ -25,26 +22,20 @@ export async function generateMetadata({
 export default async function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  if (!isLocale(locale)) notFound();
   const guide = getGuide(slug);
   if (!guide) notFound();
 
   return (
     <>
       <PageHeader eyebrow="Knowledge Base" title={guide.title} intro={guide.summary} />
+      <Block><Prose paragraphs={guide.body} /></Block>
+      <Block title="How IJ Creditor Can Assist"><Prose paragraphs={[guide.assist]} /></Block>
       <Block>
-        <Prose paragraphs={guide.body} />
-      </Block>
-      <Block title="How IJ Creditor Can Assist">
-        <Prose paragraphs={[guide.assist]} />
-      </Block>
-      <Block>
-        <Link
-          href="/knowledge-base"
-          className="text-sm font-medium text-accent transition-opacity hover:opacity-80"
-        >
+        <Link href={withLocale(locale, "/knowledge-base")} className="text-sm font-medium text-accent transition-opacity hover:opacity-80">
           ← All guides
         </Link>
       </Block>

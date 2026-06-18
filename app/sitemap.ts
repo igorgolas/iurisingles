@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SERVICES, INDUSTRIES } from "@/lib/site";
 import { KB_GUIDES } from "@/lib/kb";
+import { locales } from "@/lib/i18n";
 
 const base = "https://ijcreditor.com";
 
@@ -21,5 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...INDUSTRIES.map((i) => i.href),
     ...KB_GUIDES.map((g) => `/knowledge-base/${g.slug}`),
   ];
-  return paths.map((p) => ({ url: `${base}${p}`, lastModified: now }));
+  return locales.flatMap((l) =>
+    paths.map((p) => ({ url: `${base}/${l}${p}`, lastModified: now }))
+  );
 }
