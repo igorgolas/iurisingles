@@ -41,24 +41,39 @@ export const SERVICES: NavChild[] = [
 
 export const INDUSTRIES: NavChild[] = [
   {
-    label: "Transport & Logistics",
+    label: "Transport, Freight Forwarding & Logistics",
     href: "/industries/transport-logistics",
-    summary: "Unpaid freight invoices, B2B chain claims, cargo incidents and insurance.",
+    summary: "Unpaid freight invoices, B2B chain claims, cargo incidents and cross-border transport debt.",
   },
   {
-    label: "Vehicle Rental",
-    href: "/industries/vehicle-rental",
-    summary: "Unpaid fees, damage, fines and tolls, chargebacks and fleet customers.",
+    label: "Manufacturing & Industrial Supply",
+    href: "/industries/manufacturing-industrial-supply",
+    summary: "Unpaid invoices for machinery, components and industrial materials, with delivery and retention-of-title disputes.",
   },
   {
-    label: "Equipment Rental & Leasing",
+    label: "Chemicals, Pharma & Medical Devices",
+    href: "/industries/chemicals-pharma-medical-devices",
+    summary: "High-value, regulated supplies with deferred payment to distributors, pharmacies and hospitals.",
+  },
+  {
+    label: "Construction, Engineering & Public Suppliers",
+    href: "/industries/construction-engineering-public-suppliers",
+    summary: "Certifications, milestones, subcontracting chains and public-sector payment delays.",
+  },
+  {
+    label: "Textile Manufacturing & Brands",
+    href: "/industries/textile",
+    summary: "Wholesale and retail supply by textile and fashion manufacturers, with seasonal, returns and markdown disputes.",
+  },
+  {
+    label: "Travel, Car Rental & Mobility",
+    href: "/industries/travel-car-rental-mobility",
+    summary: "Unpaid rentals, damages, penalties and chargebacks across car rental, travel and corporate mobility.",
+  },
+  {
+    label: "Equipment Rental, Leasing & Asset Recovery",
     href: "/industries/equipment-rental-leasing",
-    summary: "Unpaid instalments, termination for breach and recovery of the financed asset.",
-  },
-  {
-    label: "Goods & Services Suppliers",
-    href: "/industries/goods-services-suppliers",
-    summary: "B2B supplier invoices, balance reconciliation and works-certification disputes.",
+    summary: "Unpaid instalments, termination for breach and recovery of the financed or rented asset.",
   },
 ];
 

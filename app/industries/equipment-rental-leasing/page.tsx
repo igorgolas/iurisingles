@@ -5,12 +5,12 @@ import Prose from "@/components/Prose";
 import Bullets from "@/components/Bullets";
 import CtaBand from "@/components/CtaBand";
 
-export const metadata: Metadata = { title: "Equipment Rental & Leasing" };
+export const metadata: Metadata = { title: "Equipment Rental, Leasing & Asset Recovery" };
 
 export default function Page() {
   return (
     <>
-      <PageHeader eyebrow="Industries" title="Equipment Rental & Leasing" />
+      <PageHeader eyebrow="Industries" title="Equipment Rental, Leasing & Asset Recovery" />
       <Block>
         <Prose paragraphs={[
           "Rental and leasing arrangements cover operational or financial financing schemes for movable assets —commercial vehicles, industrial machinery, IT equipment, installations or furniture— for use by companies and self-employed professionals. When default occurs, it is usually accompanied by specific issues: ownership of the asset, contract termination for breach, settlement of the customer's account, residual value of the asset and, where applicable, physical recovery of the financed or rented asset.",

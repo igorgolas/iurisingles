@@ -5,12 +5,12 @@ import Prose from "@/components/Prose";
 import Bullets from "@/components/Bullets";
 import CtaBand from "@/components/CtaBand";
 
-export const metadata: Metadata = { title: "Transport & Logistics" };
+export const metadata: Metadata = { title: "Transport, Freight Forwarding & Logistics" };
 
 export default function Page() {
   return (
     <>
-      <PageHeader eyebrow="Industries" title="Transport & Logistics" />
+      <PageHeader eyebrow="Industries" title="Transport, Freight Forwarding & Logistics" />
       <Block>
         <Prose paragraphs={[
           "Transport, courier and logistics activities typically operate with tight margins and a high operational interdependence between the various links of the chain: shippers, logistics operators, freight forwarders, carriers, platforms, warehouses and last-mile operators. In certain segments, collection cycles can be lengthy. Defaults usually arise from disputes over service performance —deliveries with incidents, missed deadlines, damaged goods, service-level or contractual KPIs not met— or from clients under real cash-flow pressure.",
