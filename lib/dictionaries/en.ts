@@ -77,6 +77,109 @@ export const en = {
     "travel-car-rental-mobility": { label: "Travel, Car Rental & Mobility", summary: "Unpaid rentals, damages, penalties and chargebacks across car rental, travel and corporate mobility." },
     "equipment-rental-leasing": { label: "Equipment Rental, Leasing & Asset Recovery", summary: "Unpaid instalments, termination for breach and recovery of the financed or rented asset." },
   },
+  industriesContent: {
+    filesTitle: "Types of files typically handled",
+    pages: {
+      "transport-logistics": {
+        intro: [
+          "Transport, courier and logistics activities typically operate with tight margins and a high operational interdependence between the various links of the chain: shippers, logistics operators, freight forwarders, carriers, platforms, warehouses and last-mile operators. In certain segments, collection cycles can be lengthy. Defaults usually arise from disputes over service performance —deliveries with incidents, missed deadlines, damaged goods, service-level or contractual KPIs not met— or from clients under real cash-flow pressure.",
+          "IJ Creditor has recurrent experience in the sector and knowledge of its legal specifics: Spanish Law 15/2009 on the contract of land transport of goods, the payment terms under Spanish Law 3/2004 (as amended), the CMR Convention on international road transport, the specific issues raised by transport incidents —theft of cargo, losses, damages and disputes over insurance coverage— and the customary contractual practices of the sector (consignment notes, signed delivery documents, framework contracts with penalty clauses).",
+        ],
+        files: [
+          "Collection of unpaid invoices from shippers and final customers.",
+          "B2B claims between companies along the logistics chain (forwarders, subcontractors, platforms).",
+          "Files relating to cargo theft, loss or damage, and claims related to transport insurance.",
+          "Recovery against debtors in insolvency, with knowledge of the insolvency particularities of the transport sector.",
+          "Cross-border recovery where the debtor is outside Spain, through the firm's correspondent network.",
+        ],
+      },
+      "manufacturing-industrial-supply": {
+        intro: [
+          "Manufacturers, machinery suppliers, component makers and industrial distributors sell to Spanish buyers on deferred payment, frequently under framework agreements, instalment or financed sales and with retention-of-title clauses. Defaults typically arise from disputed deliveries, quality or specification disagreements, acceptance of goods, or buyers under cash-flow pressure, and often involve significant balances and an extensive documentary trail (orders, delivery notes, acceptance records, framework contracts).",
+          "IJ Creditor handles these files with knowledge of the law applicable to commercial sales, the late-payment regime under Spanish Law 3/2004 (as amended), the enforceability of retention-of-title clauses, and the customary clauses of industrial supply: payment schedules, agreed default interest, guarantees and penalty clauses.",
+        ],
+        files: [
+          "Recovery of unpaid invoices for machinery, components and industrial materials.",
+          "Disputes over delivery, specifications or acceptance of goods.",
+          "Files involving goods supplied under retention of title.",
+          "Balance reconciliation on recurring supply accounts.",
+          "Recovery against buyers in insolvency, with knowledge of the sector's particularities.",
+          "Cross-border recovery where the debtor is outside Spain, through the firm's correspondent network.",
+        ],
+      },
+      "chemicals-pharma-medical-devices": {
+        intro: [
+          "Suppliers of chemical products, pharmaceuticals, laboratory consumables and medical devices operate high-value, regulated supply chains with deferred payment to Spanish distributors, manufacturers, pharmacies and private or public hospitals. Defaults often involve large balances, framework or tender agreements and documentation specific to the sector (batches, certificates, traceability), and may concern public-sector buyers with their own payment timelines.",
+          "IJ Creditor handles these files with attention to the documentary requirements of the sector and to the public-sector payment regime, distinguishing private commercial claims from those subject to public-procurement rules and timelines.",
+        ],
+        files: [
+          "Recovery of unpaid supply invoices for chemical, pharmaceutical and medical-device products.",
+          "Balances under framework or tender (public-procurement) agreements.",
+          "Disputes over batches, certificates or regulated documentation.",
+          "Claims against distributors, pharmacies and private or public hospitals.",
+          "Late payment by public-sector buyers, under the applicable procedure.",
+          "Recovery in insolvency and cross-border recovery where the debtor is outside Spain.",
+        ],
+      },
+      "construction-engineering-public-suppliers": {
+        intro: [
+          "Construction companies, engineering firms and their suppliers face a combination of long payment terms, subcontracting chains, works certifications and milestone-based billing, retention and guarantee amounts, and a high incidence of insolvency. Where the works are public, the buyer adds specific timelines, procedures and a distinct payment regime.",
+          "IJ Creditor handles these files with knowledge of milestone and certification billing, the subcontracting structure of the sector, retention and guarantee regimes, and the particularities of claiming against public administrations and against contractors in difficulty.",
+        ],
+        files: [
+          "Recovery of unpaid certifications, milestones and works invoices.",
+          "Claims along the subcontracting chain.",
+          "Disputes over completion, acceptance or defects.",
+          "Recovery of retention and guarantee amounts.",
+          "Late payment by public administrations, under the applicable procedure.",
+          "Action in contractor insolvency and cross-border recovery where the debtor is outside Spain.",
+        ],
+      },
+      "textile": {
+        intro: [
+          "Textile and fashion manufacturers and brands supply Spanish retail chains and wholesalers on credit, frequently around seasonal collections and large orders. Defaults typically arise from returns and markdown disputes, agreed discounts not honoured, cancelled or reduced orders, and retailers under commercial pressure, against a running account with a continuous history of invoices, credit notes and partial payments.",
+          "IJ Creditor handles these files with knowledge of wholesale and retail supply practices, seasonal ordering, the reconciliation of running commercial accounts and claims against retail groups in difficulty or insolvency.",
+        ],
+        files: [
+          "Recovery of unpaid wholesale and retail supply invoices.",
+          "Claims on seasonal collection and large-volume orders.",
+          "Disputes over returns, markdowns or agreed discounts.",
+          "Reconciliation of running accounts (invoices, credit notes, partial payments).",
+          "Claims against retail chains in difficulty or insolvency.",
+          "Cross-border recovery where the debtor is outside Spain.",
+        ],
+      },
+      "travel-car-rental-mobility": {
+        intro: [
+          "Car rental and mobility present particularities affecting collections: high customer rotation, frequently foreign customers, incidents over the condition of the vehicle on return (unrecognised damage, refuelling, administrative charges for fines, tolls or excess mileage, disputes over excess/insurance coverage), unpaid rental fees, payment chargebacks, contractually agreed charges and penalties, and charge-bearing cancellations or no-shows.",
+          "Beyond rental companies, the same dynamics affect travel agencies, tour operators and corporate mobility providers. The defaulting party may be a private individual, a company with variable fleet needs, a travel agency or a tour operator, which adds complexity to the debtor profile and requires the claim route to be tailored to each case.",
+        ],
+        files: [
+          "Recovery of unpaid rental fees.",
+          "Recovery of damages not acknowledged by the customer and properly documented by the rental company.",
+          "Administrative charges for fines, tolls, refuelling and other unpaid supplemental items.",
+          "Claims arising from payment chargebacks and disputes on electronic payments.",
+          "Claims arising from excess/insurance coverage and conditions of use of the vehicle.",
+          "Open balances from corporate fleet customers, travel agencies and tour operators.",
+          "Cross-border recovery where the debtor is outside Spain.",
+        ],
+      },
+      "equipment-rental-leasing": {
+        intro: [
+          "Rental and leasing arrangements cover operational or financial financing schemes for movable assets —commercial vehicles, industrial machinery, IT equipment, installations or furniture— for use by companies and self-employed professionals. When default occurs, it is usually accompanied by specific issues: ownership of the asset, contract termination for breach, settlement of the customer's account, residual value of the asset and, where applicable, physical recovery of the financed or rented asset.",
+          "IJ Creditor handles these files with knowledge of the legal framework applicable to each contractual form and of the customary clauses in the sector: payment schedule, purchase option, personal guarantees, agreed default interest, asset-return regime and settlements following early termination.",
+        ],
+        files: [
+          "Recovery of unpaid instalments.",
+          "Contract termination for breach, with settlement of the customer's account.",
+          "Recovery of the financed or rented asset following contract termination.",
+          "Claims arising from early returns, asset deterioration or residual-value settlements.",
+          "Intervention in insolvency proceedings, with knowledge of the particularities applicable to rental and financial leasing.",
+          "Claims against guarantors and personal sureties when set out in the contract.",
+        ],
+      },
+    },
+  },
 };
 
 export type Dictionary = typeof en;

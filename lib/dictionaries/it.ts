@@ -79,4 +79,107 @@ export const it: Dictionary = {
     "travel-car-rental-mobility": { label: "Viaggi, autonoleggio & mobilità", summary: "Noli non pagati, danni, penali e storni nel noleggio auto, nei viaggi e nella mobilità aziendale." },
     "equipment-rental-leasing": { label: "Noleggio attrezzature, leasing & recupero beni", summary: "Rate non pagate, risoluzione per inadempimento e recupero del bene finanziato o noleggiato." },
   },
+  industriesContent: {
+    filesTitle: "Tipologie di pratiche che gestiamo",
+    pages: {
+      "transport-logistics": {
+        intro: [
+          "Le attività di trasporto, corriere e logistica operano in genere con margini ridotti e una forte interdipendenza operativa tra gli anelli della catena: mittenti, operatori logistici, spedizionieri, vettori, piattaforme, magazzini e operatori dell'ultimo miglio. In alcuni segmenti i cicli di incasso possono essere lunghi. Le insolvenze nascono di solito da contestazioni sull'esecuzione del servizio —consegne con incidenti, termini non rispettati, merci danneggiate, livelli di servizio o KPI contrattuali non raggiunti— o da clienti sotto reale pressione di liquidità.",
+          "IJ Creditor vanta esperienza ricorrente nel settore e conoscenza delle sue specificità giuridiche: la legge spagnola 15/2009 sul contratto di trasporto terrestre di merci, i termini di pagamento della legge spagnola 3/2004 (e successive modifiche), la Convenzione CMR sul trasporto stradale internazionale, le questioni proprie degli incidenti di trasporto —furto di merci, perdite, danni e controversie sulla copertura assicurativa— e le prassi contrattuali abituali del settore (lettere di vettura, bolle di consegna firmate, contratti quadro con clausole penali).",
+        ],
+        files: [
+          "Recupero di fatture insolute verso mittenti e clienti finali.",
+          "Rivalse B2B tra imprese lungo la catena logistica (spedizionieri, subappaltatori, piattaforme).",
+          "Pratiche relative a furto, perdita o danneggiamento della merce e richieste legate all'assicurazione trasporti.",
+          "Recupero verso debitori in insolvenza, con conoscenza delle particolarità del settore.",
+          "Recupero transfrontaliero quando il debitore è fuori dalla Spagna, tramite la rete di corrispondenti dello studio.",
+        ],
+      },
+      "manufacturing-industrial-supply": {
+        intro: [
+          "Produttori, fornitori di macchinari, costruttori di componenti e distributori industriali vendono ad acquirenti spagnoli con pagamento differito, spesso nell'ambito di contratti quadro, vendite rateali o finanziate e con clausole di riserva di proprietà. Le insolvenze nascono di solito da consegne contestate, disaccordi su qualità o specifiche, accettazione della merce o acquirenti sotto pressione di liquidità, e riguardano spesso importi rilevanti con un'ampia documentazione (ordini, bolle di consegna, verbali di accettazione, contratti quadro).",
+          "IJ Creditor gestisce queste pratiche con conoscenza del diritto applicabile alle vendite commerciali, del regime dei ritardi di pagamento della legge spagnola 3/2004 (e successive modifiche), dell'opponibilità delle clausole di riserva di proprietà e delle clausole abituali della fornitura industriale: piani di pagamento, interessi di mora concordati, garanzie e clausole penali.",
+        ],
+        files: [
+          "Recupero di fatture insolute per macchinari, componenti e materiali industriali.",
+          "Controversie su consegna, specifiche o accettazione della merce.",
+          "Pratiche con merce fornita in riserva di proprietà.",
+          "Riconciliazione dei saldi sui conti di fornitura ricorrente.",
+          "Recupero verso acquirenti in insolvenza, con conoscenza delle particolarità del settore.",
+          "Recupero transfrontaliero quando il debitore è fuori dalla Spagna, tramite la rete di corrispondenti dello studio.",
+        ],
+      },
+      "chemicals-pharma-medical-devices": {
+        intro: [
+          "I fornitori di prodotti chimici, farmaceutici, materiali di consumo da laboratorio e dispositivi medici gestiscono catene di fornitura regolamentate e di alto valore, con pagamento differito, verso distributori, produttori, farmacie e ospedali privati o pubblici spagnoli. Le insolvenze riguardano spesso importi elevati, contratti quadro o di gara e documentazione propria del settore (lotti, certificati, tracciabilità) e possono interessare acquirenti pubblici con tempistiche di pagamento proprie.",
+          "IJ Creditor gestisce queste pratiche prestando attenzione ai requisiti documentali del settore e al regime di pagamento del settore pubblico, distinguendo i crediti commerciali privati da quelli soggetti alle norme e ai tempi degli appalti pubblici.",
+        ],
+        files: [
+          "Recupero di fatture di fornitura insolute per prodotti chimici, farmaceutici e dispositivi medici.",
+          "Saldi nell'ambito di contratti quadro o di gara (appalti pubblici).",
+          "Controversie su lotti, certificati o documentazione regolamentata.",
+          "Richieste verso distributori, farmacie e ospedali privati o pubblici.",
+          "Ritardi di pagamento di acquirenti pubblici, secondo la procedura applicabile.",
+          "Recupero in insolvenza e recupero transfrontaliero quando il debitore è fuori dalla Spagna.",
+        ],
+      },
+      "construction-engineering-public-suppliers": {
+        intro: [
+          "Imprese di costruzione, studi di ingegneria e i loro fornitori affrontano una combinazione di lunghi termini di pagamento, catene di subappalto, certificazioni di avanzamento e fatturazione per milestone, ritenute e garanzie, e un'elevata incidenza di insolvenze. Quando i lavori sono pubblici, il committente aggiunge tempistiche, procedure e un regime di pagamento specifici.",
+          "IJ Creditor gestisce queste pratiche con conoscenza della fatturazione per milestone e stati di avanzamento, della struttura di subappalto del settore, dei regimi di ritenuta e garanzia e delle particolarità delle richieste verso le amministrazioni pubbliche e verso imprese in difficoltà.",
+        ],
+        files: [
+          "Recupero di stati di avanzamento, milestone e fatture di lavori insoluti.",
+          "Rivalse lungo la catena di subappalto.",
+          "Controversie su completamento, accettazione o difetti.",
+          "Recupero di ritenute e garanzie.",
+          "Ritardi di pagamento delle amministrazioni pubbliche, secondo la procedura applicabile.",
+          "Azione in caso di insolvenza dell'appaltatore e recupero transfrontaliero quando il debitore è fuori dalla Spagna.",
+        ],
+      },
+      "textile": {
+        intro: [
+          "Produttori e marchi del tessile e della moda riforniscono a credito catene di distribuzione e grossisti spagnoli, spesso attorno alle collezioni stagionali e a grandi ordini. Le insolvenze nascono di solito da controversie su resi e ribassi, sconti concordati non riconosciuti, ordini annullati o ridotti e dettaglianti sotto pressione commerciale, nell'ambito di un conto corrente con storico continuo di fatture, note di credito e pagamenti parziali.",
+          "IJ Creditor gestisce queste pratiche con conoscenza delle prassi di fornitura all'ingrosso e al dettaglio, degli ordini stagionali, della riconciliazione dei conti commerciali correnti e delle richieste verso gruppi della distribuzione in difficoltà o in insolvenza.",
+        ],
+        files: [
+          "Recupero di fatture di fornitura insolute (ingrosso e dettaglio).",
+          "Richieste su collezioni stagionali e ordini di grande volume.",
+          "Controversie su resi, ribassi o sconti concordati.",
+          "Riconciliazione dei conti correnti (fatture, note di credito, pagamenti parziali).",
+          "Richieste verso catene della distribuzione in difficoltà o in insolvenza.",
+          "Recupero transfrontaliero quando il debitore è fuori dalla Spagna.",
+        ],
+      },
+      "travel-car-rental-mobility": {
+        intro: [
+          "L'autonoleggio e la mobilità presentano particolarità che incidono sull'incasso: elevata rotazione dei clienti, clienti spesso stranieri, incidenti sullo stato del veicolo alla riconsegna (danni non riconosciuti, rifornimento, addebiti amministrativi per multe, pedaggi o chilometraggio eccedente, controversie su franchigia/copertura assicurativa), canoni di noleggio insoluti, storni, addebiti e penali concordati contrattualmente, e cancellazioni o no-show con addebito.",
+          "Oltre alle società di noleggio, le stesse dinamiche riguardano agenzie di viaggio, tour operator e fornitori di mobilità aziendale. Il debitore può essere un privato, un'azienda con esigenze di flotta variabili, un'agenzia di viaggio o un tour operator, il che rende più complesso il profilo e richiede di adattare la via di recupero a ciascun caso.",
+        ],
+        files: [
+          "Recupero di canoni di noleggio insoluti.",
+          "Recupero di danni non riconosciuti dal cliente e debitamente documentati dalla società di noleggio.",
+          "Addebiti amministrativi per multe, pedaggi, rifornimento e altre voci insolute.",
+          "Richieste derivanti da storni e controversie sui pagamenti elettronici.",
+          "Richieste relative a franchigia/copertura assicurativa e condizioni d'uso del veicolo.",
+          "Saldi aperti di clienti flotta aziendali, agenzie di viaggio e tour operator.",
+          "Recupero transfrontaliero quando il debitore è fuori dalla Spagna.",
+        ],
+      },
+      "equipment-rental-leasing": {
+        intro: [
+          "Le formule di noleggio e leasing coprono schemi di finanziamento operativo o finanziario di beni mobili —veicoli commerciali, macchinari industriali, attrezzature informatiche, impianti o arredi— per l'uso di imprese e professionisti autonomi. In caso di insolvenza si aggiungono questioni specifiche: proprietà del bene, risoluzione del contratto per inadempimento, chiusura del conto del cliente, valore residuo del bene e, ove applicabile, recupero fisico del bene finanziato o noleggiato.",
+          "IJ Creditor gestisce queste pratiche con conoscenza del quadro giuridico applicabile a ciascuna forma contrattuale e delle clausole abituali del settore: piano di pagamento, opzione di acquisto, garanzie personali, interessi di mora concordati, regime di restituzione del bene e conguagli dopo la risoluzione anticipata.",
+        ],
+        files: [
+          "Recupero di rate insolute.",
+          "Risoluzione del contratto per inadempimento, con chiusura del conto del cliente.",
+          "Recupero del bene finanziato o noleggiato dopo la risoluzione del contratto.",
+          "Richieste derivanti da restituzioni anticipate, deterioramento del bene o conguagli di valore residuo.",
+          "Intervento nelle procedure di insolvenza, con conoscenza delle particolarità di noleggio e leasing finanziario.",
+          "Richieste verso garanti e fideiussori personali quando previsti dal contratto.",
+        ],
+      },
+    },
+  },
 };
