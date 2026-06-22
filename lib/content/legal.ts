@@ -210,7 +210,110 @@ const cookiesDe: LegalPage = {
 
 const de: Set = { legalNotice: legalNoticeDe, privacy: privacyDe, cookies: cookiesDe };
 
-const content: Partial<Record<Locale, Set>> = { en, de };
+const legalNoticeFr: LegalPage = {
+  title: "Mentions légales",
+  blocks: [
+    { t: "prose", title: "1. Propriétaire du site", paras: [
+      "Ce site, https://ijcreditor.com (le « Site »), est la propriété d'Iuris Justitia Creditor, S.L., titulaire de l'identifiant fiscal espagnol (CIF) B80508716 et dont le siège social est Paseo de la Castellana 120, 6e étage gauche, 28046 Madrid, immatriculée au Registre du commerce de Madrid, tome 5778, folio 35, section 8, feuille M-94521, inscription 1.",
+      "Vous pouvez nous contacter par e-mail à ijcreditor@ijcreditor.es ou par téléphone au +34 915 77 47 30.",
+    ] },
+    { t: "prose", title: "2. Conditions d'utilisation", paras: [
+      "L'accès au Site et son utilisation sont soumis aux présentes mentions légales. La navigation ou l'utilisation du Site implique l'acceptation pleine et entière de ces conditions ; si vous n'êtes pas d'accord, vous ne devez pas utiliser le Site. Le Site a pour objet de fournir des informations sur les activités du cabinet et les services qu'il propose.",
+      "Iuris Justitia Creditor peut modifier le Site et ces conditions à tout moment, sans préavis, et les met à jour régulièrement. L'accès est gratuit et, hormis les zones restreintes, ne requiert pas d'inscription préalable. L'utilisateur s'engage à utiliser le Site avec diligence et licéité, et à ne pas l'employer à des fins illicites ni d'une manière portant atteinte aux droits ou intérêts de tiers.",
+      "Iuris Justitia Creditor se réserve le droit de modifier la structure et le contenu du Site à tout moment et de limiter ou refuser l'accès le cas échéant. Le cabinet met tout en œuvre pour maintenir l'information exacte et à jour, mais ne garantit pas que l'accès soit ininterrompu ou exempt d'erreurs.",
+    ] },
+    { t: "prose", title: "3. Liens", paras: [
+      "Le Site peut contenir des liens vers des sites tiers non gérés par Iuris Justitia Creditor. Le cabinet n'exerce aucun contrôle sur ces sites et n'est pas responsable de leur contenu. Les liens sont fournis à titre de référence uniquement et leur inclusion n'implique aucune approbation.",
+    ] },
+    { t: "prose", title: "4. Propriété intellectuelle et industrielle", paras: [
+      "Tous les droits de propriété intellectuelle et industrielle sur le Site —apparence visuelle, conception graphique, architecture de navigation, code source, photographies, logiciels, bases de données, marques, signes distinctifs et logos— appartiennent à Iuris Justitia Creditor ou à des tiers ayant autorisé leur utilisation.",
+      "Seule l'utilisation personnelle et non commerciale des contenus propres du cabinet à des fins d'information est autorisée. La reproduction, la distribution, la communication au public, la transformation ou toute utilisation commerciale de tout ou partie du contenu est interdite sans l'autorisation expresse et préalable du cabinet. Toute utilisation non autorisée ou atteinte à ces droits engagera les responsabilités prévues par la loi.",
+    ] },
+    { t: "prose", title: "5. Limitation de responsabilité", paras: [
+      "L'accès au Site et son utilisation relèvent de la seule responsabilité de l'utilisateur. Iuris Justitia Creditor n'est pas responsable des dommages résultant de : l'indisponibilité ou le mauvais fonctionnement du Site ou de son contenu ; le manque d'utilité, d'exactitude ou de validité du contenu au regard des besoins de l'utilisateur ; la présence de virus ou d'autres composants nuisibles, ou des atteintes à la sécurité causées par des tiers ; ou, en général, toute utilisation du Site contraire aux présentes conditions.",
+    ] },
+    { t: "prose", title: "6. Cookies", paras: [
+      "Ce Site utilise des cookies propres et de tiers. Le détail des cookies utilisés, leur finalité et la manière de les gérer ou de les désactiver figurent dans la Politique de cookies, disponible à l'adresse https://ijcreditor.com/cookies.",
+    ] },
+    { t: "prose", title: "7. Protection des données personnelles", paras: [
+      "Le responsable du traitement des données personnelles collectées via le Site est Iuris Justitia Creditor, S.L. Les données sont traitées conformément au règlement (UE) 2016/679 (RGPD), à la loi organique 3/2018 (LOPDGDD) et au droit applicable en matière de protection des données. Les questions de protection des données peuvent être adressées à protecciondedatos@noxdata.es.",
+      "La communication de données via les formulaires est volontaire et repose sur le consentement de l'utilisateur. Les données ne sont utilisées que pour la finalité pour laquelle elles ont été collectées, et les utilisateurs peuvent exercer leurs droits d'accès, de rectification, d'effacement, de portabilité, d'opposition et de limitation. Le cabinet traite également l'adresse IP des utilisateurs afin d'analyser le trafic réseau et d'établir des statistiques d'utilisation, au titre de l'article 6, paragraphe 1, point f, du RGPD ; cette information est anonyme pour le cabinet. Les détails figurent dans la Politique de confidentialité.",
+    ] },
+    { t: "prose", title: "8. Droit applicable et juridiction", paras: [
+      "Les présentes conditions sont régies par le droit espagnol. Pour le règlement de tout litige relatif au Site, Iuris Justitia Creditor et l'utilisateur, renonçant expressément à toute autre juridiction, se soumettent aux tribunaux de la ville de Madrid (Espagne).",
+      "Ceci est une traduction des mentions légales rédigées en espagnol ; en cas de divergence, la version espagnole prévaut.",
+    ] },
+  ],
+};
+
+const privacyFr: LegalPage = {
+  title: "Politique de confidentialité",
+  blocks: [
+    { t: "prose", title: "Responsable du traitement", paras: [
+      "Le responsable du traitement de vos données personnelles est Iuris Justitia Creditor, S.L. (IJ Creditor), titulaire de l'identifiant fiscal espagnol (CIF) B80508716 et dont le siège social est Paseo de la Castellana 120, 6e étage gauche, 28046 Madrid. E-mail de contact : ijcreditor@ijcreditor.es. Pour les questions de protection des données, vous pouvez aussi écrire à protecciondedatos@noxdata.es.",
+    ] },
+    { t: "prose", title: "Quelles données nous traitons", paras: [
+      "Via les formulaires de ce Site, nous traitons les données que vous fournissez : données d'identification et de contact (telles que nom, entreprise, e-mail, téléphone et pays) et, dans le cas d'une demande de proposition, des données sur le dossier ainsi que tout document que vous choisissez de téléverser. Nous traitons également des données techniques telles que votre adresse IP.",
+    ] },
+    { t: "bullets", title: "Finalités", items: [
+      "Gérer votre demande et préparer une première évaluation du dossier.",
+      "Gérer et, le cas échéant, formaliser le mandat des services du cabinet.",
+      "Vous envoyer des communications commerciales, uniquement si vous y avez spécifiquement consenti.",
+      "Analyser le trafic et l'utilisation afin de maintenir et d'améliorer le Site.",
+    ] },
+    { t: "bullets", title: "Base légale", items: [
+      "L'adoption de mesures précontractuelles prises à votre demande et, le cas échéant, l'exécution du mandat (article 6, paragraphe 1, point b, du RGPD).",
+      "Votre consentement, pour les communications commerciales facultatives (article 6, paragraphe 1, point a, du RGPD), que vous pouvez retirer à tout moment.",
+      "L'intérêt légitime du cabinet à la sécurité du Site et à l'analyse du trafic (article 6, paragraphe 1, point f, du RGPD).",
+    ] },
+    { t: "prose", title: "Destinataires et sous-traitants", paras: [
+      "Vos données ne sont ni vendues ni transférées à des tiers pour leurs propres finalités. Elles peuvent être traitées pour le compte du cabinet par des prestataires agissant comme sous-traitants —notamment l'hébergement du site, l'envoi d'e-mails pour les formulaires de contact et les prestataires d'analyse d'audience—, toujours dans le cadre d'un contrat de sous-traitance. Au sein du cabinet, l'accès est limité aux personnes qui en ont besoin pour traiter votre demande. Lorsque le dossier exige une action transfrontalière, les données peuvent être partagées avec les correspondants du cabinet aux seules fins du traitement du dossier.",
+    ] },
+    { t: "prose", title: "Transferts internationaux", paras: [
+      "Certains prestataires du cabinet peuvent traiter des données en dehors de l'Espace économique européen. Dans ce cas, le transfert est effectué avec les garanties appropriées exigées par le droit de la protection des données, telles que les clauses contractuelles types de la Commission européenne.",
+    ] },
+    { t: "prose", title: "Conservation", paras: [
+      "Les données personnelles sont conservées pendant la durée nécessaire à la réalisation de la finalité pour laquelle elles ont été collectées et au respect des obligations légales applicables. Elles sont ensuite bloquées pendant les délais légaux avant suppression.",
+    ] },
+    { t: "bullets", title: "Vos droits", items: [
+      "Accéder à vos données personnelles ; demander la rectification des données inexactes ; demander leur effacement.",
+      "Demander la limitation du traitement ; vous opposer au traitement ; demander la portabilité de vos données.",
+      "Retirer à tout moment tout consentement donné, sans affecter la licéité du traitement antérieur.",
+    ] },
+    { t: "prose", paras: [
+      "Vous pouvez exercer ces droits en écrivant à protecciondedatos@noxdata.es, en indiquant le droit que vous souhaitez exercer. Vous avez également le droit d'introduire une réclamation auprès de l'Agence espagnole de protection des données (Agencia Española de Protección de Datos, www.aepd.es) si vous estimez que vos droits n'ont pas été correctement préservés.",
+    ] },
+    { t: "prose", title: "Cookies", paras: [
+      "Ce Site utilise des cookies comme décrit dans la Politique de cookies, disponible à l'adresse https://ijcreditor.com/cookies. Les cookies d'analyse ne sont installés que si vous les acceptez via la bannière de cookies.",
+      "Ceci est une traduction de la politique de confidentialité rédigée en espagnol ; en cas de divergence, la version espagnole prévaut.",
+    ] },
+  ],
+};
+
+const cookiesFr: LegalPage = {
+  title: "Politique de cookies",
+  blocks: [
+    { t: "prose", title: "Qu'est-ce qu'un cookie ?", paras: [
+      "Les cookies sont de petits fichiers téléchargés sur votre appareil lorsque vous visitez certains sites. Ils permettent au site de stocker des informations sur votre navigation, rendant l'interaction entre vous et le Site plus rapide et plus utile.",
+    ] },
+    { t: "prose", title: "Cookies utilisés sur ce site", paras: [
+      "Ce Site n'utilise pas de cookies de publicité ou de profilage. Au-delà des cookies techniques strictement nécessaires au fonctionnement du site, il utilise des cookies d'analyse de tiers, qui ne sont installés que si vous les acceptez via la bannière de cookies affichée lors de votre première visite :",
+    ] },
+    { t: "bullets", items: [
+      "Google Analytics (fournisseur : Google) — mesure la manière dont les visiteurs utilisent le site (pages vues, localisation approximative, appareil) afin de l'améliorer. Les adresses IP sont anonymisées.",
+      "Microsoft Clarity (fournisseur : Microsoft) — capture des données d'utilisation anonymisées telles que les interactions avec les pages et des cartes de chaleur agrégées pour améliorer le site.",
+    ] },
+    { t: "prose", title: "Consentement et désactivation des cookies", paras: [
+      "Les cookies strictement nécessaires ne requièrent pas de consentement. Les cookies d'analyse ne sont installés que si vous les acceptez ; si vous les refusez, aucun cookie d'analyse n'est installé et aucune donnée d'utilisation n'est envoyée à ces fournisseurs. Vous pouvez modifier ou retirer votre choix à tout moment en effaçant les données de ce site dans votre navigateur, ce qui réaffichera la bannière de cookies.",
+      "En outre, tous les navigateurs modernes permettent de gérer ou de bloquer les cookies via leurs paramètres (généralement sous « Options », « Préférences » ou « Confidentialité »).",
+      "Ceci est une traduction de la politique de cookies rédigée en espagnol ; en cas de divergence, la version espagnole prévaut.",
+    ] },
+  ],
+};
+
+const fr: Set = { legalNotice: legalNoticeFr, privacy: privacyFr, cookies: cookiesFr };
+
+const content: Partial<Record<Locale, Set>> = { en, de, fr };
 
 export function getLegal(locale: Locale): Set {
   return content[locale] ?? en;
