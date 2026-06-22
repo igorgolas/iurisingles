@@ -157,9 +157,154 @@ const en: Record<ServiceSlug, ServicePage> = {
   },
 };
 
+const de: Record<ServiceSlug, ServicePage> = {
+  "out-of-court-debt-collection": {
+    intro: "Der erste Weg, den IJ Creditor in jedem Fall versucht: die Zahlung vor einem Gerichtsverfahren herbeiführen und nach Möglichkeit die Geschäftsbeziehung erhalten. Mehr als 80 % der der Kanzlei anvertrauten Fälle werden in dieser Phase gelöst, ohne Klage.",
+    blocks: [
+      { t: "prose", title: "Honorar", paras: [
+        "Die Leistung erfolgt auf Erfolgshonorarbasis. Die Kanzlei berechnet eine Provision auf den tatsächlich beigetriebenen Betrag, gemäß den im Mandatsvertrag mit dem Mandanten vereinbarten Bedingungen und abhängig von Betrag, Alter der Forderung, Komplexität des Falls und verfügbaren Informationen über den Schuldner. Wird nichts beigetrieben, werden keine variablen Honorare in Rechnung gestellt.",
+        "Bestimmte Maßnahmen oder Kosten Dritter —wie Wirtschaftsauskünfte, beglaubigte spanische Burofax-Mitteilungen, Registerbescheinigungen oder andere für die Bearbeitung erforderliche externe Dienste— können zusätzliche Kosten verursachen, in allen Fällen nach vorheriger Information des Mandanten und ausdrücklicher Zustimmung.",
+      ] },
+      { t: "prose", title: "Juristische Begleitung des Verfahrens", paras: [
+        "Die außergerichtliche Arbeit wird von einem überwiegend aus Anwälten bestehenden Team ausgeführt und in jedem Fall fallweise von einem Anwalt der Kanzlei begleitet. Genau das verhindert die typischen Fehler, die beim Forderungseinzug ohne juristische Ausbildung entstehen: DSGVO-widrige Mitteilungen, schlecht formulierte Mahnungen, die Verjährungsfristen nicht unterbrechen, Entscheidungen, die ein späteres Gerichtsverfahren verbauen, oder die Nichteinhaltung der nach spanischem und europäischem Recht vorgesehenen Fristen und Formvorschriften.",
+      ] },
+      { t: "prose", title: "Zwei integrierte Funktionen", paras: [
+        "IJ Creditor verbindet innerhalb der außergerichtlichen Abteilung zwei spezialisierte Funktionen, die je nach Bedarf gemeinsam und nacheinander auf jeden Fall angewandt werden: Saldenabstimmung und gütlicher Forderungseinzug. In der Praxis sind dies keine getrennten Silos: Viele Fälle, die als einfache offene Rechnung eingehen, offenbaren, sobald der Dialog mit dem Schuldner beginnt, eine buchhalterische Situation, die eine Abstimmung erfordert; und viele, die als Abstimmungsfälle beginnen, enden als gütlicher Einzug der als durchsetzbar bestätigten Beträge.",
+      ] },
+      { t: "prose", title: "Saldenabstimmung", paras: [
+        "Wenn vor der Zahlungsaufforderung mit dem Schuldner die tatsächliche Zusammensetzung der Forderung zu klären ist —wegen Zweifeln an bereits verbuchten Zahlungen, ausstehenden Gutschriften, noch nicht angewandten Handelsrabatten, Zuordnungsfehlern, doppelt erfasster Mehrwertsteuer oder Rechnungsabweichungen— tritt IJ Creditor im Namen des Gläubigers als klärender Ansprechpartner zwischen den Parteien auf. Die Mitteilungen an den Schuldner nennen stets den Gläubiger, in dessen Namen die Kanzlei handelt, und stellen das Verfahren in den Modus der buchhalterischen Klärung, nicht des Drucks.",
+        "Die Unterlagen des Mandanten werden mit der vom Schuldner vorgelegten Belegdokumentation abgeglichen —Zahlungsbelege, Gutschriften, Banknachweise— und es wird nur der nach der Abstimmung als durchsetzbar bestätigte Saldo geltend gemacht. Die Funktion gilt sowohl für gewerbliche Schuldner (B2B) als auch für private Schuldner (B2C) und ist besonders nützlich, wenn der Mandant die Forderung beitreiben und zugleich die Geschäftsbeziehung erhalten möchte: Die Abstimmung verringert den Konflikt und ebnet den Weg zu schnellen, vernünftigen Lösungen für beide Seiten.",
+      ] },
+      { t: "prose", title: "Gütlicher Forderungseinzug", paras: [
+        "Wenn die Zusammensetzung der Forderung klar ist und eine gütliche Bearbeitung gewünscht wird, übernimmt die Kanzlei den direkten Einzug: Mitteilungen an den Schuldner, förmliche Mahnungen, wo angebracht, Verhandlung von Zahlungsplänen oder Ratenvereinbarungen und Abschluss der Akte mit Befriedigung der Forderung.",
+        "Der geltend gemachte Betrag ist der vom Mandanten mitgeteilte Betrag; die Kanzlei stellt ihn nicht von sich aus in Frage. Bringt der Schuldner während der Bearbeitung von sich aus Einwände oder Abweichungen vor, hält IJ Creditor sie fest, übermittelt sie dem Mandanten mit der fachlichen Einschätzung der Kanzlei zu ihrer Stichhaltigkeit, und die Entscheidung über das weitere Vorgehen verbleibt beim Mandanten. Jeder Vergleichsvorschlag —Zahlungsplan, Ratenvereinbarung oder angemessener Verzicht— wird dem Gläubiger mit allen für die Entscheidung nötigen Informationen vorgelegt; die endgültige Zustimmung liegt stets beim Gläubiger.",
+      ] },
+      { t: "bullets", title: "So arbeiten wir", items: [
+        "Annahme. Der Mandant übermittelt die Unterlagen im für ihn bequemsten Format —meist digitale Dateien: Tabellen, ERP-Exporte oder ein anderes geeignetes Medium. Die Kanzlei fordert im Verlauf alle zusätzlich benötigten Daten oder Dokumente an.",
+        "Interne Prüfung und Aktenanlage. Das Team bewertet jeden Fall, identifiziert rechtliche Risiken und legt die Akte unter der entsprechenden juristischen Begleitung an.",
+        "Mitteilungen an den Schuldner. Mahnschreiben, beglaubigte spanische Burofaxe, elektronischer oder telefonischer Kontakt, je nach Sachlage. Jede Mitteilung wird von einem Anwalt geprüft, um Beweiskraft, DSGVO-Konformität und gegebenenfalls die Rechtswirkung der Unterbrechung von Verjährungsfristen sicherzustellen.",
+        "Abstimmung, Verhandlung oder Vergleich. Wo der Fall die Klärung der Forderungszusammensetzung erfordert, wird vor der Zahlungsaufforderung die Saldenabstimmung eingeleitet. Nach Bestätigung arbeitet die Kanzlei mit dem Schuldner auf einen Abschluss hin: vollständige Zahlung, Zahlungsplan, Raten oder angemessener Verzicht. Vorschläge, die der Zustimmung des Mandanten bedürfen, werden begründet vorgelegt.",
+        "Einzug und Abrechnung. Beigetriebene Beträge werden auf einem separaten Bankkonto verwahrt und dem Gläubiger im vereinbarten Rhythmus und Format überwiesen. Standardmäßig erfolgt die Abrechnung monatlich.",
+        "Abschluss oder Eskalation. Gelingt der gütliche Weg, wird die Akte geschlossen. Andernfalls erstellt IJ Creditor einen Bericht zur gerichtlichen Erfolgsaussicht und berät den Mandanten anhand des Ergebnisses über die nächsten Schritte.",
+      ] },
+      { t: "prose", title: "Informationen, die uns nützlich sind", paras: [
+        "Die Kanzlei arbeitet mit dem, was der Mandant bereitstellen kann, und fordert weitere Daten im Verlauf an. Es ist nicht nötig, alles im Voraus zu liefern. Kann der Mandant von Anfang an ohne nennenswerten Verwaltungsaufwand die vollständigen Informationen jeder Forderung bereitstellen, wird die Akte schneller angelegt.",
+      ] },
+      { t: "bullets", items: [
+        "Offene Rechnungen mit Fälligkeitsdaten und Leistungsbeschreibung.",
+        "Vertrag mit dem Schuldner, falls vorhanden.",
+        "Lieferscheine oder Nachweise über die Erbringung der Leistung oder des Produkts.",
+        "Frühere Mitteilungen an den Schuldner.",
+        "Vollständige Identifikation des Schuldners (spanische CIF/NIF oder ausländisches Äquivalent, Sitz, Ansprechpartner oder Abteilung, Telefon und E-Mail).",
+        "Jeder weitere relevante Umstand wie erhaltene Teilzahlungen oder ausstehende Gutschriften.",
+      ] },
+      { t: "prose", title: "Fristen", paras: [
+        "Nach Eingang der Akte samt Belegen erfolgen Anlage und erster Kontakt mit dem Schuldner kurzfristig. Die Gesamtdauer der gütlichen Phase hängt von der Komplexität des Falls, der Solvenz und Bereitschaft des Schuldners und der aktivierten Funktion ab: einfachere Akten werden innerhalb weniger Wochen abgeschlossen, während Fälle, die eine buchhalterische Abstimmung oder die Verhandlung eines Zahlungsplans erfordern, einige Monate dauern können.",
+        "Lässt sich die Forderung nach einem angemessenen Zeitraum auf dem gütlichen Weg nicht befriedigen, wird gemeinsam mit dem Mandanten die Zweckmäßigkeit eines gerichtlichen Vorgehens geprüft, stets mit vorausgehendem Bericht zur gerichtlichen Erfolgsaussicht.",
+      ] },
+    ],
+  },
+  "judicial-debt-collection": {
+    intro: "Der Weg, der aktiviert wird, wenn die gütliche Phase ausgeschöpft ist oder von vornherein nicht in Betracht kommt. IJ Creditor übernimmt die direkte rechtliche Vertretung in dem für die jeweilige Lage am besten geeigneten Verfahren, bis zu Urteil, Vollstreckung und tatsächlicher Beitreibung.",
+    blocks: [
+      { t: "prose", title: "Bericht zur gerichtlichen Erfolgsaussicht", paras: [
+        "Vor der Empfehlung eines gerichtlichen Vorgehens erstellt IJ Creditor —soweit möglich— einen Bericht zur gerichtlichen Erfolgsaussicht. Der Bericht bewertet Stärke und Gültigkeit der Dokumentation, Solvenz und Verbleib des Schuldners, anwendbare Verjährungsfristen und die realistischen Erfolgsaussichten vor Gericht. Sein Zweck ist es, dem Mandanten Kosten und Aufwand eines Verfahrens zu ersparen, das unter den gegebenen Umständen nicht eingeleitet werden sollte.",
+        "Rät der Bericht von einer Klage ab, wird dies dem Mandanten begründet mitgeteilt. Die geistige Arbeit des Anwalts am Bericht wird nie in Rechnung gestellt. Sind kostenpflichtige externe Auskünfte erforderlich —Vermögensberichte zum Schuldner, Registerbescheinigungen, gezielte Recherchen in öffentlichen oder privaten Datenbanken— werden diese Kosten nach vorheriger ausdrücklicher Zustimmung an den Mandanten weitergegeben.",
+      ] },
+      { t: "prose", title: "Honorar", paras: [
+        "In den meisten Fällen sind die gerichtlichen Honorare bereits durch die im Mandatsvertrag zu Beginn der Beziehung vereinbarten Sätze abgedeckt. In diesem Fall ist vor Verfahrenseinleitung nur die ausdrückliche Ermächtigung des Mandanten zum Vorgehen erforderlich; es gelten die bereits vereinbarten Sätze, ein neues Angebot ist nicht nötig.",
+        "Sind die gerichtlichen Honorare nicht vom Vertrag abgedeckt, übermittelt IJ Creditor dem Mandanten vor jeder Maßnahme ein schriftliches Pauschalangebot, berechnet nach dem betreffenden Verfahren, dem geltend gemachten Betrag und der erwarteten Komplexität, und bittet um ausdrückliche Zustimmung zur Fortsetzung.",
+        "In beiden Fällen werden die mit dem Verfahren verbundenen Nebenposten vorab ausgewiesen, einschließlich anfallender Gerichtsgebühren und absehbarer Auslagen.",
+      ] },
+      { t: "prose", title: "Alternative Streitbeilegung (MASC)", paras: [
+        "Seit Inkrafttreten des spanischen Organgesetzes 1/2025 setzen die meisten Zivil- und Handelsgerichtsverfahren den Nachweis eines vorherigen Versuchs einer alternativen Streitbeilegungsmethode (MASC) voraus —Verhandlung, Mediation, Schlichtung, verbindliches Angebot oder jede andere gesetzlich vorgesehene Form— bevor eine Klage erhoben werden kann. Das Gesetz sieht auch Ausnahmen vor: Insolvenzverfahren, Wechselverfahren, Vollstreckung, vorläufige Sicherungsmaßnahmen und bestimmte Verfahren der freiwilligen Gerichtsbarkeit. Wo die Anforderung gilt, wird die Klage ohne Nachweis des vorherigen MASC-Versuchs nicht zugelassen.",
+        "IJ Creditor erledigt diese Anforderung in jeder Akte, in der sie gilt. Die übliche Form ist eine förmliche Mitteilung an den Schuldner, typischerweise per spanischem Burofax mit einem konkreten Zahlungsvorschlag. Das Burofax ermöglicht es, sowohl den Versand als auch —über die spanische Post— die Zustellung und den vollständigen Inhalt der Mitteilung zu dokumentieren und damit den gesetzlich geforderten Versuch nachzuweisen. Die Kosten werden mit dem Mandanten vereinbart.",
+      ] },
+      { t: "subs", title: "Verfügbare Verfahrenswege je nach Sachverhalt", intro: "Welches konkrete Verfahren IJ Creditor in jedem Fall einleitet, hängt vom Gegenstand der Forderung und von den Voraussetzungen ab, die das spanische Zivilprozessgesetz für jeden Weg festlegt. Nicht jede Forderung lässt jedes Verfahren zu —so lässt etwa eine Klage auf Vertragsauflösung das Mahnverfahren (monitorio) nicht zu. Die Kanzlei prüft fallweise, welches Verfahren rechtlich möglich und kommerziell am zweckmäßigsten ist.", items: [
+        { h: "Mahnverfahren (monitorio)", p: "Standardweg für bezifferte, bestimmte, fällige und durchsetzbare Geldforderungen, ohne Höchstgrenze. Nach Zulassung fordert das Gericht den Schuldner auf, binnen zwanzig Tagen zu zahlen oder Widerspruch einzulegen. Reagiert der Schuldner nicht, erhält der Gläubiger einen Vollstreckungstitel und der Fall geht direkt in die Vollstreckung. Legt der Schuldner Widerspruch ein, wandelt sich das Verfahren —je nach Betrag— in ein verbales oder ordentliches Verfahren um." },
+        { h: "Verbales Verfahren (juicio verbal)", p: "Verfahrensweg für Geldforderungen bis 15.000 € und für weitere im Zivilprozessgesetz aufgeführte Sachverhalte. Es ist zügiger als das ordentliche Verfahren; ob eine mündliche Verhandlung stattfindet, hängt von den Anträgen der Parteien und der Einschätzung des Gerichts ab." },
+        { h: "Ordentliches Verfahren (procedimiento ordinario)", p: "Verfahrensweg für Geldforderungen über 15.000 € und für weitere gesetzlich vorbehaltene Sachverhalte. Es erlaubt eine umfassendere Beweisphase und ist der übliche Weg für Fälle mit gewisser technischer oder rechtlicher Komplexität." },
+        { h: "Vollstreckung und Pfändung", p: "Sobald ein rechtskräftiges Urteil, ein Mahnbescheid oder ein anderer Vollstreckungstitel vorliegt, betreibt IJ Creditor die Vollstreckung: Einreichung des Vollstreckungsantrags, Antrag auf gerichtliche Vermögensermittlung des Schuldners und Pfändung von Bankkonten, Gehältern, Fahrzeugen, Immobilien oder Forderungen gegen Dritte, bis hin zur öffentlichen Versteigerung, sofern erforderlich —bis zur tatsächlichen Beitreibung oder zur Feststellung der Zahlungsunfähigkeit." },
+        { h: "Insolvenzverfahren (concurso de acreedores)", p: "Tritt der Schuldner in ein Insolvenzverfahren ein, führt die Kanzlei den Fall über den insolvenzrechtlichen Rahmen: Anmeldung der Forderung beim bestellten Insolvenzverwalter innerhalb der gesetzlichen Frist, Qualifizierung der Forderung, Begleitung des Vergleichs oder der Liquidation und Anfechtung masseschädigender Handlungen. Wo gesetzliche Gründe bestehen, verfolgt IJ Creditor auch Klagen auf Ausdehnung der Haftung auf die Geschäftsführer." },
+      ] },
+      { t: "bullets", title: "So arbeiten wir", items: [
+        "Prüfung der gerichtlichen Erfolgsaussicht. Die Erfolgsaussichten werden bewertet und die Kanzlei empfiehlt den geeigneten Weg oder gegebenenfalls den Verzicht auf eine Klage.",
+        "Zustimmung des Mandanten. Sind die gerichtlichen Honorare bereits vom Vertrag abgedeckt, genügt die ausdrückliche Ermächtigung des Mandanten. Andernfalls wird vorab ein schriftliches Pauschalangebot erstellt, das der Zustimmung bedarf. Ohne Zustimmung des Mandanten wird keine Verfahrenshandlung vorgenommen.",
+        "Abfassung und Einreichung der Klage. Die Anwälte der Kanzlei verfassen den Schriftsatz, sammeln Urkundenbeweise und schlagen gegebenenfalls Zeugen- und Sachverständigenbeweise vor.",
+        "Verfahrensführung. Durchgehende direkte rechtliche Vertretung: Verhandlungen, Stellungnahmen, Rechtsmittel und etwaige Zwischenverfahren.",
+        "Vollstreckung und Pfändung. Nach Erlangung eines Urteils oder vollstreckbaren Beschlusses wird die Vollstreckungsphase bis zur tatsächlichen Befriedigung der Forderung eingeleitet.",
+        "Information und Abrechnung gegenüber dem Mandanten. Während des gesamten Verfahrens erhält der Mandant Updates zum Stand der Akte und zu relevanten Entwicklungen.",
+      ] },
+      { t: "bullets", title: "Unterlagen, die wir vom Mandanten benötigen", items: [
+        "Alle die Forderung belegenden Unterlagen: Rechnungen, Verträge, Lieferscheine, Nachweise über die Erbringung der Leistung oder des Produkts.",
+        "Frühere Mitteilungen an den Schuldner: Korrespondenz, förmliche Mahnungen, Antworten.",
+        "Vollständige Identifikationsdaten des Schuldners: spanische CIF/NIF oder ausländisches Äquivalent, Sitz, Rechtsform, Geschäftsführer.",
+        "Soweit verfügbar, Informationen zur Vermögenslage des Schuldners oder zu früheren prozessualen Umständen (anhängige Verfahren, Insolvenzlage usw.).",
+        "Allgemeine Prozessvollmacht zugunsten des von der Kanzlei benannten Prozessbevollmächtigten (procurador) und der Anwälte oder gegebenenfalls apud acta.",
+      ] },
+      { t: "prose", title: "Fristen", paras: [
+        "Die gerichtlichen Fristen hängen vom Verfahren, dem zuständigen Gericht und der Reaktion des Schuldners ab. Als Orientierung kann ein unwidersprochenes Mahnverfahren innerhalb weniger Monate erledigt sein. In streitigen Verfahren —verbales Verfahren, ordentliches Verfahren, Vollstreckung— können sich die Fristen je nach erforderlichen Verfahrensabschnitten und Arbeitsanfall des Gerichts verlängern.",
+        "Zu Verfahrensbeginn gibt IJ Creditor dem Mandanten eine angemessene Schätzung der Fristen, gestützt auf die Erfahrung der Kanzlei mit dem jeweiligen Gericht und auf die vorgesehene Verfahrensart.",
+      ] },
+      { t: "prose", title: "Netz lokaler Anwälte", paras: [
+        "Obwohl die rechtliche Vertretung jedes Verfahrens von IJ Creditor in Madrid geleitet wird, unterhält die Kanzlei ein gefestigtes Netz lokaler Anwälte mit spezifischer Erfahrung in ihren jeweiligen Gerichtsbezirken. Wo Art des Verfahrens, Standort des Schuldners oder technische Komplexität es nahelegen, greift IJ Creditor auf diese Fachleute zurück, um in jedem Fall die beste Vertretung zu sichern.",
+        "Die Koordination erfolgt stets von der Zentrale aus, sodass der Mandant für die gesamte Akte einen einzigen Ansprechpartner behält.",
+      ] },
+    ],
+  },
+  "international-debt-collection": {
+    intro: "Für ausländische Mandanten, deren Schuldner sich in anderen Ländern als Spanien befinden. IJ Creditor koordiniert den Fall von Madrid aus und führt ihn im Land des Schuldners über ein Netz von Partnerkanzleien und Korrespondenten aus.",
+    blocks: [
+      { t: "prose", paras: [
+        "Fälle, in denen ein ausländischer Gläubiger einen in Spanien ansässigen Schuldner hat, werden nicht über diese Leistung bearbeitet. Diese Fälle sind der Kern des Angebots der Kanzlei für ausländische Gläubiger und werden auf den Seiten zum außergerichtlichen und gerichtlichen Forderungseinzug behandelt.",
+      ] },
+      { t: "prose", title: "So arbeitet das Netz", paras: [
+        "Jeder Fall wird im Land des Schuldners von einer lokalen Kanzlei bearbeitet, die das rechtliche Umfeld, die Handelsgepflogenheiten und die Sprache kennt. Koordination, Kommunikation mit dem Mandanten und Fallbegleitung erfolgen von Madrid aus auf Englisch, sodass der Mandant für über verschiedene Rechtsordnungen hinweg geführte Fälle einen einzigen Ansprechpartner hat. Die Korrespondenten werden nach Erfolgsbilanz, Mitgliedschaft in denselben Branchenverbänden und der bisherigen Erfahrung von IJ Creditor mit jeder Kanzlei ausgewählt.",
+      ] },
+      { t: "subs", title: "Anwendbarer Rechtsrahmen", items: [
+        { h: "Innerhalb der Europäischen Union", p: "Anerkennung und Vollstreckung spanischer Urteile in anderen EU-Mitgliedstaaten richten sich in der Regel nach der Verordnung (EU) Nr. 1215/2012 (Brüssel Ia): Ein spanisches Urteil ist in jedem anderen Mitgliedstaat ohne gesonderte Vollstreckbarerklärung unmittelbar vollstreckbar. Für grenzüberschreitende Forderungen mäßiger Höhe stehen zudem das Europäische Mahnverfahren (Verordnung (EG) Nr. 1896/2006) und das Europäische Verfahren für geringfügige Forderungen (Verordnung (EG) Nr. 861/2007) zur Verfügung, die beide einen europäischen, in anderen Mitgliedstaaten unmittelbar wirksamen Vollstreckungstitel ermöglichen." },
+        { h: "Außerhalb der Europäischen Union", p: "Für Schuldner in Nicht-EU-Staaten wird die Anerkennung und Vollstreckung spanischer Urteile über das Exequaturverfahren betrieben, nach dem einschlägigen internationalen Abkommen, sofern eines besteht (Übereinkommen von Lugano für die Schweiz, Norwegen und Island; bilaterale Verträge mit mehreren lateinamerikanischen Ländern usw.), und in deren Ermangelung nach dem spanischen Gesetz 29/2015 über die internationale Rechtskooperation in Zivilsachen sowie dem Recht des Vollstreckungsstaats. Wo die Umstände es nahelegen, kann IJ Creditor empfehlen, das Verfahren direkt in der Gerichtsbarkeit des Schuldners über die lokale Korrespondenzkanzlei einzuleiten, was oft effizienter ist, als in Spanien zu klagen und dann die Vollstreckung im Ausland zu betreiben." },
+      ] },
+      { t: "bullets", title: "Vom Service abgedeckte Maßnahmen", items: [
+        "Grenzüberschreitender außergerichtlicher Forderungseinzug. Kommunikation und Verhandlung mit dem Schuldner über den lokalen Korrespondenten, in dessen Sprache und nach den örtlichen Handelsgepflogenheiten. Der zuerst versuchte Weg und derjenige, der am häufigsten ohne Gericht zum Einzug führt.",
+        "Gerichtsverfahren im Land des Schuldners. Bleibt die gütliche Phase ohne Ergebnis, koordiniert IJ Creditor mit dem lokalen Korrespondenten Einreichung und Begleitung des einschlägigen Verfahrens, bis zu Urteil und Vollstreckung.",
+        "Gerichtsverfahren in Spanien mit Vollstreckung im Ausland. Wo es zweckmäßiger ist, in Spanien zu klagen (z. B. aufgrund der Vertragsbedingungen, einer Gerichtsstandsklausel oder von Vermögen des Schuldners in Spanien), übernimmt die Kanzlei die rechtliche Vertretung in Spanien und koordiniert die Anerkennung und Vollstreckung der rechtskräftigen Entscheidung im Ausland.",
+        "Grenzüberschreitende Insolvenz. Wird der ausländische Schuldner insolvent, koordiniert IJ Creditor mit dem lokalen Korrespondenten die Anmeldung der Forderung und die weitere Begleitung, gegebenenfalls nach der Verordnung (EU) 2015/848.",
+      ] },
+    ],
+  },
+  "credit-solvency-reports": {
+    intro: "Wirtschafts-, Vermögens- und Solvenzauskünfte über Unternehmen und Privatpersonen, spanisch und ausländisch, erstellt aus überprüfbaren Quellen — damit die entscheidende Person über ausreichende, abgesicherte Informationen verfügt, um fundiert zu entscheiden.",
+    blocks: [
+      { t: "bullets", title: "Vier typische Einsatzzwecke", items: [
+        "Analyse vor Kreditgewährung. Bevor ein neuer Kunde angenommen, eine Zahlungsziel-Linie eröffnet oder ein Geschäft gewisser Größe abgeschlossen wird, profiliert eine Auskunft die finanzielle, vermögensbezogene und Compliance-Situation der Gegenpartei und erlaubt es, das Risikolimit festzulegen oder Sicherheiten zu verlangen.",
+        "Laufende Risikoüberwachung des Kundenportfolios. Für Unternehmen mit breiten oder konzentrierten B2B-Portfolios ermöglichen periodische Auskünfte, Vermögensverschlechterungen, Insolvenzanträge, Wechsel in der Geschäftsführung oder frühe Anzeichen von Zahlungsausfall vorwegzunehmen.",
+        "Prüfung der Erfolgsaussicht vor dem Einzug. Bevor Zeit und Honorar in eine Einzugsmaßnahme investiert werden, profiliert eine Auskunft Solvenz und Vermögen des Schuldners. Fällt sie ungünstig aus, bleibt dem Mandanten die Kosten eines Verfahrens ohne realistische Aussicht erspart.",
+        "Unterstützung laufender Einzugsfälle. Hat IJ Creditor bereits eine offene Akte, kann eine gezielte Auskunft den Fall stützen: Überprüfung des Gesellschaftsstatus, Lokalisierung von Unternehmen mit Sitzwechsel, Identifizierung von Vermögen für Sicherheiten oder Vollstreckung. Die Anfrage erfolgt mit vorheriger Zustimmung des Mandanten, und die Kosten werden mit vorherigem Angebot weitergegeben.",
+      ] },
+      { t: "subs", title: "Arten von Auskünften", items: [
+        { h: "Wirtschaftsauskunft (Basis)", p: "Identifikations- und Registerdaten des Unternehmens, Rechtsform, Stammkapital, aktuelle Geschäftsführer und jüngste Historie, Geschäftstätigkeit und, soweit verfügbar, der zuletzt hinterlegte Jahresabschluss. Nützlich als erste Überprüfung der formellen Solvenz einer Gegenpartei." },
+        { h: "Vermögensauskunft", p: "Identifizierung des registrierten Vermögens des Schuldners: Immobilien im Grundbuch, Fahrzeuge, Schiffe, Beteiligungen, Marken und sonstige Vermögenswerte. Unerlässlich, um die Aussichten von Vollstreckung und Pfändung im Fall eines Zahlungsausfalls zu bewerten." },
+        { h: "Erweiterte Auskunft und gezielte Prüfungen", p: "Verbindet das Vorstehende mit vom Mandanten angeforderten gezielten Prüfungen: Eintrag in Kreditinformationssystemen nach Artikel 20 LOPDGDD, frühere Insolvenzverfahren, Verbindungen zu Unternehmensgruppen, Identifizierung des wirtschaftlich Berechtigten bei nachgewiesenem berechtigtem Interesse, Exposition gegenüber internationalen Sanktionen oder jeder andere relevante Punkt." },
+        { h: "Bericht zur Einzugs-Erfolgsaussicht", p: "Zusammenfassung des Vorstehenden aus juristischer Sicht, angewandt auf einen konkreten Einzugsfall: realistische Einzugsaussichten, empfohlene Wege und gegebenenfalls die Empfehlung, nicht zu klagen. Dies ist der Bericht, der jeder von der Kanzlei geführten gerichtlichen Maßnahme vorausgeht." },
+      ] },
+      { t: "prose", title: "Verwendete Quellen", paras: ["Jede Auskunft wird aus abgesicherten Informationen aus zwei Arten von Quellen erstellt:"] },
+      { t: "bullets", items: [
+        "Nach geltendem Recht zugängliche öffentliche Register: spanisches Handelsregister, Grundbuch, Register für bewegliches Vermögen, BORME, spanisches Amtsblatt und andere Verwaltungsregister. Wo die Einsicht den Nachweis eines berechtigten Interesses erfordert —wie beim Grundbuch— fragt IJ Creditor die Informationen unter Einhaltung der entsprechenden Vorschriften ab.",
+        "Spezialisierte Wirtschaftsauskunfteien, spanisch und international, die abgesicherte Daten über Unternehmen und Privatpersonen aggregieren und Branchenfachleuten über Dienstleistungsverträge zur Verfügung stellen.",
+      ] },
+      { t: "prose", paras: [
+        "IJ Creditor unterhält keine eigenen Datenbanken mit Wirtschaftsinformationen über Unternehmen oder Privatpersonen. Die gelieferten Informationen stammen in allen Fällen aus den genannten Quellen und werden in jeder Auskunft ausgewiesen.",
+        "Wo Gegenstand der Auskunft eine Privatperson ist oder die angeforderten Daten besonderen Zugangsbeschränkungen unterliegen —insbesondere den Vorschriften zur Vermögenssolvenz nach Artikel 20 des Organgesetzes 3/2018 (LOPDGDD) und der Rechtsprechung des spanischen Obersten Gerichtshofs zu Bonitätsdateien oder der Einsicht in das spanische Zentralregister der wirtschaftlich Berechtigten— wird die Leistung nur erbracht, wenn eine Rechtsgrundlage, ein berechtigter Zweck und ein nach den anwendbaren Vorschriften zulässiger Zugang vorliegen. In diesen Fällen prüft die Kanzlei vorab die Rechtmäßigkeit der Abfrage und legt sie dem Mandanten vor dem Vorgehen vor.",
+      ] },
+    ],
+  },
+};
+
 const content: Partial<Record<Locale, Partial<Record<ServiceSlug, ServicePage>>>> = {
   en,
-  // de/fr/it added incrementally; fall back to English until translated.
+  de,
+  // fr/it added incrementally; fall back to English until translated.
 };
 
 export function getServicePage(locale: Locale, slug: ServiceSlug): ServicePage {
