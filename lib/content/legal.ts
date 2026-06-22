@@ -313,7 +313,110 @@ const cookiesFr: LegalPage = {
 
 const fr: Set = { legalNotice: legalNoticeFr, privacy: privacyFr, cookies: cookiesFr };
 
-const content: Partial<Record<Locale, Set>> = { en, de, fr };
+const legalNoticeIt: LegalPage = {
+  title: "Note legali",
+  blocks: [
+    { t: "prose", title: "1. Titolare del sito", paras: [
+      "Questo sito, https://ijcreditor.com (il « Sito »), è di proprietà di Iuris Justitia Creditor, S.L., con codice fiscale spagnolo (CIF) B80508716 e sede legale in Paseo de la Castellana 120, 6º piano sinistra, 28046 Madrid, iscritta al Registro delle imprese di Madrid, volume 5778, foglio 35, sezione 8, scheda M-94521, iscrizione 1.",
+      "Puoi contattarci via e-mail all'indirizzo ijcreditor@ijcreditor.es o per telefono al +34 915 77 47 30.",
+    ] },
+    { t: "prose", title: "2. Condizioni d'uso", paras: [
+      "L'accesso al Sito e il suo utilizzo sono soggetti alle presenti note legali. La navigazione o l'uso del Sito implica la piena accettazione di queste condizioni; in caso di disaccordo, non dovresti utilizzare il Sito. Il Sito ha lo scopo di fornire informazioni sulle attività dello studio e sui servizi offerti.",
+      "Iuris Justitia Creditor può modificare il Sito e queste condizioni in qualsiasi momento, senza preavviso, e le aggiorna regolarmente. L'accesso è gratuito e, salvo le aree riservate, non richiede registrazione preventiva. L'utente si impegna a utilizzare il Sito in modo diligente e lecito e a non impiegarlo per finalità illecite né in modo lesivo dei diritti o degli interessi di terzi.",
+      "Iuris Justitia Creditor si riserva il diritto di modificare la struttura e il contenuto del Sito in qualsiasi momento e di limitare o negare l'accesso ove opportuno. Lo studio si adopera per mantenere le informazioni accurate e aggiornate, ma non garantisce che l'accesso sia ininterrotto o privo di errori.",
+    ] },
+    { t: "prose", title: "3. Link", paras: [
+      "Il Sito può contenere link a siti di terzi non gestiti da Iuris Justitia Creditor. Lo studio non esercita alcun controllo su tali siti e non è responsabile dei loro contenuti. I link sono forniti solo a titolo di riferimento e la loro inclusione non implica alcuna approvazione.",
+    ] },
+    { t: "prose", title: "4. Proprietà intellettuale e industriale", paras: [
+      "Tutti i diritti di proprietà intellettuale e industriale sul Sito —aspetto visivo, progettazione grafica, architettura di navigazione, codice sorgente, fotografie, software, banche dati, marchi, segni distintivi e loghi— appartengono a Iuris Justitia Creditor o a terzi che ne hanno autorizzato l'uso.",
+      "È autorizzato solo l'uso personale e non commerciale dei contenuti propri dello studio a fini informativi. Sono vietate la riproduzione, la distribuzione, la comunicazione al pubblico, la trasformazione o qualsiasi uso commerciale di tutto o parte del contenuto senza la previa ed espressa autorizzazione dello studio. L'uso non autorizzato o la violazione di tali diritti comporterà le responsabilità previste dalla legge.",
+    ] },
+    { t: "prose", title: "5. Limitazione di responsabilità", paras: [
+      "L'accesso al Sito e il suo utilizzo sono di esclusiva responsabilità dell'utente. Iuris Justitia Creditor non è responsabile dei danni derivanti da: indisponibilità o malfunzionamento del Sito o dei suoi contenuti; mancanza di utilità, accuratezza o validità dei contenuti rispetto alle esigenze dell'utente; presenza di virus o altri componenti dannosi, o violazioni della sicurezza causate da terzi; o, in generale, qualsiasi uso del Sito contrario alle presenti condizioni.",
+    ] },
+    { t: "prose", title: "6. Cookie", paras: [
+      "Questo Sito utilizza cookie propri e di terzi. I dettagli sui cookie utilizzati, la loro finalità e le modalità per gestirli o disabilitarli sono indicati nell'Informativa sui cookie, disponibile all'indirizzo https://ijcreditor.com/cookies.",
+    ] },
+    { t: "prose", title: "7. Protezione dei dati personali", paras: [
+      "Il titolare del trattamento dei dati personali raccolti tramite il Sito è Iuris Justitia Creditor, S.L. I dati sono trattati in conformità al regolamento (UE) 2016/679 (GDPR), alla legge organica 3/2018 (LOPDGDD) e alla normativa applicabile in materia di protezione dei dati. Le questioni relative alla protezione dei dati possono essere indirizzate a protecciondedatos@noxdata.es.",
+      "Il conferimento di dati tramite i moduli è volontario e si basa sul consenso dell'utente. I dati sono utilizzati solo per la finalità per cui sono stati raccolti e gli utenti possono esercitare i diritti di accesso, rettifica, cancellazione, portabilità, opposizione e limitazione. Lo studio tratta inoltre l'indirizzo IP degli utenti per analizzare il traffico di rete e produrre statistiche d'uso, ai sensi dell'articolo 6, paragrafo 1, lettera f, del GDPR; tale informazione è anonima per lo studio. I dettagli sono nell'Informativa sulla privacy.",
+    ] },
+    { t: "prose", title: "8. Legge applicabile e foro competente", paras: [
+      "Le presenti condizioni sono regolate dalla legge spagnola. Per la risoluzione di qualsiasi controversia relativa al Sito, Iuris Justitia Creditor e l'utente, rinunciando espressamente a qualsiasi altro foro, si sottopongono ai tribunali della città di Madrid (Spagna).",
+      "Questa è una traduzione delle note legali redatte in spagnolo; in caso di discrepanza, prevale la versione spagnola.",
+    ] },
+  ],
+};
+
+const privacyIt: LegalPage = {
+  title: "Informativa sulla privacy",
+  blocks: [
+    { t: "prose", title: "Titolare del trattamento", paras: [
+      "Il titolare del trattamento dei tuoi dati personali è Iuris Justitia Creditor, S.L. (IJ Creditor), con codice fiscale spagnolo (CIF) B80508716 e sede legale in Paseo de la Castellana 120, 6º piano sinistra, 28046 Madrid. E-mail di contatto: ijcreditor@ijcreditor.es. Per le questioni di protezione dei dati puoi scrivere anche a protecciondedatos@noxdata.es.",
+    ] },
+    { t: "prose", title: "Quali dati trattiamo", paras: [
+      "Tramite i moduli di questo Sito trattiamo i dati che fornisci: dati identificativi e di contatto (come nome, azienda, e-mail, telefono e Paese) e, nel caso di una richiesta di proposta, dati sulla pratica ed eventuali documenti che scegli di caricare. Trattiamo inoltre dati tecnici come il tuo indirizzo IP.",
+    ] },
+    { t: "bullets", title: "Finalità", items: [
+      "Gestire la tua richiesta e preparare una prima valutazione della pratica.",
+      "Gestire e, ove applicabile, formalizzare l'incarico dei servizi dello studio.",
+      "Inviarti comunicazioni commerciali, solo se hai prestato uno specifico consenso.",
+      "Analizzare il traffico e l'uso per mantenere e migliorare il Sito.",
+    ] },
+    { t: "bullets", title: "Base giuridica", items: [
+      "L'adozione di misure precontrattuali su tua richiesta e, ove applicabile, l'esecuzione dell'incarico (articolo 6, paragrafo 1, lettera b, GDPR).",
+      "Il tuo consenso, per le comunicazioni commerciali facoltative (articolo 6, paragrafo 1, lettera a, GDPR), che puoi revocare in qualsiasi momento.",
+      "Il legittimo interesse dello studio alla sicurezza del Sito e all'analisi del traffico (articolo 6, paragrafo 1, lettera f, GDPR).",
+    ] },
+    { t: "prose", title: "Destinatari e responsabili del trattamento", paras: [
+      "I tuoi dati non sono venduti né trasferiti a terzi per finalità proprie di questi. Possono essere trattati per conto dello studio da fornitori che agiscono come responsabili del trattamento —in particolare hosting del sito, invio di e-mail per i moduli di contatto e fornitori di analisi web—, sempre nell'ambito di un accordo di responsabilità del trattamento. All'interno dello studio, l'accesso è limitato a chi ne ha bisogno per gestire la tua richiesta. Ove la pratica richieda un'azione transfrontaliera, i dati possono essere condivisi con i corrispondenti dello studio al solo scopo di gestire la pratica.",
+    ] },
+    { t: "prose", title: "Trasferimenti internazionali", paras: [
+      "Alcuni fornitori dello studio possono trattare dati al di fuori dello Spazio economico europeo. In tal caso, il trasferimento è effettuato con le garanzie appropriate richieste dalla normativa sulla protezione dei dati, come le clausole contrattuali tipo della Commissione europea.",
+    ] },
+    { t: "prose", title: "Conservazione", paras: [
+      "I dati personali sono conservati per il tempo necessario a soddisfare la finalità per cui sono stati raccolti e ad adempiere agli obblighi di legge applicabili. Successivamente sono bloccati per i periodi previsti dalla legge prima della cancellazione.",
+    ] },
+    { t: "bullets", title: "I tuoi diritti", items: [
+      "Accedere ai tuoi dati personali; chiedere la rettifica dei dati inesatti; chiederne la cancellazione.",
+      "Chiedere la limitazione del trattamento; opporti al trattamento; chiedere la portabilità dei tuoi dati.",
+      "Revocare in qualsiasi momento il consenso prestato, senza pregiudicare la liceità del trattamento precedente.",
+    ] },
+    { t: "prose", paras: [
+      "Puoi esercitare questi diritti scrivendo a protecciondedatos@noxdata.es, indicando il diritto che desideri esercitare. Hai inoltre il diritto di presentare reclamo all'Agenzia spagnola per la protezione dei dati (Agencia Española de Protección de Datos, www.aepd.es) se ritieni che i tuoi diritti non siano stati adeguatamente tutelati.",
+    ] },
+    { t: "prose", title: "Cookie", paras: [
+      "Questo Sito utilizza cookie come descritto nell'Informativa sui cookie, disponibile all'indirizzo https://ijcreditor.com/cookies. I cookie analitici sono installati solo se li accetti tramite il banner dei cookie.",
+      "Questa è una traduzione dell'informativa sulla privacy redatta in spagnolo; in caso di discrepanza, prevale la versione spagnola.",
+    ] },
+  ],
+};
+
+const cookiesIt: LegalPage = {
+  title: "Informativa sui cookie",
+  blocks: [
+    { t: "prose", title: "Cosa sono i cookie?", paras: [
+      "I cookie sono piccoli file scaricati sul tuo dispositivo quando visiti determinati siti. Consentono al sito di memorizzare informazioni sulla tua navigazione, rendendo l'interazione tra te e il Sito più rapida e utile.",
+    ] },
+    { t: "prose", title: "Cookie utilizzati su questo sito", paras: [
+      "Questo Sito non utilizza cookie pubblicitari o di profilazione. Oltre ai cookie tecnici strettamente necessari al funzionamento del sito, utilizza cookie analitici di terzi, che sono installati solo se li accetti tramite il banner dei cookie mostrato alla prima visita:",
+    ] },
+    { t: "bullets", items: [
+      "Google Analytics (fornitore: Google) — misura come i visitatori usano il sito (pagine viste, posizione approssimativa, dispositivo) per migliorarlo. Gli indirizzi IP sono anonimizzati.",
+      "Microsoft Clarity (fornitore: Microsoft) — acquisisce dati d'uso anonimizzati come le interazioni con le pagine e mappe di calore aggregate per migliorare il sito.",
+    ] },
+    { t: "prose", title: "Consenso e disattivazione dei cookie", paras: [
+      "I cookie strettamente necessari non richiedono consenso. I cookie analitici sono installati solo se li accetti; se li rifiuti, non viene installato alcun cookie analitico e nessun dato d'uso viene inviato a tali fornitori. Puoi modificare o revocare la tua scelta in qualsiasi momento cancellando i dati di questo sito nel browser, il che farà ricomparire il banner dei cookie.",
+      "Inoltre, tutti i browser moderni consentono di gestire o bloccare i cookie tramite le loro impostazioni (di solito sotto « Opzioni », « Preferenze » o « Privacy »).",
+      "Questa è una traduzione dell'informativa sui cookie redatta in spagnolo; in caso di discrepanza, prevale la versione spagnola.",
+    ] },
+  ],
+};
+
+const it: Set = { legalNotice: legalNoticeIt, privacy: privacyIt, cookies: cookiesIt };
+
+const content: Partial<Record<Locale, Set>> = { en, de, fr, it };
 
 export function getLegal(locale: Locale): Set {
   return content[locale] ?? en;
