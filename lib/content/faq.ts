@@ -263,7 +263,71 @@ const it: FaqContent = {
   ],
 };
 
-const content: Partial<Record<Locale, FaqContent>> = { en, de, fr, it };
+const pt: FaqContent = {
+  title: "Perguntas frequentes",
+  intro: "As perguntas mais frequentes de clientes e visitantes. Se a sua pergunta não tiver resposta aqui, contacte a sociedade através do formulário « Solicitar uma proposta » ou da página de Contacto.",
+  items: [
+    { q: "Como funcionam os vossos honorários?", a: [
+      "O trabalho extrajudicial é prestado com honorários de êxito: uma comissão sobre o montante efetivamente recuperado, sem custo inicial. Se nada for recuperado, não são cobrados honorários variáveis.",
+      "Determinadas ações específicas ou custos de terceiros —relatórios de informação comercial, burofax espanhóis, certidões de registo ou serviços externos necessários à gestão— podem implicar custo adicional, em todos os casos com informação prévia e aprovação expressa do cliente.",
+      "Na ação judicial, os honorários são acordados por escrito num orçamento fechado antes de qualquer ação, calculados em função do tipo de procedimento e do montante em causa.",
+    ]},
+    { q: "E se não recuperarem nada?", a: [
+      "Na fase amigável, os honorários variáveis só são devidos quando o cliente recupera montantes. Antes de avançar para tribunal, elabora-se um relatório de viabilidade judicial sem custo, que avalia as perspetivas de êxito. Se o relatório desaconselhar a apresentação da ação, a recomendação é comunicada de forma fundamentada ao cliente.",
+    ]},
+    { q: "Existe um montante mínimo para aceitar um caso?", a: [
+      "Não. Não há limite mínimo. Para montantes pequenos, avalia-se a via mais eficiente em termos de custo-benefício; se uma determinada via não for razoável face à relação entre o custo esperado e o montante reclamado, a sociedade explica-o ao cliente para que decida com informação completa.",
+    ]},
+    { q: "Também tratam carteiras de pequenos montantes?", a: [
+      "Sim. A IJ Creditor trata tanto casos individuais de valor elevado como carteiras de numerosos pequenos montantes. Em cada caso avalia-se a proporcionalidade entre o custo esperado e as perspetivas realistas de recuperação, recomendando a via mais eficiente do ponto de vista económico e jurídico.",
+      "Em certos setores —transporte, aluguer de viaturas, fornecimentos recorrentes, serviços B2B— é comum trabalhar com carteiras amplas de montantes pequenos mas repetitivos, para os quais a sociedade dispõe de modelos específicos de gestão e reconciliação.",
+    ]},
+    { q: "Tenho de me deslocar a Espanha para recuperar um crédito de um devedor espanhol?", a: [
+      "Não. O escritório de Madrid gere o caso diretamente do início ao fim. Comunica com a sociedade em inglês; a sociedade comunica com o devedor em espanhol, presencialmente quando acrescenta valor. Para a ação judicial, a sociedade utiliza uma procuração notarial assinada no seu país, normalmente com apostila ao abrigo da Convenção de Haia.",
+    ]},
+    { q: "Quanto tempo demora a recuperar um crédito em Espanha?", a: [
+      "Os prazos na fase amigável dependem da complexidade do caso, da solvência e disposição do devedor e da função ativada. Os casos mais simples encerram-se em semanas; os que exigem reconciliação de saldos ou negociação de um plano de pagamento podem demorar alguns meses. A maioria dos casos confiados à IJ Creditor resolve-se na fase extrajudicial. A ação judicial depende do procedimento e do tribunal.",
+    ]},
+    { q: "Uma sentença espanhola pode ser executada contra um devedor noutro país da UE?", a: [
+      "Sim. Ao abrigo do Regulamento (UE) 1215/2012 (Bruxelas I bis), um título executivo espanhol é reconhecido e executado diretamente em qualquer outro Estado-Membro da UE, sem exequatur. O tribunal do Estado-Membro recebe a sentença certificada e o certificado Bruxelas I bis e procede à execução segundo o direito processual local. A sociedade trata da parte espanhola e coordena com os seus parceiros no Estado de execução.",
+    ]},
+    { q: "Uma sentença estrangeira pode ser executada em Espanha?", a: [
+      "Sim. Se a sentença foi proferida num Estado-Membro da UE, aplica-se Bruxelas I bis —reconhecimento e execução diretos sem exequatur. Se a sentença vem de um país terceiro, o reconhecimento e a execução passam pelo procedimento espanhol de exequatur ao abrigo da Lei 29/2015 sobre cooperação jurídica internacional em matéria civil e das convenções internacionais aplicáveis.",
+    ]},
+    { q: "Qual é a diferença entre reconciliação de saldos e cobrança?", a: [
+      "A reconciliação de saldos é a fase em que a sociedade atua como interlocutor técnico entre credor e devedor para esclarecer a composição real da dívida antes de exigir o pagamento: pagamentos já imputados, notas de crédito pendentes, descontos comerciais, erros de imputação ou divergências contabilísticas.",
+      "A cobrança é a fase em que a dívida é clara e a sociedade gere o pagamento amigável.",
+      "Na prática, as duas funções aplicam-se de forma integrada: muitos casos que começam como créditos simples revelam depois uma situação contabilística que exige reconciliação, e muitos que começam como reconciliações terminam como cobrança amigável dos montantes confirmados como exigíveis.",
+    ]},
+    { q: "Que supervisão jurídica se aplica na fase amigável?", a: [
+      "Todo o trabalho extrajudicial da IJ Creditor é supervisionado por um advogado da sociedade. A equipa é composta maioritariamente por advogados, e cada comunicação com o devedor —cartas, interpelações formais, burofax— é revista segundo critérios jurídicos para assegurar a validade probatória, a conformidade com o RGPD e, quando a lei o aplica, o possível efeito de interrupção da prescrição.",
+    ]},
+    { q: "O devedor pode apresentar queixa sobre o processo de cobrança?", a: [
+      "A IJ Creditor exerce toda a sua atividade em conformidade com o direito espanhol e europeu aplicável, incluindo as regras de proteção de dados, de consumo e de deontologia. As comunicações com o devedor são conduzidas segundo critérios de proporcionalidade, rastreabilidade e supervisão jurídica, evitando qualquer prática incompatível com o quadro legal aplicável.",
+      "A atividade é devidamente documentada e adaptada à natureza de cada processo —devedor empresarial ou particular, âmbito nacional ou internacional, fase amigável ou judicial— a fim de reduzir riscos desnecessários tanto para o cliente credor como para a sociedade.",
+    ]},
+    { q: "O que é um burofax?", a: [
+      "O burofax é o serviço postal certificado de referência em Espanha, que fornece prova jurídica tanto do conteúdo como da entrega de uma comunicação. É admitido como prova em tribunal de que o devedor foi formalmente notificado e, quando aplicável, tem o efeito jurídico de interromper a prescrição. A sociedade utiliza-o sempre que o caso o exija.",
+    ]},
+    { q: "O que é o MASC e porque é importante?", a: [
+      "MASC significa « Medio Adecuado de Solución de Controversias » — método adequado de resolução de litígios. Na sequência da Lei Orgânica espanhola 1/2025, na maioria dos processos civis e comerciais é necessário comprovar uma tentativa documentada de MASC antes de apresentar uma ação em tribunal. A lei prevê também exceções, incluindo os processos de insolvência, o procedimento cambiário, a execução, as providências cautelares prévias e certos processos de jurisdição voluntária. A sociedade realiza a tentativa de MASC quando exigida, deixando registo documentado para que conte para o requisito de admissibilidade processual.",
+    ]},
+    { q: "O que é o concurso de acreedores e como afeta o meu crédito?", a: [
+      "O concurso de acreedores é o processo de insolvência espanhol para empresas e particulares incapazes de cumprir as suas obrigações. Uma vez aberto, os credores devem reclamar os seus créditos ao administrador da insolvência nomeado pelo tribunal e a fase amigável para. A sociedade representa os credores estrangeiros nos processos de insolvência espanhóis: reclamação de créditos, classificação (privilegiado, comum, subordinado), acompanhamento do acordo ou da liquidação e, quando aplicável, ação de extensão de responsabilidade contra os administradores.",
+      "As questões de insolvência estão excluídas do regime geral do MASC; as ações são conduzidas diretamente através do processo de insolvência.",
+    ]},
+    { q: "Como é mantido o cliente informado?", a: [
+      "A sociedade presta contas ao cliente na cadência e no formato acordados em cada caso. Por defeito, o reporte é mensal e inclui o estado de cada processo, as ações realizadas, os montantes cobrados e os pendentes.",
+      "Além disso, a IJ Creditor disponibiliza aos seus clientes uma aplicação online a partir da qual podem consultar em tempo real o estado dos seus processos: estado de cada crédito, montantes recuperados, saldo pendente, últimas ações e evolução global da carteira.",
+      "Qualquer evento processual ou extrajudicial relevante é comunicado ao cliente no momento em que ocorre, sem aguardar o relatório periódico.",
+    ]},
+    { q: "O que acontece aos montantes recuperados?", a: [
+      "Os montantes recuperados para o cliente são guardados numa conta bancária separada do património da sociedade, em conformidade com as regras da Ordem dos Advogados espanhola, e são transferidos para o cliente na cadência e pelo método previstos.",
+      "A sociedade fatura os seus honorários sobre os montantes efetivamente cobrados e entrega o saldo ao cliente.",
+    ]},
+  ],
+};
+const content: Partial<Record<Locale, FaqContent>> = { en, pt, de, fr, it };
 
 export function getFaq(locale: Locale): FaqContent {
   return content[locale] ?? en;
