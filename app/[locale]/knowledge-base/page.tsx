@@ -6,7 +6,7 @@ import Block from "@/components/Block";
 import Prose from "@/components/Prose";
 import Container from "@/components/Container";
 import CtaBand from "@/components/CtaBand";
-import { KB_GUIDES } from "@/lib/kb";
+import { getGuides } from "@/lib/content/kb";
 import { isLocale, withLocale } from "@/lib/i18n";
 
 export const metadata: Metadata = { title: "Knowledge Base" };
@@ -14,6 +14,7 @@ export const metadata: Metadata = { title: "Knowledge Base" };
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
+  const guides = getGuides(locale);
   return (
     <>
       <PageHeader
@@ -28,7 +29,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       </Block>
       <Container className="pb-8">
         <div className="grid gap-4 md:grid-cols-2">
-          {KB_GUIDES.map((g) => (
+          {guides.map((g) => (
             <Link key={g.slug} href={withLocale(locale, `/knowledge-base/${g.slug}`)} className="group rounded-lg border border-slate/15 p-5 transition-colors hover:border-accent/40">
               <h2 className="text-base font-semibold text-ink group-hover:text-accent">{g.nav}</h2>
               <p className="mt-2 text-sm leading-relaxed text-slate">{g.summary}</p>
