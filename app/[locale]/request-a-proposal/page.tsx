@@ -1,41 +1,39 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import PageHeader from "@/components/PageHeader";
 import Block from "@/components/Block";
 import Prose from "@/components/Prose";
 import Container from "@/components/Container";
 import LeadForm from "@/components/LeadForm";
+import { isLocale } from "@/lib/i18n";
+import { getDictionary } from "@/lib/dictionaries";
 
-export const metadata: Metadata = { title: "Request a Proposal" };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return { title: getDictionary(locale).request.title };
+}
 
-export default function Page() {
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+  const dict = getDictionary(locale);
+  const r = dict.request;
   return (
     <>
-      <PageHeader
-        eyebrow="Get started"
-        title="Request a Proposal"
-        intro="To have IJ Creditor assess your case, complete the form below. The firm will respond with a first case assessment, the recommended route and the applicable fee model. The consultation does not generate any contractual obligation: if you decide not to proceed, the file is closed at no cost."
-      />
-      <Block title="Confidentiality and treatment of information">
-        <Prose paragraphs={[
-          "Information submitted through this form will be processed confidentially. Where, by the legal nature of the consultation or of the engagement, the lawyer's professional duty applies, information will be covered by professional secrecy under applicable law. In any event, access to that information within the firm is limited to those who need to know it in order to prepare the case assessment, in accordance with Regulation (EU) 2016/679 (GDPR) and Organic Law 3/2018 (LOPDGDD). The detailed privacy policy is available from the footer of this site.",
-        ]} />
+      <PageHeader eyebrow={r.eyebrow} title={r.title} intro={r.intro} />
+      <Block title={r.confidentialityTitle}>
+        <Prose paragraphs={[r.confidentialityText]} />
       </Block>
       <Container className="py-6">
-        <p className="mb-6 inline-block rounded-md bg-accent/10 px-4 py-2 text-sm font-medium text-accent">
-          Confidential first assessment within two business days.
-        </p>
-        <LeadForm variant="proposal" />
+        <p className="mb-6 inline-block rounded-md bg-accent/10 px-4 py-2 text-sm font-medium text-accent">{r.sla}</p>
+        <LeadForm variant="proposal" t={dict.form} />
       </Container>
-      <Block title="Legal basis for data processing">
-        <Prose paragraphs={[
-          "Data submitted through this form is processed in order to handle the request, assess the viability of the service and, where applicable, formalise the engagement. The legal basis is the adoption of pre-contractual measures taken at the request of the data subject (Article 6(1)(b) GDPR) and, where applicable, the firm's legitimate interest in processing and responding to the consultation (Article 6(1)(f) GDPR). Before submitting the form, the applicant must confirm that they have read IJ Creditor's privacy policy.",
-          "If the applicant also wishes to receive commercial communications not strictly required to handle their consultation, they may opt in via a specific, separate checkbox. That consent is optional, may be revoked at any time and does not affect the processing of the consultation.",
-        ]} />
+      <Block title={r.legalBasisTitle}>
+        <Prose paragraphs={r.legalBasisParas} />
       </Block>
-      <Block title="What happens after submission">
-        <Prose paragraphs={[
-          "IJ Creditor will respond within a reasonable timeframe, normally within two business days, with a first case assessment, the recommended route and, where appropriate, a fee proposal for the client to decide whether to formalise the engagement.",
-        ]} />
+      <Block title={r.afterTitle}>
+        <Prose paragraphs={[r.afterText]} />
       </Block>
     </>
   );

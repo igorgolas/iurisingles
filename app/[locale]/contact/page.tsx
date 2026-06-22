@@ -1,43 +1,50 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import PageHeader from "@/components/PageHeader";
 import Container from "@/components/Container";
 import LeadForm from "@/components/LeadForm";
 import { SITE } from "@/lib/site";
+import { isLocale } from "@/lib/i18n";
+import { getDictionary } from "@/lib/dictionaries";
 
-export const metadata: Metadata = { title: "Contact" };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return { title: getDictionary(locale).nav.contact };
+}
 
-export default function Page() {
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+  const dict = getDictionary(locale);
+  const c = dict.contact;
   return (
     <>
-      <PageHeader
-        eyebrow="Contact"
-        title="Contact us"
-        intro="IJ Creditor handles consultations and engagements from Spanish and foreign clients from its head office in Madrid. The fastest way to start a case is through the Request a Proposal form; for any other matter, the details below apply."
-      />
+      <PageHeader eyebrow={dict.nav.contact} title={c.title} intro={c.intro} />
       <Container className="grid gap-12 py-16 md:grid-cols-2">
         <div className="space-y-6 text-[15px] leading-relaxed text-slate">
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">Head office</h2>
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">{c.headOffice}</h2>
             <p className="mt-2">Paseo de la Castellana 120<br />28046 Madrid<br />Spain</p>
           </div>
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">Telephone</h2>
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">{c.telephone}</h2>
             <p className="mt-2">{SITE.phone}</p>
           </div>
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">Email</h2>
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">{c.emailLabel}</h2>
             <p className="mt-2">{SITE.email}</p>
           </div>
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">International matters</h2>
-            <p className="mt-2">For consultations from foreign companies or cross-border matters, communications may be sent to the same general email address; the firm channels them internally to the team in charge of international debt collection.</p>
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">{c.internationalMatters}</h2>
+            <p className="mt-2">{c.internationalText}</p>
           </div>
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">Company identification</h2>
-            <p className="mt-2">Company name: {SITE.name}, S.L.<br />Spanish tax ID (NIF): {SITE.nif}.<br />Address: {SITE.address}</p>
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">{c.companyIdentification}</h2>
+            <p className="mt-2">{c.companyNameLabel}: {SITE.name}, S.L.<br />{c.nifLabel}: {SITE.nif}.<br />{c.addressLabel}: {SITE.address}</p>
           </div>
         </div>
-        <LeadForm variant="contact" />
+        <LeadForm variant="contact" t={dict.form} />
       </Container>
     </>
   );
