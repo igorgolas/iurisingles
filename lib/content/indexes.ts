@@ -80,8 +80,27 @@ const industriesIt: IndustriesIndex = {
   ],
 };
 
-const servicesIndexByLocale: Partial<Record<Locale, ServicesIndex>> = { en: servicesEn, de: servicesDe, fr: servicesFr, it: servicesIt };
-const industriesIndexByLocale: Partial<Record<Locale, IndustriesIndex>> = { en: industriesEn, de: industriesDe, fr: industriesFr, it: industriesIt };
+const servicesPt: ServicesIndex = {
+  title: "Cobrança e serviços jurídicos a credores desde 1992",
+  intro: "Qualquer que seja o serviço solicitado, o objetivo é o mesmo: encontrar uma solução que recupere o crédito preservando, sempre que possível, a relação comercial entre o cliente e o devedor. Mais de 80% dos casos assumidos pela IJ Creditor resolvem-se na fase extrajudicial, sem apresentação de ação.",
+  detail: {
+    "out-of-court-debt-collection": "Recuperação com honorários de êxito sobre o montante efetivamente cobrado: sem recuperação, sem honorários variáveis. O trabalho extrajudicial é realizado por uma equipa composta maioritariamente por advogados e supervisionado, processo a processo, por um advogado da sociedade, combinando reconciliação de saldos e cobrança amigável.",
+    "judicial-debt-collection": "Quando a fase amigável não resulta, a IJ Creditor assume a representação jurídica direta no procedimento mais adequado —monitorio, verbal, ordinário, execução ou insolvência—, precedido sempre que possível de um relatório de viabilidade judicial e iniciado com um honorário fixo acordado por escrito.",
+    "international-debt-collection": "Para clientes estrangeiros cujos devedores se encontram fora de Espanha. A IJ Creditor coordena o caso a partir de Madrid e executa-o no país do devedor através da sua rede de correspondentes, tanto na fase amigável como, quando adequado, na judicial.",
+    "credit-solvency-reports": "Informação comercial, patrimonial e de solvência sobre empresas e particulares, elaborada a partir de registos públicos e fornecedores especializados para decisões de crédito, monitorização de carteira e viabilidade da cobrança. A IJ Creditor não mantém bases de dados próprias.",
+  },
+};
+const industriesPt: IndustriesIndex = {
+  title: "Setores em que recuperamos para credores estrangeiros com devedores em Espanha",
+  intro: "A IJ Creditor tratou créditos por pagar de credores estrangeiros em praticamente todos os setores económicos com devedores em Espanha. A sociedade identifica as áreas em que tem experiência recorrente e conhecimento específico dos usos comerciais, padrões contratuais e particularidades jurídicas que afetam a cobrança em Espanha.",
+  closing: [
+    "Cada setor tem a sua própria dinâmica de incumprimento —perfil do devedor, natureza das faturas, prazos de pagamento habituais, garantias contratuais padrão e vias de cobrança mais eficientes. A especialização setorial permite à sociedade reconhecer rapidamente as especificidades de cada caso e adaptar sem demora a estratégia de cobrança.",
+    "Para setores não listados aqui, a IJ Creditor também trata processos através da sua linha de serviço geral. A especialização setorial é um complemento que acrescenta valor onde se aplica, não uma condição para aceder ao serviço.",
+  ],
+};
+
+const servicesIndexByLocale: Partial<Record<Locale, ServicesIndex>> = { en: servicesEn, pt: servicesPt, de: servicesDe, fr: servicesFr, it: servicesIt };
+const industriesIndexByLocale: Partial<Record<Locale, IndustriesIndex>> = { en: industriesEn, pt: industriesPt, de: industriesDe, fr: industriesFr, it: industriesIt };
 
 export function getServicesIndex(locale: Locale): ServicesIndex {
   return servicesIndexByLocale[locale] ?? servicesEn;

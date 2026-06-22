@@ -103,7 +103,32 @@ const it: AboutPage = {
   ],
 };
 
-const content: Partial<Record<Locale, AboutPage>> = { en, de, fr, it };
+const pt: AboutPage = {
+  title: "Uma sociedade espanhola de cobrança de dívidas e escritório de advogados, ao serviço dos credores desde 1992",
+  blocks: [
+    { t: "prose", paras: [
+      "A Iuris Justitia Creditor (IJ Creditor) é uma sociedade espanhola de cobrança de dívidas especializada na recuperação de créditos comerciais e em serviços jurídicos a credores. Foi fundada em 1992 e opera ininterruptamente desde então, com sede no Paseo de la Castellana 120, em Madrid. A sociedade cobre quatro linhas de serviço: cobrança extrajudicial, cobrança judicial em Espanha, cobrança internacional através de uma rede de correspondentes e relatórios comerciais e de solvência.",
+      "Mais de 3.000 empresas —espanholas e estrangeiras— confiaram os seus créditos por pagar à sociedade ao longo dos anos. A atividade abrange créditos B2B e, quando aplicável, B2C, segundo os mesmos critérios jurídicos, técnicos e éticos. Mais de 80% dos casos confiados à sociedade resolvem-se na fase extrajudicial, sem recorrer a tribunal.",
+    ] },
+    { t: "prose", title: "Sociedade de cobrança e sociedade de advogados", paras: [
+      "A IJ Creditor atua simultaneamente como sociedade espanhola de cobrança de dívidas e como sociedade de advogados. A consequência prática desta estrutura é que cada passo do caso, incluindo a fase amigável, é supervisionado por um advogado da sociedade. Cada comunicação com o devedor, cada interpelação formal e cada proposta de acordo é redigida segundo critérios jurídicos —valor probatório, conformidade com o RGPD, possível efeito de interrupção da prescrição— e em conformidade com o direito processual aplicável.",
+      "A sociedade cobre todo o ciclo do crédito, desde o esclarecimento de saldos disputados quando o crédito não é evidente, até à execução judicial dos montantes por pagar quando a ação em tribunal se torna necessária.",
+    ] },
+    { t: "prose", title: "Como trabalhamos", paras: [
+      "O objetivo da IJ Creditor é sempre o mesmo: encontrar uma solução que recupere o crédito preservando, sempre que possível, a relação comercial entre o cliente e o devedor. A ação judicial só é recomendada quando o diálogo extrajudicial se esgotou ou quando, à partida, não é viável. Nunca é a via por defeito. Esta forma de trabalhar reflete-se no código de conduta da sociedade, disponível publicamente neste site.",
+    ] },
+    { t: "prose", title: "Equipa e rede", paras: [
+      "A equipa é composta por advogados internos, gestores de processos e especialistas em informação comercial, todos integrados na sede de Madrid. A sociedade é membro de associações internacionais de cobrança e de credores — a European Collectors Association (ECA), a League International for Creditors (LIC International) e a American Lawyers Quarterly —, através das quais se mantém a sua rede de correspondentes em múltiplas jurisdições.",
+    ] },
+    { t: "prose", title: "Enquadramento regulatório", paras: [
+      "A atividade da IJ Creditor rege-se simultaneamente pelo Código Deontológico da Advocacia Espanhola (Código Deontológico de la Abogacía Española, aprovado pelo Conselho Geral da Advocacia Espanhola em março de 2019), pelo Estatuto Geral da Advocacia Espanhola (Decreto Real 135/2021) e pelos códigos de conduta setoriais adotados pelas associações de cobrança a que a sociedade pertence.",
+      "Aplica-se também a legislação geral espanhola e europeia pertinente, incluindo o Código Civil espanhol, o Código Penal, o código de processo civil, o Regulamento (UE) 2016/679 (RGPD) e a Lei Orgânica 3/2018 (LOPDGDD), a Lei 18/2022 sobre a criação e o crescimento de empresas, a Lei 10/2010 sobre a prevenção do branqueamento de capitais e a legislação da UE aplicável à cobrança transfronteiriça.",
+    ] },
+    { t: "prose", title: "Sede", paras: ["Paseo de la Castellana 120, 28046 Madrid, Espanha."] },
+  ],
+};
+
+const content: Partial<Record<Locale, AboutPage>> = { en, pt, de, fr, it };
 
 export function getAbout(locale: Locale): AboutPage {
   return content[locale] ?? en;
