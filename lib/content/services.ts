@@ -589,8 +589,152 @@ const it: Record<ServiceSlug, ServicePage> = {
   },
 };
 
+const pt: Record<ServiceSlug, ServicePage> = {
+  "out-of-court-debt-collection": {
+    intro: "A primeira via que a IJ Creditor tenta em cada caso: obter o pagamento antes da ação judicial e, sempre que possível, preservar a relação comercial. Mais de 80% dos casos confiados à sociedade resolvem-se nesta fase, sem ação em tribunal.",
+    blocks: [
+      { t: "prose", title: "Honorários", paras: [
+        "O serviço é prestado com honorários de êxito. A sociedade cobra uma comissão sobre o montante efetivamente recuperado, calculada nos termos acordados com o cliente no contrato de mandato e em função do montante, da antiguidade do crédito, da complexidade do caso e da informação disponível sobre o devedor. Se nada for recuperado, não são faturados honorários variáveis.",
+        "Determinadas ações ou custos de terceiros —como relatórios de informação comercial, burofax espanhóis certificados, certidões de registo ou outros serviços externos necessários à gestão— podem implicar custo adicional, em todos os casos com informação prévia ao cliente e aprovação expressa.",
+      ] },
+      { t: "prose", title: "Supervisão jurídica do processo", paras: [
+        "O trabalho extrajudicial é realizado por uma equipa composta maioritariamente por advogados e, em cada caso, supervisionado processo a processo por um advogado da sociedade. É isto que evita os erros típicos de uma cobrança feita sem formação jurídica: comunicações que violam o RGPD, interpelações mal redigidas que não interrompem a prescrição, decisões que fecham a porta a uma posterior ação judicial, ou o incumprimento dos prazos e formalidades previstos no direito espanhol e europeu.",
+      ] },
+      { t: "prose", title: "Duas funções integradas", paras: [
+        "A IJ Creditor combina no departamento extrajudicial duas funções especializadas, aplicadas em conjunto e sucessivamente a cada caso conforme as suas necessidades: a reconciliação de saldos e a cobrança amigável. Na prática não são compartimentos estanques: muitos casos que chegam como simples fatura por pagar revelam, uma vez iniciado o diálogo com o devedor, uma situação contabilística que exige reconciliação; e muitos que começam como reconciliações terminam como cobrança amigável dos montantes confirmados como exigíveis.",
+      ] },
+      { t: "prose", title: "Reconciliação de saldos", paras: [
+        "Quando é necessário esclarecer com o devedor a composição real da dívida antes de exigir o pagamento —por dúvidas sobre pagamentos já creditados, notas de crédito pendentes, descontos comerciais ainda não aplicados, erros de imputação, IVA contado em duplicado ou divergências de faturação— a IJ Creditor atua, em nome do credor, como interlocutor entre as partes em modo de esclarecimento. As comunicações com o devedor identificam sempre o credor por conta de quem a sociedade atua e colocam o processo em modo de esclarecimento contabilístico, não de pressão.",
+        "Os registos do cliente são cruzados com a documentação de suporte fornecida pelo devedor —recibos de pagamento, notas de crédito, comprovativos bancários— e apenas se reclama o saldo confirmado como exigível após a reconciliação. A função aplica-se tanto a devedores empresariais (B2B) como a particulares (B2C) e é particularmente útil quando o cliente pretende recuperar o crédito preservando a relação comercial: a reconciliação reduz o conflito e abre caminho a soluções rápidas e razoáveis para ambas as partes.",
+      ] },
+      { t: "prose", title: "Cobrança amigável", paras: [
+        "Quando a composição da dívida é clara e se solicita gestão amigável, a sociedade trata da cobrança direta: comunicações com o devedor, interpelações formais quando adequado, negociação de planos de pagamento ou acordos de prestações e encerramento do processo com a satisfação do crédito.",
+        "O montante reclamado é o que o cliente comunica; a sociedade não o contesta por iniciativa própria. Se, durante a gestão, o devedor levantar por iniciativa própria objeções ou divergências, a IJ Creditor regista-as, transmite-as ao cliente com o parecer profissional da sociedade sobre a sua coerência, e a decisão sobre como proceder permanece com o cliente. Qualquer proposta de acordo —plano de pagamento, acordo de prestações ou renúncia razoável— é apresentada ao credor com toda a informação necessária para decidir; a aprovação final cabe sempre ao credor.",
+      ] },
+      { t: "bullets", title: "Como trabalhamos", items: [
+        "Receção. O cliente envia os processos no formato mais cómodo —normalmente ficheiros digitais: folhas de cálculo, exportações de ERP ou outro suporte adequado. A sociedade solicita, ao longo do processo, quaisquer dados ou documentos adicionais necessários.",
+        "Análise interna e abertura do processo. A equipa avalia cada caso, identifica os riscos jurídicos e abre o processo sob a respetiva supervisão jurídica.",
+        "Comunicações com o devedor. Cartas de interpelação, burofax espanhóis certificados, contacto eletrónico ou telefónico, conforme o caso. Cada comunicação é revista por um advogado para assegurar a validade probatória, a conformidade com o RGPD e, quando aplicável, o efeito jurídico de interromper a prescrição.",
+        "Reconciliação, negociação ou acordo. Quando o caso exige esclarecer a composição da dívida, inicia-se a reconciliação de saldos antes de exigir o pagamento. Uma vez confirmada, a sociedade trabalha com o devedor rumo a um encerramento: pagamento integral, plano de pagamento, prestações ou renúncia razoável. As propostas que requerem aprovação do cliente são apresentadas de forma fundamentada.",
+        "Cobrança e prestação de contas. Os montantes recuperados são guardados numa conta bancária separada e entregues ao credor na cadência e no formato acordados. Por defeito, a prestação de contas é mensal.",
+        "Encerramento ou escalada. Se a via amigável tiver êxito, o processo é encerrado. Caso contrário, a IJ Creditor elabora um relatório de viabilidade judicial e, com base no seu resultado, aconselha o cliente sobre os passos seguintes.",
+      ] },
+      { t: "prose", title: "Informação que nos é útil", paras: [
+        "A sociedade trabalha com o que o cliente puder fornecer, solicitando dados adicionais ao longo do processo. Não é necessário fornecer tudo à partida. Se o cliente puder fornecer desde o início, sem esforço administrativo significativo, a informação completa de cada crédito, o processo é aberto mais depressa.",
+      ] },
+      { t: "bullets", items: [
+        "Faturas por pagar com as respetivas datas de vencimento e descritivos.",
+        "Contrato com o devedor, se existir.",
+        "Guias de entrega ou comprovativos da prestação do serviço ou produto.",
+        "Comunicações anteriores com o devedor.",
+        "Identificação completa do devedor (CIF/NIF espanhol ou equivalente estrangeiro, sede, pessoa ou departamento de contacto, telefone e e-mail).",
+        "Qualquer outra circunstância relevante, como pagamentos parciais recebidos ou notas de crédito pendentes.",
+      ] },
+      { t: "prose", title: "Prazos", paras: [
+        "Após a receção do processo com a documentação de suporte, a abertura e o primeiro contacto com o devedor ocorrem num prazo curto. A duração total da fase amigável depende da complexidade do caso, da solvência e disposição do devedor e da função ativada: os processos mais simples encerram-se em poucas semanas, enquanto os casos que exigem reconciliação contabilística ou a negociação de um plano de pagamento podem demorar alguns meses.",
+        "Se, decorrido um período razoável, a via amigável não permitir satisfazer o crédito, avalia-se com o cliente a oportunidade de avançar para tribunal, sempre precedida de um relatório de viabilidade judicial.",
+      ] },
+    ],
+  },
+  "judicial-debt-collection": {
+    intro: "A via ativada quando a fase amigável se esgotou, ou quando não é viável à partida. A IJ Creditor assume a representação jurídica direta no procedimento mais adequado a cada situação, até à sentença, execução e recuperação efetiva.",
+    blocks: [
+      { t: "prose", title: "Relatório de viabilidade judicial", paras: [
+        "Antes de recomendar a ação judicial, a IJ Creditor elabora —sempre que possível— um relatório de viabilidade judicial. O relatório avalia a solidez e validade da documentação, a solvência e o paradeiro do devedor, os prazos de prescrição aplicáveis e as perspetivas realistas de êxito em tribunal. O seu objetivo é evitar sujeitar o cliente ao custo e esforço de um procedimento que, dadas as circunstâncias, não deveria ser iniciado.",
+        "Se o relatório desaconselhar a apresentação da ação, tal é comunicado ao cliente de forma fundamentada. O trabalho intelectual do advogado no relatório nunca é faturado. Quando é necessária informação externa com custo —relatórios patrimoniais do devedor, certidões de registo, pesquisas específicas em bases de dados públicas ou privadas— esse custo é repassado ao cliente, com aprovação expressa prévia.",
+      ] },
+      { t: "prose", title: "Honorários", paras: [
+        "Na maioria dos casos, os honorários judiciais já estão cobertos pelas tarifas acordadas com o cliente no contrato de mandato assinado no início da relação. Nesse caso, antes de iniciar o procedimento apenas é necessária a autorização expressa do cliente para avançar; aplicam-se as tarifas já acordadas e não é necessário um novo orçamento.",
+        "Quando os honorários judiciais não estão cobertos pelo contrato, a IJ Creditor envia ao cliente um orçamento fixo por escrito antes de qualquer ação, calculado em função do procedimento, do montante reclamado e da complexidade prevista, e solicita aprovação expressa para continuar.",
+        "Em ambos os casos, as rubricas acessórias relacionadas com o procedimento são indicadas antecipadamente, incluindo as taxas de justiça aplicáveis e os desembolsos previsíveis.",
+      ] },
+      { t: "prose", title: "Resolução alternativa de litígios (MASC)", paras: [
+        "Desde a entrada em vigor da Lei Orgânica espanhola 1/2025, a maioria dos processos civis e comerciais exige a prova de uma tentativa prévia de um método adequado de resolução de litígios (MASC) —negociação, mediação, conciliação, oferta vinculativa ou qualquer outra forma prevista na lei— antes de se poder apresentar uma ação. A lei prevê também exceções: processos de insolvência, processos cambiários, execução, providências cautelares prévias e certos processos de jurisdição voluntária. Quando o requisito se aplica, a ação não é admitida sem prova da tentativa prévia de MASC.",
+        "A IJ Creditor trata deste requisito em cada processo em que se aplique. A forma habitual é uma notificação formal ao devedor, normalmente por burofax espanhol com uma proposta de pagamento concreta. O burofax permite documentar tanto o envio como, através dos correios espanhóis, a entrega e o conteúdo integral da comunicação, provando assim a tentativa exigida pela lei. O custo é acordado com o cliente.",
+      ] },
+      { t: "subs", title: "Vias procedimentais disponíveis consoante a matéria", intro: "O procedimento concreto que a IJ Creditor iniciará em cada caso depende do objeto da ação e das condições fixadas pelo código de processo civil espanhol para cada via. Nem todas as ações admitem todos os procedimentos —por exemplo, uma ação de resolução de contrato não admite o procedimento de injunção (monitorio). A sociedade avalia, caso a caso, que procedimento é juridicamente possível e comercialmente mais adequado.", items: [
+        { h: "Procedimento de injunção (monitorio)", p: "Via padrão para créditos pecuniários líquidos, determinados, vencidos e exigíveis, sem limite máximo. Uma vez admitido, o tribunal intima o devedor a pagar no prazo de vinte dias ou a deduzir oposição. Se o devedor não responder, o credor obtém um título executivo e o caso passa diretamente à execução. Se o devedor se opuser, o procedimento transforma-se —consoante o montante— em processo verbal ou ordinário." },
+        { h: "Processo verbal (juicio verbal)", p: "Via aplicável a ações pecuniárias até 15 000 € e a outras matérias específicas listadas no código de processo civil. É mais célere do que o processo ordinário; a realização de uma audiência depende dos pedidos das partes e do que o tribunal considere adequado." },
+        { h: "Processo ordinário (procedimiento ordinario)", p: "Via aplicável a ações pecuniárias superiores a 15 000 € e a outras matérias reservadas por lei. Permite uma fase de prova mais completa e é a via habitual para casos de alguma complexidade técnica ou jurídica." },
+        { h: "Execução e penhora", p: "Uma vez obtida uma sentença transitada, uma injunção (monitorio) ou outro título executivo, a IJ Creditor prossegue a execução: apresentação do requerimento executivo, pedido ao tribunal de investigação do património do devedor e penhora de contas bancárias, salários, veículos, imóveis ou créditos sobre terceiros, até à venda em hasta pública quando necessário —até à cobrança efetiva ou a uma declaração de insolvência." },
+        { h: "Processo de insolvência (concurso de acreedores)", p: "Quando o devedor entra em processo de insolvência, a sociedade encaminha o caso pelo quadro da insolvência: reclamação do crédito ao administrador da insolvência nomeado dentro do prazo legal, qualificação do crédito, acompanhamento do acordo ou da liquidação e impugnação de atos prejudiciais à massa. Quando existam fundamentos legais, a IJ Creditor também propõe ações de extensão de responsabilidade aos administradores." },
+      ] },
+      { t: "bullets", title: "Como trabalhamos", items: [
+        "Avaliação da viabilidade judicial. Avaliam-se as perspetivas de êxito e a sociedade recomenda a via adequada ou, quando apropriado, a não apresentação da ação.",
+        "Aprovação do cliente. Quando os honorários judiciais já estão cobertos pelo contrato, basta a autorização expressa do cliente. Caso contrário, é emitido antecipadamente um orçamento fixo por escrito que requer aprovação. Nenhuma ação processual é praticada sem a aprovação do cliente.",
+        "Elaboração e apresentação da ação. Os advogados da sociedade redigem a peça processual, reúnem a prova documental e, quando adequado, propõem prova testemunhal e pericial.",
+        "Gestão processual. Representação jurídica direta ao longo de todo o processo: audiências, respostas, recursos e quaisquer incidentes.",
+        "Execução e penhora. Uma vez obtida sentença ou título executivo, inicia-se a fase de execução até à satisfação efetiva do crédito.",
+        "Informação e prestação de contas ao cliente. Ao longo do procedimento, o cliente recebe atualizações sobre o estado do processo e sobre quaisquer desenvolvimentos relevantes.",
+      ] },
+      { t: "bullets", title: "Documentação que precisamos do cliente", items: [
+        "Toda a documentação que prova o crédito: faturas, contratos, guias de entrega, comprovativos da prestação do serviço ou produto.",
+        "Comunicações anteriores com o devedor: correspondência, interpelações formais, respostas.",
+        "Dados de identificação completos do devedor: CIF/NIF espanhol ou equivalente estrangeiro, sede, forma jurídica, administradores.",
+        "Quando disponível, informação sobre a situação patrimonial do devedor ou sobre qualquer circunstância processual anterior (processos pendentes, situação de insolvência, etc.).",
+        "Procuração forense a favor do solicitador (procurador) e dos advogados designados pela sociedade ou, quando aplicável, apud acta.",
+      ] },
+      { t: "prose", title: "Prazos", paras: [
+        "Os prazos judiciais dependem do procedimento, do tribunal competente e da resposta do devedor. A título indicativo, um monitorio não contestado pode resolver-se em poucos meses. Em procedimentos contestados —processo verbal, ordinário, execução— os prazos podem alongar-se consoante as fases processuais exigidas e o volume de trabalho do tribunal.",
+        "No início do procedimento, a IJ Creditor fornece ao cliente uma estimativa razoável de prazos, baseada na experiência da sociedade com o tribunal competente e no tipo de procedimento previsto.",
+      ] },
+      { t: "prose", title: "Rede de advogados locais", paras: [
+        "Embora a representação jurídica de cada procedimento seja conduzida a partir da IJ Creditor em Madrid, a sociedade mantém uma rede consolidada de advogados locais com experiência específica nas respetivas comarcas. Quando a natureza do procedimento, a localização do devedor ou a complexidade técnica da matéria o justificam, a IJ Creditor apoia-se nestes profissionais para assegurar a melhor representação em cada caso.",
+        "A coordenação é sempre mantida a partir da sede central, de modo que o cliente conserve um único ponto de contacto para todo o processo.",
+      ] },
+    ],
+  },
+  "international-debt-collection": {
+    intro: "Para clientes estrangeiros cujos devedores se encontram em países que não a Espanha. A IJ Creditor coordena o caso a partir de Madrid e executa-o no país do devedor através de uma rede de sociedades parceiras e correspondentes.",
+    blocks: [
+      { t: "prose", paras: [
+        "Os casos em que um credor estrangeiro tem um devedor situado em Espanha não são tratados por este serviço. Esses casos são o núcleo da oferta da sociedade para credores estrangeiros e estão abrangidos pelas páginas de cobrança extrajudicial e judicial.",
+      ] },
+      { t: "prose", title: "Como funciona a rede", paras: [
+        "Cada caso é tratado no país do devedor por uma sociedade local que conhece o enquadramento jurídico, os usos comerciais e o idioma. A coordenação, as comunicações com o cliente e o acompanhamento do caso são conduzidos a partir de Madrid, em inglês, para que o cliente disponha de um único ponto de contacto em casos executados em diferentes jurisdições. Os correspondentes são selecionados pelo seu historial, pela pertença às mesmas associações setoriais e pela experiência anterior da IJ Creditor com cada sociedade.",
+      ] },
+      { t: "subs", title: "Enquadramento jurídico aplicável", items: [
+        { h: "Dentro da União Europeia", p: "O reconhecimento e a execução de sentenças espanholas noutros Estados-Membros da UE regem-se, em regra, pelo Regulamento (UE) n.º 1215/2012 (Bruxelas I bis): uma sentença espanhola é diretamente executória em qualquer outro Estado-Membro sem uma declaração de executoriedade separada. Para créditos transfronteiriços de montante moderado, estão também disponíveis o Procedimento Europeu de Injunção de Pagamento (Regulamento (CE) n.º 1896/2006) e o Processo Europeu para Ações de Pequeno Montante (Regulamento (CE) n.º 861/2007), ambos permitindo um título executivo europeu diretamente eficaz noutros Estados-Membros." },
+        { h: "Fora da União Europeia", p: "Para devedores situados em Estados terceiros, o reconhecimento e a execução de sentenças espanholas obtêm-se por exequatur, nos termos da convenção internacional aplicável quando exista (Convenção de Lugano para a Suíça, Noruega e Islândia; tratados bilaterais com vários países da América Latina; etc.) e, na sua falta, ao abrigo da Lei espanhola 29/2015 sobre cooperação jurídica internacional em matéria civil e do direito do Estado de execução. Quando as circunstâncias o aconselham, a IJ Creditor pode recomendar iniciar o procedimento diretamente na jurisdição do devedor através da sociedade correspondente local, frequentemente mais eficiente do que litigar em Espanha e depois procurar a execução no estrangeiro." },
+      ] },
+      { t: "bullets", title: "Tipos de ação abrangidos pelo serviço", items: [
+        "Cobrança extrajudicial transfronteiriça. Comunicações e negociação com o devedor através do correspondente local, no seu idioma e segundo os usos comerciais locais. A primeira via tentada e a que mais frequentemente conduz à cobrança sem ação judicial.",
+        "Processos judiciais no país do devedor. Quando a fase amigável não produz resultado, a IJ Creditor coordena com o correspondente local a apresentação e o acompanhamento do procedimento aplicável, até à sentença e execução.",
+        "Processos judiciais em Espanha com execução no estrangeiro. Quando é mais adequado litigar em Espanha (p. ex. pelos termos do contrato, uma cláusula de jurisdição ou bens do devedor em Espanha), a sociedade assume a representação jurídica em Espanha e coordena o reconhecimento e a execução no estrangeiro da decisão definitiva.",
+        "Insolvência transfronteiriça. Se o devedor estrangeiro entrar em insolvência, a IJ Creditor coordena com o correspondente local a reclamação do crédito e o acompanhamento subsequente, nos termos do Regulamento (UE) 2015/848 quando aplicável.",
+      ] },
+    ],
+  },
+  "credit-solvency-reports": {
+    intro: "Relatórios comerciais, patrimoniais e de solvência sobre empresas e particulares, espanhóis e estrangeiros, elaborados a partir de fontes verificáveis — para que quem decide disponha de informação suficiente e contrastada para decidir com critério.",
+    blocks: [
+      { t: "bullets", title: "Quatro usos típicos", items: [
+        "Análise pré-crédito. Antes de aceitar um novo cliente, abrir uma linha de pagamento diferido ou fechar uma operação de certa dimensão, um relatório traça o perfil financeiro, patrimonial e de conformidade da contraparte, permitindo fixar o limite de risco ou exigir garantias.",
+        "Monitorização ativa do risco da carteira de clientes. Para empresas com carteiras B2B amplas ou concentradas, relatórios periódicos permitem antecipar a deterioração patrimonial, a abertura de insolvências, mudanças na administração ou primeiros sinais de incumprimento.",
+        "Avaliação de viabilidade antes da cobrança. Antes de investir tempo e honorários numa ação de cobrança, um relatório traça o perfil de solvência e do património do devedor. Se for desfavorável, poupa-se ao cliente o custo de um procedimento sem retorno realista.",
+        "Apoio a processos de cobrança em curso. Quando a IJ Creditor já tem um processo aberto, um relatório específico pode sustentá-lo: verificação do estado societário, localização de empresas que mudaram de morada, identificação de bens para garantia ou execução. O pedido é feito com autorização prévia do cliente e o custo é repassado com orçamento prévio.",
+      ] },
+      { t: "subs", title: "Tipos de relatório", items: [
+        { h: "Relatório comercial básico", p: "Dados de identificação e de registo da empresa, forma jurídica, capital social, administradores atuais e historial recente, atividade e, quando disponível, as últimas contas anuais depositadas. Útil como verificação inicial da solvência formal de uma contraparte." },
+        { h: "Relatório patrimonial", p: "Identificação dos bens registados do devedor: imóveis na Conservatória do Registo Predial, veículos, embarcações, participações sociais, marcas e outros bens. Essencial para avaliar as perspetivas de execução e penhora em caso de incumprimento." },
+        { h: "Relatório alargado e verificações específicas", p: "Combina o anterior com verificações específicas solicitadas pelo cliente: presença em sistemas de informação de crédito ao abrigo do artigo 20.º da LOPDGDD, processos de insolvência anteriores, ligações a grupos societários, identificação do beneficiário efetivo quando exista interesse legítimo, exposição a sanções internacionais ou qualquer outro ponto relevante." },
+        { h: "Relatório de viabilidade da cobrança", p: "Síntese, numa ótica jurídica, do anterior, aplicada a um caso de cobrança concreto: perspetivas realistas de cobrança, vias recomendadas e, quando adequado, recomendação de não avançar. É o relatório que precede qualquer ação judicial conduzida pela sociedade." },
+      ] },
+      { t: "prose", title: "Fontes utilizadas", paras: ["Cada relatório é elaborado a partir de informação contrastada de dois tipos de fontes:"] },
+      { t: "bullets", items: [
+        "Registos públicos acessíveis nos termos da lei aplicável: Registo Comercial espanhol, Registo Predial, Registo de Bens Móveis, BORME, Diário Oficial do Estado e outros registos administrativos. Quando a consulta exige demonstrar um interesse legítimo —como no Registo Predial— a IJ Creditor solicita a informação em conformidade com a legislação correspondente.",
+        "Fornecedores especializados de informação comercial, espanhóis e internacionais, que agregam dados contrastados sobre empresas e particulares e os disponibilizam a profissionais do setor mediante contratos de serviço.",
+      ] },
+      { t: "prose", paras: [
+        "A IJ Creditor não mantém bases de dados próprias de informação comercial sobre empresas ou particulares. A informação entregue provém, em todos os casos, das fontes acima e é identificada em cada relatório.",
+        "Quando o objeto do relatório é um particular ou os dados solicitados estão sujeitos a restrições de acesso específicas —em particular as relativas à solvência patrimonial ao abrigo do artigo 20.º da Lei Orgânica 3/2018 (LOPDGDD) e da jurisprudência do Supremo Tribunal espanhol sobre ficheiros de crédito, ou a consulta do Registo Central de Beneficiários Efetivos espanhol— o serviço só é prestado quando exista uma base legal, uma finalidade legítima e um acesso autorizado pelas normas aplicáveis. Nesses casos, a sociedade verifica previamente a legitimidade da consulta e apresenta-a ao cliente antes de avançar.",
+      ] },
+    ],
+  },
+};
 const content: Partial<Record<Locale, Partial<Record<ServiceSlug, ServicePage>>>> = {
   en,
+  pt,
   de,
   fr,
   it,
