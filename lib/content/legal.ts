@@ -107,7 +107,110 @@ const cookiesEn: LegalPage = {
 type Set = { legalNotice: LegalPage; privacy: LegalPage; cookies: LegalPage };
 const en: Set = { legalNotice: legalNoticeEn, privacy: privacyEn, cookies: cookiesEn };
 
-const content: Partial<Record<Locale, Set>> = { en };
+const legalNoticeDe: LegalPage = {
+  title: "Impressum",
+  blocks: [
+    { t: "prose", title: "1. Inhaber der Website", paras: [
+      "Diese Website, https://ijcreditor.com (die „Website“), wird betrieben von Iuris Justitia Creditor, S.L., mit spanischer Steuernummer (CIF) B80508716 und Sitz am Paseo de la Castellana 120, 6. Stock links, 28046 Madrid, eingetragen im Handelsregister von Madrid, Band 5778, Blatt 35, Abschnitt 8, Seite M-94521, Eintrag 1.",
+      "Sie können uns per E-Mail an ijcreditor@ijcreditor.es oder telefonisch unter +34 915 77 47 30 erreichen.",
+    ] },
+    { t: "prose", title: "2. Nutzungsbedingungen", paras: [
+      "Der Zugang zur und die Nutzung der Website unterliegen diesem Impressum. Das Surfen oder Nutzen der Website bedeutet die vollständige Annahme dieser Bedingungen; sind Sie nicht einverstanden, sollten Sie die Website nicht nutzen. Zweck der Website ist es, über die Geschäftstätigkeit der Kanzlei und die angebotenen Leistungen zu informieren.",
+      "Iuris Justitia Creditor kann die Website und diese Bedingungen jederzeit ohne Vorankündigung ändern und aktualisiert sie regelmäßig. Der Zugang ist kostenlos und erfordert, abgesehen von geschützten Bereichen, keine vorherige Registrierung. Der Nutzer verpflichtet sich, die Website sorgfältig und rechtmäßig zu nutzen und sie nicht für rechtswidrige Zwecke oder in einer Weise zu verwenden, die Rechte oder Interessen Dritter verletzt.",
+      "Iuris Justitia Creditor behält sich vor, Struktur und Inhalt der Website jederzeit zu ändern und den Zugang gegebenenfalls einzuschränken oder zu verweigern. Die Kanzlei bemüht sich nach Kräften, die Informationen aktuell und korrekt zu halten, garantiert jedoch nicht, dass der Zugang ununterbrochen oder fehlerfrei ist.",
+    ] },
+    { t: "prose", title: "3. Links", paras: [
+      "Die Website kann Links zu Websites Dritter enthalten, die nicht von Iuris Justitia Creditor verwaltet werden. Die Kanzlei hat keine Kontrolle über solche Websites und ist für deren Inhalt nicht verantwortlich. Links werden nur als Referenz bereitgestellt; ihre Aufnahme bedeutet keine Billigung.",
+    ] },
+    { t: "prose", title: "4. Geistiges und gewerbliches Eigentum", paras: [
+      "Alle Rechte des geistigen und gewerblichen Eigentums an der Website —visuelles Erscheinungsbild, grafische Gestaltung, Navigationsarchitektur, Quellcode, Fotografien, Software, Datenbanken, Marken, Kennzeichen und Logos— stehen Iuris Justitia Creditor oder Dritten zu, die ihre Nutzung gestattet haben.",
+      "Gestattet ist nur die persönliche, nicht kommerzielle Nutzung der eigenen Inhalte der Kanzlei zu Informationszwecken. Die Vervielfältigung, Verbreitung, öffentliche Wiedergabe, Umgestaltung oder jede kommerzielle Nutzung des gesamten Inhalts oder von Teilen davon ist ohne vorherige ausdrückliche Genehmigung der Kanzlei untersagt. Eine unbefugte Nutzung oder Verletzung dieser Rechte führt zu den gesetzlich vorgesehenen Haftungsfolgen.",
+    ] },
+    { t: "prose", title: "5. Haftungsbeschränkung", paras: [
+      "Der Zugang zur und die Nutzung der Website erfolgen in alleiniger Verantwortung des Nutzers. Iuris Justitia Creditor haftet nicht für Schäden aus: der fehlenden Verfügbarkeit oder Funktionsfähigkeit der Website oder ihrer Inhalte; der fehlenden Nützlichkeit, Richtigkeit oder Gültigkeit der Inhalte für die Bedürfnisse des Nutzers; dem Vorhandensein von Viren oder anderen schädlichen Komponenten oder durch Dritte verursachten Sicherheitsverletzungen; oder allgemein jeder gegen diese Bedingungen verstoßenden Nutzung der Website.",
+    ] },
+    { t: "prose", title: "6. Cookies", paras: [
+      "Diese Website verwendet eigene und Cookies Dritter. Einzelheiten zu den verwendeten Cookies, ihrem Zweck und zur Verwaltung oder Deaktivierung finden Sie in der Cookie-Richtlinie unter https://ijcreditor.com/cookies.",
+    ] },
+    { t: "prose", title: "7. Schutz personenbezogener Daten", paras: [
+      "Verantwortlicher für die über die Website erhobenen personenbezogenen Daten ist Iuris Justitia Creditor, S.L. Die Verarbeitung erfolgt gemäß der Verordnung (EU) 2016/679 (DSGVO), dem Organgesetz 3/2018 (LOPDGDD) und dem anwendbaren Datenschutzrecht. Datenschutzanliegen können an protecciondedatos@noxdata.es gerichtet werden.",
+      "Die Angabe von Daten über die Formulare ist freiwillig und stützt sich auf die Einwilligung des Nutzers. Die Daten werden nur für den Zweck verwendet, für den sie erhoben wurden, und die Nutzer können ihre Rechte auf Auskunft, Berichtigung, Löschung, Übertragbarkeit, Widerspruch und Einschränkung ausüben. Die Kanzlei verarbeitet zudem die IP-Adresse der Nutzer zur Analyse des Netzverkehrs und zur Erstellung von Nutzungsstatistiken nach Art. 6 Abs. 1 lit. f DSGVO; diese Information ist für die Kanzlei anonym. Einzelheiten finden Sie in der Datenschutzerklärung.",
+    ] },
+    { t: "prose", title: "8. Anwendbares Recht und Gerichtsstand", paras: [
+      "Diese Bedingungen unterliegen spanischem Recht. Für die Beilegung etwaiger Streitigkeiten im Zusammenhang mit der Website unterwerfen sich Iuris Justitia Creditor und der Nutzer unter ausdrücklichem Verzicht auf jeden anderen Gerichtsstand den Gerichten der Stadt Madrid (Spanien).",
+      "Dies ist eine englische bzw. deutsche Übersetzung des spanischsprachigen Impressums; bei Abweichungen ist die spanische Fassung maßgeblich.",
+    ] },
+  ],
+};
+
+const privacyDe: LegalPage = {
+  title: "Datenschutzerklärung",
+  blocks: [
+    { t: "prose", title: "Verantwortlicher", paras: [
+      "Verantwortlicher für Ihre personenbezogenen Daten ist Iuris Justitia Creditor, S.L. (IJ Creditor), mit spanischer Steuernummer (CIF) B80508716 und Sitz am Paseo de la Castellana 120, 6. Stock links, 28046 Madrid. Kontakt-E-Mail: ijcreditor@ijcreditor.es. In Datenschutzangelegenheiten können Sie auch an protecciondedatos@noxdata.es schreiben.",
+    ] },
+    { t: "prose", title: "Welche Daten wir verarbeiten", paras: [
+      "Über die Formulare dieser Website verarbeiten wir die von Ihnen angegebenen Daten: Identifikations- und Kontaktdaten (wie Name, Unternehmen, E-Mail, Telefon und Land) und, im Falle einer Angebotsanfrage, Daten zum Fall sowie etwaige von Ihnen hochgeladene Dokumente. Wir verarbeiten zudem technische Daten wie Ihre IP-Adresse.",
+    ] },
+    { t: "bullets", title: "Zwecke", items: [
+      "Bearbeitung Ihrer Anfrage und Erstellung einer ersten Falleinschätzung.",
+      "Verwaltung und gegebenenfalls Begründung des Mandats der Kanzlei.",
+      "Versand kommerzieller Mitteilungen, nur wenn Sie ausdrücklich zugestimmt haben.",
+      "Analyse von Verkehr und Nutzung zur Pflege und Verbesserung der Website.",
+    ] },
+    { t: "bullets", title: "Rechtsgrundlage", items: [
+      "Die Durchführung vorvertraglicher Maßnahmen auf Ihre Anfrage und gegebenenfalls die Erfüllung des Mandats (Art. 6 Abs. 1 lit. b DSGVO).",
+      "Ihre Einwilligung für optionale kommerzielle Mitteilungen (Art. 6 Abs. 1 lit. a DSGVO), die Sie jederzeit widerrufen können.",
+      "Das berechtigte Interesse der Kanzlei an der Sicherheit der Website und an der Verkehrsanalyse (Art. 6 Abs. 1 lit. f DSGVO).",
+    ] },
+    { t: "prose", title: "Empfänger und Auftragsverarbeiter", paras: [
+      "Ihre Daten werden nicht verkauft oder zu eigenen Zwecken an Dritte weitergegeben. Sie können im Auftrag der Kanzlei von Dienstleistern als Auftragsverarbeiter verarbeitet werden —insbesondere Website-Hosting, E-Mail-Versand für die Kontaktformulare und Web-Analyse-Anbieter—, stets auf Grundlage eines Auftragsverarbeitungsvertrags. Innerhalb der Kanzlei ist der Zugang auf diejenigen beschränkt, die ihn zur Bearbeitung Ihrer Anfrage benötigen. Wo der Fall ein grenzüberschreitendes Vorgehen erfordert, können Daten ausschließlich zum Zweck der Fallbearbeitung an die Korrespondenten der Kanzlei weitergegeben werden.",
+    ] },
+    { t: "prose", title: "Internationale Übermittlungen", paras: [
+      "Einige Dienstleister der Kanzlei können Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten. In diesem Fall erfolgt die Übermittlung mit den nach dem Datenschutzrecht erforderlichen geeigneten Garantien, etwa den Standardvertragsklauseln der Europäischen Kommission.",
+    ] },
+    { t: "prose", title: "Aufbewahrung", paras: [
+      "Personenbezogene Daten werden so lange aufbewahrt, wie es zur Erfüllung des Zwecks, für den sie erhoben wurden, und zur Einhaltung gesetzlicher Pflichten erforderlich ist. Danach werden sie für die gesetzlich vorgesehenen Fristen gesperrt, bevor sie gelöscht werden.",
+    ] },
+    { t: "bullets", title: "Ihre Rechte", items: [
+      "Auskunft über Ihre personenbezogenen Daten; Berichtigung unrichtiger Daten; Löschung.",
+      "Einschränkung der Verarbeitung; Widerspruch gegen die Verarbeitung; Übertragbarkeit Ihrer Daten.",
+      "Jederzeitiger Widerruf einer erteilten Einwilligung, ohne die Rechtmäßigkeit der vorherigen Verarbeitung zu berühren.",
+    ] },
+    { t: "prose", paras: [
+      "Sie können diese Rechte ausüben, indem Sie an protecciondedatos@noxdata.es schreiben und das auszuübende Recht angeben. Sie haben zudem das Recht, eine Beschwerde bei der spanischen Datenschutzbehörde (Agencia Española de Protección de Datos, www.aepd.es) einzureichen, wenn Sie der Ansicht sind, dass Ihre Rechte nicht ordnungsgemäß gewahrt wurden.",
+    ] },
+    { t: "prose", title: "Cookies", paras: [
+      "Diese Website verwendet Cookies wie in der Cookie-Richtlinie unter https://ijcreditor.com/cookies beschrieben. Analyse-Cookies werden nur gesetzt, wenn Sie sie über das Cookie-Banner annehmen.",
+      "Dies ist eine Übersetzung der spanischsprachigen Datenschutzerklärung; bei Abweichungen ist die spanische Fassung maßgeblich.",
+    ] },
+  ],
+};
+
+const cookiesDe: LegalPage = {
+  title: "Cookie-Richtlinie",
+  blocks: [
+    { t: "prose", title: "Was sind Cookies?", paras: [
+      "Cookies sind kleine Dateien, die beim Besuch bestimmter Websites auf Ihr Gerät heruntergeladen werden. Sie ermöglichen es der Website, Informationen über Ihr Surfverhalten zu speichern und so die Interaktion zwischen Ihnen und der Website schneller und nützlicher zu machen.",
+    ] },
+    { t: "prose", title: "Auf dieser Website verwendete Cookies", paras: [
+      "Diese Website verwendet keine Cookies für Werbung oder Profilbildung. Über die technisch notwendigen Cookies hinaus verwendet sie Analyse-Cookies Dritter, die nur gesetzt werden, wenn Sie sie über das beim ersten Besuch angezeigte Cookie-Banner annehmen:",
+    ] },
+    { t: "bullets", items: [
+      "Google Analytics (Anbieter: Google) — misst, wie Besucher die Website nutzen (aufgerufene Seiten, ungefähre Standortangabe, Gerät), um sie zu verbessern. IP-Adressen werden anonymisiert.",
+      "Microsoft Clarity (Anbieter: Microsoft) — erfasst anonymisierte Nutzungsdaten wie Seiteninteraktionen und aggregierte Heatmaps zur Verbesserung der Website.",
+    ] },
+    { t: "prose", title: "Einwilligung und Deaktivierung von Cookies", paras: [
+      "Technisch notwendige Cookies bedürfen keiner Einwilligung. Analyse-Cookies werden nur gesetzt, wenn Sie sie annehmen; lehnen Sie ab, werden keine Analyse-Cookies gesetzt und es werden keine Nutzungsdaten an diese Anbieter gesendet. Sie können Ihre Wahl jederzeit ändern oder widerrufen, indem Sie die Daten dieser Website in Ihrem Browser löschen, woraufhin das Cookie-Banner erneut angezeigt wird.",
+      "Darüber hinaus erlauben alle modernen Browser, Cookies über ihre Einstellungen zu verwalten oder zu blockieren (in der Regel unter „Optionen“, „Einstellungen“ oder „Datenschutz“).",
+      "Dies ist eine Übersetzung der spanischsprachigen Cookie-Richtlinie; bei Abweichungen ist die spanische Fassung maßgeblich.",
+    ] },
+  ],
+};
+
+const de: Set = { legalNotice: legalNoticeDe, privacy: privacyDe, cookies: cookiesDe };
+
+const content: Partial<Record<Locale, Set>> = { en, de };
 
 export function getLegal(locale: Locale): Set {
   return content[locale] ?? en;
