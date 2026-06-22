@@ -25,6 +25,7 @@ export const it: Dictionary = {
     contact: "Contatti",
     legalNotice: "Note legali",
     privacy: "Informativa sulla privacy",
+    cookies: "Informativa sui cookie",
     rights: "Tutti i diritti riservati.",
   },
   cookie: {

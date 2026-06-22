@@ -23,6 +23,7 @@ export const en = {
     contact: "Contact",
     legalNotice: "Legal notice",
     privacy: "Privacy policy",
+    cookies: "Cookies policy",
     rights: "All rights reserved.",
   },
   cookie: {

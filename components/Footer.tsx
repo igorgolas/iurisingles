@@ -13,6 +13,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
     { label: dict.footer.contact, href: withLocale(locale, "/contact") },
     { label: dict.footer.legalNotice, href: withLocale(locale, "/legal-notice") },
     { label: dict.footer.privacy, href: withLocale(locale, "/privacy") },
+    { label: dict.footer.cookies, href: withLocale(locale, "/cookies") },
   ];
   return (
     <footer className="mt-24 border-t border-slate/10 bg-ink text-white/80">
