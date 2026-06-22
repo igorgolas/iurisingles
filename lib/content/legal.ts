@@ -416,7 +416,110 @@ const cookiesIt: LegalPage = {
 
 const it: Set = { legalNotice: legalNoticeIt, privacy: privacyIt, cookies: cookiesIt };
 
-const content: Partial<Record<Locale, Set>> = { en, de, fr, it };
+const legalNoticePt: LegalPage = {
+  title: "Aviso legal",
+  blocks: [
+    { t: "prose", title: "1. Titularidade do site", paras: [
+      "Este site, https://ijcreditor.com (o « Site »), é propriedade da Iuris Justitia Creditor, S.L., com número fiscal espanhol (CIF) B80508716 e sede no Paseo de la Castellana 120, 6.º esquerdo, 28046 Madrid, inscrita no Registo Comercial de Madrid, tomo 5778, fólio 35, secção 8, folha M-94521, inscrição 1.",
+      "Pode contactar-nos por e-mail para ijcreditor@ijcreditor.es ou por telefone para +34 915 77 47 30.",
+    ] },
+    { t: "prose", title: "2. Condições de utilização", paras: [
+      "O acesso ao Site e a sua utilização estão sujeitos a este Aviso Legal. A navegação ou utilização do Site implica a plena aceitação destas condições; se não concordar, não deve utilizar o Site. O Site destina-se a prestar informação sobre as atividades da sociedade e os serviços que oferece.",
+      "A Iuris Justitia Creditor pode alterar o Site e estas condições a qualquer momento, sem aviso prévio, e atualiza-as regularmente. O acesso é gratuito e, salvo as áreas restritas, não exige registo prévio. O utilizador compromete-se a utilizar o Site de forma diligente e lícita e a não o empregar para fins ilícitos nem de modo lesivo dos direitos ou interesses de terceiros.",
+      "A Iuris Justitia Creditor reserva-se o direito de alterar a estrutura e o conteúdo do Site a qualquer momento e de limitar ou recusar o acesso quando adequado. A sociedade faz o seu melhor para manter a informação exata e atualizada, mas não garante que o acesso seja ininterrupto ou isento de erros.",
+    ] },
+    { t: "prose", title: "3. Ligações", paras: [
+      "O Site pode conter ligações para sites de terceiros não geridos pela Iuris Justitia Creditor. A sociedade não exerce qualquer controlo sobre esses sites e não é responsável pelo seu conteúdo. As ligações são fornecidas apenas a título de referência e a sua inclusão não implica qualquer aprovação.",
+    ] },
+    { t: "prose", title: "4. Propriedade intelectual e industrial", paras: [
+      "Todos os direitos de propriedade intelectual e industrial sobre o Site —aspeto visual, conceção gráfica, arquitetura de navegação, código-fonte, fotografias, software, bases de dados, marcas, sinais distintivos e logótipos— pertencem à Iuris Justitia Creditor ou a terceiros que autorizaram a sua utilização.",
+      "Só é autorizada a utilização pessoal e não comercial dos conteúdos próprios da sociedade para fins informativos. É proibida a reprodução, distribuição, comunicação ao público, transformação ou qualquer utilização comercial da totalidade ou de parte do conteúdo sem autorização prévia e expressa da sociedade. A utilização não autorizada ou a violação destes direitos dará origem às responsabilidades estabelecidas por lei.",
+    ] },
+    { t: "prose", title: "5. Limitação de responsabilidade", paras: [
+      "O acesso ao Site e a sua utilização são da exclusiva responsabilidade do utilizador. A Iuris Justitia Creditor não é responsável por danos decorrentes de: indisponibilidade ou mau funcionamento do Site ou do seu conteúdo; falta de utilidade, exatidão ou validade do conteúdo face às necessidades do utilizador; presença de vírus ou outros componentes nocivos, ou violações de segurança causadas por terceiros; ou, em geral, qualquer utilização do Site contrária a estas condições.",
+    ] },
+    { t: "prose", title: "6. Cookies", paras: [
+      "Este Site utiliza cookies próprios e de terceiros. Os detalhes sobre os cookies utilizados, a sua finalidade e a forma de os gerir ou desativar constam da Política de Cookies, disponível em https://ijcreditor.com/cookies.",
+    ] },
+    { t: "prose", title: "7. Proteção de dados pessoais", paras: [
+      "O responsável pelo tratamento dos dados pessoais recolhidos através do Site é a Iuris Justitia Creditor, S.L. Os dados são tratados em conformidade com o Regulamento (UE) 2016/679 (RGPD), a Lei Orgânica 3/2018 (LOPDGDD) e a lei aplicável em matéria de proteção de dados. As questões de proteção de dados podem ser dirigidas a protecciondedatos@noxdata.es.",
+      "O fornecimento de dados através dos formulários é voluntário e baseia-se no consentimento do utilizador. Os dados são usados apenas para a finalidade para que foram recolhidos, e os utilizadores podem exercer os seus direitos de acesso, retificação, apagamento, portabilidade, oposição e limitação. A sociedade trata ainda o endereço IP dos utilizadores para analisar o tráfego de rede e produzir estatísticas de utilização, ao abrigo do artigo 6.º, n.º 1, alínea f), do RGPD; esta informação é anónima para a sociedade. Os detalhes constam da Política de Privacidade.",
+    ] },
+    { t: "prose", title: "8. Lei aplicável e foro", paras: [
+      "Estas condições regem-se pela lei espanhola. Para a resolução de qualquer litígio relativo ao Site, a Iuris Justitia Creditor e o utilizador, renunciando expressamente a qualquer outro foro, submetem-se aos tribunais da cidade de Madrid (Espanha).",
+      "Esta é uma tradução do aviso legal redigido em espanhol; em caso de divergência, prevalece a versão espanhola.",
+    ] },
+  ],
+};
+
+const privacyPt: LegalPage = {
+  title: "Política de privacidade",
+  blocks: [
+    { t: "prose", title: "Responsável pelo tratamento", paras: [
+      "O responsável pelo tratamento dos seus dados pessoais é a Iuris Justitia Creditor, S.L. (IJ Creditor), com número fiscal espanhol (CIF) B80508716 e sede no Paseo de la Castellana 120, 6.º esquerdo, 28046 Madrid. E-mail de contacto: ijcreditor@ijcreditor.es. Para questões de proteção de dados pode também escrever para protecciondedatos@noxdata.es.",
+    ] },
+    { t: "prose", title: "Que dados tratamos", paras: [
+      "Através dos formulários deste Site tratamos os dados que fornece: dados de identificação e de contacto (como nome, empresa, e-mail, telefone e país) e, no caso de um pedido de proposta, dados sobre o caso e quaisquer documentos que opte por carregar. Tratamos ainda dados técnicos como o seu endereço IP.",
+    ] },
+    { t: "bullets", title: "Finalidades", items: [
+      "Tratar o seu pedido e preparar uma primeira avaliação do caso.",
+      "Gerir e, quando aplicável, formalizar o mandato dos serviços da sociedade.",
+      "Enviar-lhe comunicações comerciais, apenas se tiver consentido especificamente.",
+      "Analisar o tráfego e a utilização para manter e melhorar o Site.",
+    ] },
+    { t: "bullets", title: "Base legal", items: [
+      "A adoção de medidas pré-contratuais tomadas a seu pedido e, quando aplicável, a execução do mandato (artigo 6.º, n.º 1, alínea b), do RGPD).",
+      "O seu consentimento, para comunicações comerciais facultativas (artigo 6.º, n.º 1, alínea a), do RGPD), que pode retirar a qualquer momento.",
+      "O interesse legítimo da sociedade na segurança do Site e na análise do tráfego (artigo 6.º, n.º 1, alínea f), do RGPD).",
+    ] },
+    { t: "prose", title: "Destinatários e subcontratantes", paras: [
+      "Os seus dados não são vendidos nem transferidos para terceiros para finalidades próprias destes. Podem ser tratados por conta da sociedade por prestadores que atuam como subcontratantes —em particular o alojamento do site, o envio de e-mails para os formulários de contacto e os fornecedores de análise web—, sempre ao abrigo de um contrato de subcontratação. Dentro da sociedade, o acesso está limitado a quem dele necessita para tratar o seu pedido. Quando o caso exija uma ação transfronteiriça, os dados podem ser partilhados com os correspondentes da sociedade com o único objetivo de tratar o caso.",
+    ] },
+    { t: "prose", title: "Transferências internacionais", paras: [
+      "Alguns prestadores da sociedade podem tratar dados fora do Espaço Económico Europeu. Nesse caso, a transferência é realizada com as garantias adequadas exigidas pela lei de proteção de dados, como as cláusulas contratuais-tipo da Comissão Europeia.",
+    ] },
+    { t: "prose", title: "Conservação", paras: [
+      "Os dados pessoais são conservados pelo tempo necessário ao cumprimento da finalidade para que foram recolhidos e ao cumprimento das obrigações legais aplicáveis. Posteriormente, são bloqueados pelos prazos legalmente estabelecidos antes do apagamento.",
+    ] },
+    { t: "bullets", title: "Os seus direitos", items: [
+      "Aceder aos seus dados pessoais; solicitar a retificação de dados inexatos; solicitar o seu apagamento.",
+      "Solicitar a limitação do tratamento; opor-se ao tratamento; solicitar a portabilidade dos seus dados.",
+      "Retirar, a qualquer momento, qualquer consentimento dado, sem afetar a licitude do tratamento anterior.",
+    ] },
+    { t: "prose", paras: [
+      "Pode exercer estes direitos escrevendo para protecciondedatos@noxdata.es, indicando o direito que pretende exercer. Tem também o direito de apresentar reclamação à Agência Espanhola de Proteção de Dados (Agencia Española de Protección de Datos, www.aepd.es) se considerar que os seus direitos não foram devidamente salvaguardados.",
+    ] },
+    { t: "prose", title: "Cookies", paras: [
+      "Este Site utiliza cookies conforme descrito na Política de Cookies, disponível em https://ijcreditor.com/cookies. Os cookies de análise só são instalados se os aceitar através do banner de cookies.",
+      "Esta é uma tradução da política de privacidade redigida em espanhol; em caso de divergência, prevalece a versão espanhola.",
+    ] },
+  ],
+};
+
+const cookiesPt: LegalPage = {
+  title: "Política de cookies",
+  blocks: [
+    { t: "prose", title: "O que são cookies?", paras: [
+      "Os cookies são pequenos ficheiros descarregados para o seu dispositivo quando visita determinados sites. Permitem ao site armazenar informação sobre a sua navegação, tornando a interação entre si e o Site mais rápida e útil.",
+    ] },
+    { t: "prose", title: "Cookies utilizados neste site", paras: [
+      "Este Site não utiliza cookies de publicidade ou de definição de perfis. Para além dos cookies técnicos estritamente necessários ao funcionamento do site, utiliza cookies de análise de terceiros, que só são instalados se os aceitar através do banner de cookies mostrado na primeira visita:",
+    ] },
+    { t: "bullets", items: [
+      "Google Analytics (fornecedor: Google) — mede como os visitantes usam o site (páginas vistas, localização aproximada, dispositivo) para o melhorar. Os endereços IP são anonimizados.",
+      "Microsoft Clarity (fornecedor: Microsoft) — capta dados de utilização anonimizados, como interações com as páginas e mapas de calor agregados, para melhorar o site.",
+    ] },
+    { t: "prose", title: "Consentimento e desativação de cookies", paras: [
+      "Os cookies estritamente necessários não exigem consentimento. Os cookies de análise só são instalados se os aceitar; se os recusar, não é instalado qualquer cookie de análise e nenhum dado de utilização é enviado a estes fornecedores. Pode alterar ou retirar a sua escolha a qualquer momento apagando os dados deste site no seu navegador, o que fará reaparecer o banner de cookies.",
+      "Além disso, todos os navegadores modernos permitem gerir ou bloquear cookies através das suas definições (normalmente em « Opções », « Preferências » ou « Privacidade »).",
+      "Esta é uma tradução da política de cookies redigida em espanhol; em caso de divergência, prevalece a versão espanhola.",
+    ] },
+  ],
+};
+
+const pt: Set = { legalNotice: legalNoticePt, privacy: privacyPt, cookies: cookiesPt };
+
+const content: Partial<Record<Locale, Set>> = { en, pt, de, fr, it };
 
 export function getLegal(locale: Locale): Set {
   return content[locale] ?? en;
