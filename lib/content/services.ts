@@ -301,10 +301,155 @@ const de: Record<ServiceSlug, ServicePage> = {
   },
 };
 
+const fr: Record<ServiceSlug, ServicePage> = {
+  "out-of-court-debt-collection": {
+    intro: "La première voie que IJ Creditor tente dans chaque dossier : obtenir le paiement avant toute action judiciaire et, dans la mesure du possible, préserver la relation commerciale. Plus de 80 % des dossiers confiés au cabinet se résolvent à ce stade, sans dépôt de plainte.",
+    blocks: [
+      { t: "prose", title: "Honoraires", paras: [
+        "Le service est rendu aux honoraires de résultat. Le cabinet perçoit une commission sur le montant effectivement recouvré, calculée selon les conditions convenues avec le client dans le contrat de mandat et en fonction du montant, de l'ancienneté de la créance, de la complexité du dossier et des informations disponibles sur le débiteur. Si rien n'est recouvré, aucun honoraire variable n'est facturé.",
+        "Certaines actions ou coûts de tiers —comme les rapports d'information commerciale, les burofax espagnols certifiés, les certifications de registre ou d'autres services externes nécessaires à la gestion— peuvent entraîner un coût supplémentaire, dans tous les cas avec information préalable du client et approbation expresse.",
+      ] },
+      { t: "prose", title: "Supervision juridique du processus", paras: [
+        "Le travail amiable est réalisé par une équipe composée majoritairement d'avocats et, dans chaque dossier, supervisé pièce par pièce par un avocat du cabinet. C'est ce qui évite les erreurs typiques du recouvrement géré sans formation juridique : communications contraires au RGPD, mises en demeure mal rédigées qui n'interrompent pas la prescription, décisions qui ferment la porte à une action judiciaire ultérieure, ou non-respect des délais et formalités prévus par le droit espagnol et européen.",
+      ] },
+      { t: "prose", title: "Deux fonctions intégrées", paras: [
+        "IJ Creditor combine au sein du département amiable deux fonctions spécialisées, appliquées conjointement et successivement à chaque dossier selon ses besoins : le rapprochement des soldes et le recouvrement amiable. En pratique, ce ne sont pas des silos séparés : de nombreux dossiers arrivés comme simple facture impayée révèlent, dès l'ouverture du dialogue avec le débiteur, une situation comptable qui exige un rapprochement ; et beaucoup qui commencent comme des rapprochements se terminent par le recouvrement amiable des montants confirmés comme exigibles.",
+      ] },
+      { t: "prose", title: "Rapprochement des soldes", paras: [
+        "Lorsqu'il faut clarifier avec le débiteur la composition réelle de la créance avant de réclamer le paiement —en raison de doutes sur des paiements déjà crédités, d'avoirs en attente, de remises commerciales non encore appliquées, d'erreurs d'imputation, d'une TVA comptée deux fois ou de divergences de facturation— IJ Creditor agit, au nom du créancier, comme interlocuteur entre les parties en mode clarification. Les communications avec le débiteur identifient toujours le créancier pour le compte duquel le cabinet agit et placent le processus en mode de clarification comptable, non de pression.",
+        "Les registres du client sont recoupés avec les pièces justificatives fournies par le débiteur —reçus de paiement, avoirs, preuves bancaires— et seul le solde confirmé comme exigible après le rapprochement est réclamé. La fonction s'applique tant aux débiteurs professionnels (B2B) qu'aux particuliers (B2C) et est particulièrement utile lorsque le client souhaite recouvrer la créance tout en préservant la relation commerciale : le rapprochement réduit le conflit et ouvre la voie à des solutions rapides et raisonnables pour les deux parties.",
+      ] },
+      { t: "prose", title: "Recouvrement amiable", paras: [
+        "Lorsque la composition de la créance est claire et qu'une gestion amiable est demandée, le cabinet assure le recouvrement direct : communications avec le débiteur, mises en demeure le cas échéant, négociation de plans de paiement ou d'échelonnements, et clôture du dossier avec la satisfaction de la créance.",
+        "Le montant réclamé est celui que le client communique ; le cabinet ne le conteste pas de sa propre initiative. Si, durant la gestion, le débiteur soulève de lui-même des contestations ou divergences, IJ Creditor les consigne, les transmet au client avec l'avis professionnel du cabinet sur leur cohérence, et la décision sur la suite reste au client. Toute proposition de règlement —plan de paiement, échelonnement ou remise raisonnable— est portée au créancier avec toutes les informations nécessaires pour décider ; l'approbation finale appartient toujours au créancier.",
+      ] },
+      { t: "bullets", title: "Notre méthode", items: [
+        "Réception. Le client envoie les dossiers dans le format le plus pratique —généralement des fichiers numériques : tableurs, exports d'ERP ou tout autre support adapté. Le cabinet demande au fil de l'eau les données ou documents complémentaires nécessaires.",
+        "Examen interne et ouverture du dossier. L'équipe évalue chaque dossier, identifie les risques juridiques et ouvre le dossier sous la supervision juridique correspondante.",
+        "Communications avec le débiteur. Lettres de mise en demeure, burofax espagnols certifiés, contact électronique ou téléphonique, selon le cas. Chaque communication est examinée par un avocat pour assurer la valeur probante, la conformité au RGPD et, le cas échéant, l'effet juridique d'interruption de la prescription.",
+        "Rapprochement, négociation ou règlement. Lorsque le dossier exige de clarifier la composition de la créance, le rapprochement des soldes est engagé avant toute réclamation. Une fois confirmé, le cabinet travaille avec le débiteur vers une clôture : paiement intégral, plan de paiement, échelonnement ou remise raisonnable. Les propositions requérant l'accord du client sont soumises de façon motivée.",
+        "Encaissement et reddition de comptes. Les sommes recouvrées sont conservées sur un compte bancaire distinct et reversées au créancier au rythme et dans le format convenus. Par défaut, la reddition de comptes est mensuelle.",
+        "Clôture ou escalade. Si la voie amiable aboutit, le dossier est clôturé. Sinon, IJ Creditor établit un rapport de faisabilité judiciaire et, selon son résultat, conseille le client sur les étapes suivantes.",
+      ] },
+      { t: "prose", title: "Informations qui nous sont utiles", paras: [
+        "Le cabinet travaille avec ce que le client peut fournir, en demandant toute donnée complémentaire en cours de route. Il n'est pas nécessaire de tout fournir d'emblée. Si le client peut fournir dès le départ, sans effort administratif notable, l'information complète de chaque créance, le dossier s'ouvre plus vite.",
+      ] },
+      { t: "bullets", items: [
+        "Factures impayées avec leurs échéances et leur objet.",
+        "Contrat avec le débiteur, le cas échéant.",
+        "Bons de livraison ou preuves de la prestation du service ou du produit.",
+        "Communications antérieures avec le débiteur.",
+        "Identification complète du débiteur (CIF/NIF espagnol ou équivalent étranger, siège, personne ou service de contact, téléphone et e-mail).",
+        "Toute autre circonstance pertinente, comme des paiements partiels reçus ou des avoirs en attente.",
+      ] },
+      { t: "prose", title: "Délais", paras: [
+        "Après réception du dossier accompagné des pièces, l'ouverture et le premier contact avec le débiteur ont lieu dans un délai court. La durée totale de la phase amiable dépend de la complexité du dossier, de la solvabilité et de la disposition du débiteur et de la fonction activée : les dossiers les plus simples se clôturent en quelques semaines, tandis que ceux exigeant un rapprochement comptable ou la négociation d'un plan de paiement peuvent prendre quelques mois.",
+        "Si, après un délai raisonnable, la voie amiable ne permet pas de satisfaire la créance, l'opportunité de passer en justice est évaluée avec le client, toujours précédée d'un rapport de faisabilité judiciaire.",
+      ] },
+    ],
+  },
+  "judicial-debt-collection": {
+    intro: "La voie activée lorsque la phase amiable est épuisée, ou lorsqu'elle n'est pas envisageable d'emblée. IJ Creditor assure la représentation juridique directe dans la procédure la mieux adaptée à chaque situation, jusqu'au jugement, à l'exécution et au recouvrement effectif.",
+    blocks: [
+      { t: "prose", title: "Rapport de faisabilité judiciaire", paras: [
+        "Avant de recommander une action en justice, IJ Creditor établit —dans la mesure du possible— un rapport de faisabilité judiciaire. Le rapport évalue la solidité et la validité de la documentation, la solvabilité et la localisation du débiteur, les délais de prescription applicables et les perspectives réalistes de succès en justice. Son but est d'éviter d'imposer au client le coût et l'effort d'une procédure qui, au vu des circonstances, ne devrait pas être engagée.",
+        "Si le rapport déconseille le dépôt, cela est communiqué au client de façon motivée. Le travail intellectuel de l'avocat sur le rapport n'est jamais facturé. Lorsque des informations externes payantes sont requises —rapports de patrimoine du débiteur, certifications de registre, recherches spécifiques dans des bases publiques ou privées— ce coût est répercuté au client, avec approbation expresse préalable.",
+      ] },
+      { t: "prose", title: "Honoraires", paras: [
+        "Dans la plupart des cas, les honoraires judiciaires sont déjà couverts par les tarifs convenus avec le client dans le contrat de mandat signé au début de la relation. Dans ce cas, avant d'engager la procédure, seule l'autorisation expresse du client de procéder est requise ; les honoraires applicables sont les tarifs déjà convenus et aucun nouveau devis n'est nécessaire.",
+        "Lorsque les honoraires judiciaires ne sont pas couverts par le contrat, IJ Creditor remet au client un devis forfaitaire par écrit avant toute action, calculé selon la procédure concernée, le montant réclamé et la complexité prévue, et demande l'approbation expresse pour continuer.",
+        "Dans les deux cas, les éléments accessoires liés à la procédure sont identifiés en amont, y compris les frais de justice applicables et les débours prévisibles.",
+      ] },
+      { t: "prose", title: "Résolution alternative des litiges (MASC)", paras: [
+        "Depuis l'entrée en vigueur de la loi organique espagnole 1/2025, la plupart des procédures civiles et commerciales exigent la preuve d'une tentative préalable d'une méthode alternative de résolution des litiges (MASC) —négociation, médiation, conciliation, offre contraignante ou toute autre forme prévue par la loi— avant qu'une demande puisse être déposée. La loi prévoit aussi des exceptions : procédures d'insolvabilité, procédures de change, exécution, mesures conservatoires préalables et certaines procédures gracieuses. Lorsque l'exigence s'applique, la demande n'est pas admise sans preuve de la tentative MASC préalable.",
+        "IJ Creditor gère cette exigence dans chaque dossier où elle s'applique. La forme habituelle est une notification formelle au débiteur, généralement par burofax espagnol avec une proposition de paiement précise. Le burofax permet de documenter à la fois l'envoi et, via la poste espagnole, la remise et le contenu intégral de la communication, prouvant ainsi la tentative requise par la loi. Le coût est convenu avec le client.",
+      ] },
+      { t: "subs", title: "Voies procédurales disponibles selon la matière", intro: "La procédure précise que IJ Creditor engagera dans chaque cas dépend de l'objet de la demande et des conditions fixées par le code de procédure civile espagnol pour chaque voie. Toutes les demandes n'admettent pas toutes les procédures —par exemple, une action en résolution de contrat n'admet pas la procédure d'injonction de payer (monitorio). Le cabinet évalue, au cas par cas, quelle procédure est juridiquement possible et commercialement la plus appropriée.", items: [
+        { h: "Procédure d'injonction de payer (monitorio)", p: "Voie standard pour les créances pécuniaires liquides, déterminées, échues et exigibles, sans plafond. Une fois admise, le tribunal enjoint au débiteur de payer dans les vingt jours ou de s'opposer. Si le débiteur ne répond pas, le créancier obtient un titre exécutoire et le dossier passe directement à l'exécution. En cas d'opposition, la procédure se transforme —selon le montant— en procédure verbale ou ordinaire." },
+        { h: "Procédure verbale (juicio verbal)", p: "Voie applicable aux demandes pécuniaires jusqu'à 15 000 € et à d'autres matières spécifiques listées par le code de procédure civile. Elle est plus agile que la procédure ordinaire ; la tenue d'une audience dépend des demandes des parties et de l'appréciation du tribunal." },
+        { h: "Procédure ordinaire (procedimiento ordinario)", p: "Voie applicable aux demandes pécuniaires supérieures à 15 000 € et à d'autres matières réservées par la loi. Elle permet une phase probatoire plus complète et constitue la voie habituelle pour les dossiers présentant une certaine complexité technique ou juridique." },
+        { h: "Exécution et saisie", p: "Une fois obtenu un jugement définitif, une ordonnance de monitorio ou tout autre titre exécutoire, IJ Creditor poursuit l'exécution : dépôt de la demande d'exécution, demande au tribunal d'enquêter sur le patrimoine du débiteur, et saisie de comptes bancaires, salaires, véhicules, biens immobiliers ou créances envers des tiers, jusqu'à la vente aux enchères publiques si nécessaire —jusqu'au recouvrement effectif ou à une déclaration d'insolvabilité." },
+        { h: "Procédure d'insolvabilité (concurso de acreedores)", p: "Lorsque le débiteur entre en procédure d'insolvabilité, le cabinet canalise le dossier via le cadre de l'insolvabilité : déclaration de la créance auprès de l'administrateur judiciaire désigné dans le délai légal, qualification de la créance, suivi du concordat ou de la liquidation, et contestation des actes préjudiciables à la masse. Lorsque des motifs légaux existent, IJ Creditor exerce aussi des actions en extension de responsabilité aux dirigeants." },
+      ] },
+      { t: "bullets", title: "Notre méthode", items: [
+        "Évaluation de la faisabilité judiciaire. Les perspectives de succès sont évaluées et le cabinet recommande la voie appropriée ou, le cas échéant, le non-dépôt de la demande.",
+        "Accord du client. Lorsque les honoraires judiciaires sont déjà couverts par le contrat, l'autorisation expresse du client suffit. Sinon, un devis forfaitaire écrit est émis au préalable et requiert l'approbation. Aucune action procédurale n'est engagée sans l'accord du client.",
+        "Rédaction et dépôt de la demande. Les avocats du cabinet rédigent l'acte de procédure, réunissent les preuves documentaires et, le cas échéant, proposent des preuves testimoniales et d'expertise.",
+        "Gestion procédurale. Représentation juridique directe tout au long : audiences, réponses, recours et tout incident éventuel.",
+        "Exécution et saisie. Une fois obtenu un jugement ou une ordonnance exécutoire, la phase d'exécution est engagée jusqu'à la satisfaction effective de la créance.",
+        "Information et reddition de comptes au client. Tout au long de la procédure, le client reçoit des mises à jour sur l'état du dossier et sur tout développement pertinent.",
+      ] },
+      { t: "bullets", title: "Documents dont nous avons besoin du client", items: [
+        "Toute la documentation prouvant la créance : factures, contrats, bons de livraison, preuves de prestation du service ou du produit.",
+        "Communications antérieures avec le débiteur : correspondance, mises en demeure, réponses.",
+        "Données d'identification complètes du débiteur : CIF/NIF espagnol ou équivalent étranger, siège, forme juridique, dirigeants.",
+        "Le cas échéant, informations sur la situation patrimoniale du débiteur ou sur toute circonstance procédurale antérieure (procédures en cours, situation d'insolvabilité, etc.).",
+        "Pouvoir général ad litem en faveur de l'avoué (procurador) et des avocats désignés par le cabinet, ou, le cas échéant, apud acta.",
+      ] },
+      { t: "prose", title: "Délais", paras: [
+        "Les délais judiciaires dépendent de la procédure, du tribunal compétent et de la réponse du débiteur. À titre indicatif, un monitorio non contesté peut se résoudre en quelques mois. Dans les procédures contestées —procédure verbale, ordinaire, exécution— les délais peuvent s'allonger selon les étapes procédurales requises et la charge de travail du tribunal.",
+        "Au début de la procédure, IJ Creditor fournit au client une estimation raisonnable des délais, fondée sur l'expérience du cabinet avec le tribunal concerné et sur le type de procédure envisagé.",
+      ] },
+      { t: "prose", title: "Réseau d'avocats locaux", paras: [
+        "Bien que la représentation juridique de chaque procédure soit pilotée depuis IJ Creditor à Madrid, le cabinet entretient un réseau consolidé d'avocats locaux disposant d'une expérience spécifique dans leurs ressorts respectifs. Lorsque la nature de la procédure, la localisation du débiteur ou la complexité technique du dossier le justifient, IJ Creditor s'appuie sur ces professionnels pour assurer la meilleure représentation dans chaque cas.",
+        "La coordination est toujours maintenue depuis le siège central, de sorte que le client conserve un interlocuteur unique pour l'ensemble du dossier.",
+      ] },
+    ],
+  },
+  "international-debt-collection": {
+    intro: "Pour les clients étrangers dont les débiteurs sont situés dans des pays autres que l'Espagne. IJ Creditor coordonne le dossier depuis Madrid et l'exécute dans le pays du débiteur via un réseau de cabinets partenaires et de correspondants.",
+    blocks: [
+      { t: "prose", paras: [
+        "Les cas où un créancier étranger a un débiteur situé en Espagne ne sont pas traités par ce service. Ces cas constituent le cœur de l'offre du cabinet pour les créanciers étrangers et sont couverts par les pages de recouvrement amiable et judiciaire.",
+      ] },
+      { t: "prose", title: "Comment fonctionne le réseau", paras: [
+        "Chaque dossier est traité dans le pays du débiteur par un cabinet local qui connaît l'environnement juridique, les usages commerciaux et la langue. La coordination, les communications avec le client et le suivi du dossier sont menés depuis Madrid, en anglais, de sorte que le client bénéficie d'un interlocuteur unique pour des dossiers exécutés à travers différentes juridictions. Les correspondants sont sélectionnés selon leur historique, leur appartenance aux mêmes associations sectorielles et l'expérience antérieure d'IJ Creditor avec chaque cabinet.",
+      ] },
+      { t: "subs", title: "Cadre juridique applicable", items: [
+        { h: "Au sein de l'Union européenne", p: "La reconnaissance et l'exécution des jugements espagnols dans d'autres États membres de l'UE sont régies, en règle générale, par le règlement (UE) n° 1215/2012 (Bruxelles I bis) : un jugement espagnol est directement exécutoire dans tout autre État membre sans déclaration d'exequatur distincte. Pour les créances transfrontalières de montant modéré, la procédure européenne d'injonction de payer (règlement (CE) n° 1896/2006) et la procédure européenne de règlement des petits litiges (règlement (CE) n° 861/2007) sont également disponibles, toutes deux permettant un titre exécutoire européen directement effectif dans les autres États membres." },
+        { h: "En dehors de l'Union européenne", p: "Pour les débiteurs situés dans des États non membres de l'UE, la reconnaissance et l'exécution des jugements espagnols sont recherchées par exequatur, conformément à la convention internationale applicable lorsqu'elle existe (Convention de Lugano pour la Suisse, la Norvège et l'Islande ; traités bilatéraux avec plusieurs pays d'Amérique latine ; etc.) et, à défaut, en vertu de la loi espagnole 29/2015 sur la coopération juridique internationale en matière civile et du droit de l'État d'exécution. Lorsque les circonstances le conseillent, IJ Creditor peut recommander d'engager la procédure directement dans la juridiction du débiteur via le cabinet correspondant local, ce qui est souvent plus efficace que de saisir la justice en Espagne puis de demander l'exécution à l'étranger." },
+      ] },
+      { t: "bullets", title: "Types d'actions couverts par le service", items: [
+        "Recouvrement amiable transfrontalier. Communications et négociation avec le débiteur via le correspondant local, dans sa langue et selon les usages commerciaux locaux. La première voie tentée et celle qui mène le plus souvent au recouvrement sans action en justice.",
+        "Procédures judiciaires dans le pays du débiteur. Lorsque la phase amiable n'aboutit pas, IJ Creditor coordonne avec le correspondant local le dépôt et le suivi de la procédure applicable, jusqu'au jugement et à l'exécution.",
+        "Procédures judiciaires en Espagne avec exécution à l'étranger. Lorsqu'il est plus approprié de saisir la justice en Espagne (par ex. en raison des termes du contrat, d'une clause attributive de juridiction ou de biens du débiteur en Espagne), le cabinet assure la représentation juridique en Espagne et coordonne la reconnaissance et l'exécution à l'étranger de la décision définitive.",
+        "Insolvabilité transfrontalière. Si le débiteur étranger devient insolvable, IJ Creditor coordonne avec le correspondant local la déclaration de la créance et le suivi ultérieur, conformément au règlement (UE) 2015/848 le cas échéant.",
+      ] },
+    ],
+  },
+  "credit-solvency-reports": {
+    intro: "Rapports commerciaux, patrimoniaux et de solvabilité sur des entreprises et des particuliers, espagnols et étrangers, établis à partir de sources vérifiables — afin que le décideur dispose d'informations suffisantes et recoupées pour décider avec discernement.",
+    blocks: [
+      { t: "bullets", title: "Quatre usages typiques", items: [
+        "Analyse avant octroi de crédit. Avant d'accepter un nouveau client, d'ouvrir une ligne de paiement différé ou de conclure une opération d'une certaine taille, un rapport dresse le profil financier, patrimonial et de conformité de la contrepartie, permettant de fixer la limite de risque ou de demander des garanties.",
+        "Suivi actif du risque du portefeuille clients. Pour les entreprises aux portefeuilles B2B larges ou concentrés, des rapports périodiques permettent d'anticiper la dégradation patrimoniale, les ouvertures d'insolvabilité, les changements de direction ou les premiers signes de défaut.",
+        "Évaluation de faisabilité avant recouvrement. Avant d'investir temps et honoraires dans une action de recouvrement, un rapport dresse le profil de solvabilité et de patrimoine du débiteur. S'il est défavorable, le client s'épargne le coût d'une procédure sans rendement réaliste.",
+        "Appui aux dossiers de recouvrement en cours. Lorsque IJ Creditor a déjà un dossier ouvert, un rapport spécifique peut l'étayer : vérification du statut social, localisation d'entreprises ayant changé d'adresse, identification de biens pour garantie ou exécution. La demande est faite avec l'autorisation préalable du client et le coût est répercuté avec un devis préalable.",
+      ] },
+      { t: "subs", title: "Types de rapport", items: [
+        { h: "Rapport commercial de base", p: "Données d'identification et de registre de l'entreprise, forme juridique, capital social, dirigeants actuels et historique récent, activité et, le cas échéant, derniers comptes annuels déposés. Utile comme vérification initiale de la solvabilité formelle d'une contrepartie." },
+        { h: "Rapport patrimonial", p: "Identification des biens enregistrés du débiteur : immeubles au registre foncier, véhicules, navires, participations, marques et autres actifs. Essentiel pour évaluer les perspectives d'exécution et de saisie en cas de défaut." },
+        { h: "Rapport étendu et vérifications spécifiques", p: "Combine ce qui précède avec des vérifications spécifiques demandées par le client : présence dans des systèmes d'information sur le crédit au titre de l'article 20 LOPDGDD, procédures d'insolvabilité antérieures, liens avec des groupes de sociétés, identification du bénéficiaire effectif lorsqu'un intérêt légitime est établi, exposition aux sanctions internationales ou tout autre point pertinent." },
+        { h: "Rapport de faisabilité du recouvrement", p: "Synthèse, sous l'angle juridique, de ce qui précède, appliquée à un dossier de recouvrement précis : perspectives réalistes de recouvrement, voies recommandées et, le cas échéant, recommandation de ne pas agir en justice. C'est le rapport qui précède toute action judiciaire gérée par le cabinet." },
+      ] },
+      { t: "prose", title: "Sources utilisées", paras: ["Chaque rapport est établi à partir d'informations recoupées issues de deux types de sources :"] },
+      { t: "bullets", items: [
+        "Registres publics accessibles selon la loi applicable : registre du commerce espagnol, registre foncier, registre des biens meubles, BORME, Journal officiel de l'État et autres registres administratifs. Lorsque la consultation exige de démontrer un intérêt légitime —comme pour le registre foncier— IJ Creditor demande l'information dans le respect de la législation correspondante.",
+        "Fournisseurs spécialisés d'information commerciale, espagnols et internationaux, qui agrègent des données recoupées sur des entreprises et des particuliers et les mettent à disposition des professionnels du secteur via des contrats de service.",
+      ] },
+      { t: "prose", paras: [
+        "IJ Creditor ne tient pas ses propres bases de données d'information commerciale sur les entreprises ou les particuliers. Les informations fournies proviennent dans tous les cas des sources ci-dessus et sont identifiées dans chaque rapport.",
+        "Lorsque le sujet du rapport est un particulier ou que les données demandées sont soumises à des restrictions d'accès particulières —notamment celles relatives à la solvabilité patrimoniale au titre de l'article 20 de la loi organique 3/2018 (LOPDGDD) et de la jurisprudence du Tribunal suprême espagnol sur les fichiers de crédit, ou la consultation du Registre central espagnol des bénéficiaires effectifs— le service n'est fourni que lorsqu'il existe une base légale, une finalité légitime et un accès autorisé par les règles applicables. Dans ces cas, le cabinet vérifie au préalable la légitimité de la consultation et la porte au client avant de procéder.",
+      ] },
+    ],
+  },
+};
+
 const content: Partial<Record<Locale, Partial<Record<ServiceSlug, ServicePage>>>> = {
   en,
   de,
-  // fr/it added incrementally; fall back to English until translated.
+  fr,
+  // it added incrementally; falls back to English until translated.
 };
 
 export function getServicePage(locale: Locale, slug: ServiceSlug): ServicePage {
