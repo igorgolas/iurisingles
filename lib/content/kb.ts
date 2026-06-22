@@ -461,7 +461,160 @@ const it: Record<string, Tr> = {
   },
 };
 
-const byLocale: Partial<Record<Locale, Record<string, Tr>>> = { de, fr, it };
+const pt: Record<string, Tr> = {
+  "spanish-payment-order-monitorio": {
+    title: "O procedimento de injunção espanhol (Proceso Monitorio)",
+    nav: "O procedimento de injunção espanhol (monitorio)",
+    summary: "Base legal no código de processo civil; quem pode apresentar; documentos exigidos; o prazo de vinte dias; o requisito prévio de MASC; oposição; execução.",
+    body: [
+      "O procedimento de injunção espanhol, regulado nos artigos 812.º a 818.º do código de processo civil (LEC), é uma via simplificada para recuperar créditos pecuniários vencidos, exigíveis e suportados por prova documental como faturas, contratos, guias de entrega ou reconhecimentos de dívida escritos. Não há montante máximo. O requerimento é apresentado no tribunal de primeira instância competente; uma vez admitido, o devedor é intimado a pagar ou a deduzir oposição fundamentada no prazo de vinte dias úteis (días hábiles). Na ausência de oposição, o credor pode passar diretamente à execução, incluindo a penhora de contas bancárias e outros bens.",
+      "Desde 3 de abril de 2025, ao abrigo do artigo 5.º da Lei Orgânica 1/2025 e do artigo 403.2 LEC, uma tentativa prévia de método adequado de resolução de litígios (MASC) é, em regra, condição de admissibilidade da injunção nacional, embora a jurisprudência sobre o seu âmbito exato esteja ainda a consolidar-se (a injunção de pagamento europeia está excecionada). Quando o devedor cessou as comunicações e não levanta qualquer contestação genuína, o procedimento é frequentemente o modo mais direto de obter um título executivo em Espanha.",
+    ],
+    assist: "Avaliamos a base documental do crédito, tratamos o requisito prévio de MASC e apresentamos e acompanhamos a injunção no tribunal espanhol competente.",
+  },
+  "verbal-proceedings": {
+    title: "Processo verbal (Juicio Verbal)",
+    nav: "Processo verbal (juicio verbal) para créditos inferiores a 15 000 €",
+    summary: "Quando esta via se aplica em vez do monitorio; o limite de 15 000 €; a audiência; prazos; interação com o monitorio em caso de oposição.",
+    body: [
+      "O processo verbal é a via declarativa prevista para créditos cíveis de menor valor e para certas matérias designadas por lei, regulada principalmente no artigo 250.º LEC. Na sequência da reforma introduzida pelo Decreto-Lei Real 6/2023, em vigor desde 20 de março de 2024, os créditos de 15 000 € ou menos são decididos por este processo. É também a via que se segue quando um devedor deduz oposição fundamentada a uma injunção cujo montante se insere nesse limite.",
+      "O tribunal examina os argumentos e as provas das partes e, quando adequado, realiza uma audiência na qual podem ser apresentados testemunhas, peritos e documentos, antes de proferir sentença. Embora mais litigioso do que a injunção, o processo verbal continua a ser um mecanismo comparativamente eficiente para resolver litígios comerciais e recuperar montantes devidos.",
+    ],
+    assist: "Representamos credores estrangeiros ao longo do processo verbal em Espanha, desde a avaliação do valor e da via a seguir até à representação na audiência.",
+  },
+  "ordinary-proceedings": {
+    title: "Processo ordinário (Juicio Ordinario)",
+    nav: "Processo ordinário para créditos superiores a 15 000 €",
+    summary: "Quando se aplica o processo ordinário; estrutura (petição, contestação, audiência prévia, julgamento, sentença); quando esta via é adequada.",
+    body: [
+      "O processo ordinário é a via declarativa para créditos de maior valor ou mais complexos. Ao abrigo do artigo 249.º LEC, os créditos superiores a 15 000 € —juntamente com certas matérias reservadas a esta via independentemente do montante— são tratados por este processo. Segue uma estrutura mais completa: petição inicial, contestação, uma audiência prévia (audiencia previa) para fixar os pontos controvertidos e as provas, julgamento e sentença.",
+      "É a via adequada quando o litígio depende da interpretação contratual, da responsabilidade, de operações comerciais contestadas ou de questões probatórias substanciais. Embora demore em geral mais do que outros procedimentos, permite ao tribunal examinar em detalhe questões jurídicas e factuais complexas e é tipicamente a via quando o devedor levanta objeções substanciais ou o valor em causa justifica uma apreciação judicial aprofundada.",
+    ],
+    assist: "Preparamos e conduzimos o processo ordinário para credores estrangeiros, coordenando a estratégia, as provas e a representação perante os tribunais espanhóis.",
+  },
+  "burofax-formal-demand": {
+    title: "Interpelações formais e burofax",
+    nav: "O burofax espanhol",
+    summary: "O que é um burofax; o que prova (conteúdo e entrega); interrupção da prescrição; o seu papel na prova da fase prévia de MASC.",
+    body: [
+      "O burofax é um dos meios mais usados para notificar formalmente em Espanha, porque prova tanto o conteúdo da comunicação como a sua entrega, o que lhe confere claro valor probatório. Um burofax bem redigido pode servir para exigir o pagamento, constituir o devedor em mora, interromper a prescrição ao abrigo do artigo 1973.º do Código Civil e provar a tentativa do credor de resolver a questão antes do litígio.",
+      "Desde a entrada em vigor da Lei Orgânica 1/2025, uma interpelação documentada deste tipo desempenha também um papel na prova da fase prévia de resolução de litígios agora geralmente exigida antes da apresentação de certas ações. Em muitos casos, uma interpelação formal leva ao pagamento sem processo judicial; e quando o litígio se torna necessário, uma interpelação prévia reforça em geral a posição do credor.",
+    ],
+    assist: "Redigimos e enviamos interpelações por burofax ao abrigo do direito espanhol, calibradas para interromper a prescrição e para sustentar tanto a recuperação como, quando relevante, o requisito de MASC.",
+  },
+  "limitation-periods": {
+    title: "Prazos de prescrição de créditos comerciais",
+    nav: "Prazos de prescrição de créditos comerciais no direito espanhol",
+    summary: "Regra geral de cinco anos (artigo 1964.º CC); prazos setoriais mais curtos, como o transporte; como se interrompe a prescrição; porque agir cedo importa.",
+    body: [
+      "O direito espanhol fixa prazos de prescrição dentro dos quais os credores devem agir; deixar o prazo decorrer pode impedir a recuperação judicial. O prazo de prescrição geral das ações pessoais (contratuais) é de cinco anos, ao abrigo do artigo 1964.2 do Código Civil, alterado pela Lei 42/2015. Certos setores estão sujeitos a prazos mais curtos: os créditos decorrentes de um contrato de transporte de mercadorias, por exemplo, estão geralmente sujeitos a um prazo de um ano (artigo 79.º da Lei 15/2009 e a Convenção CMR no transporte internacional).",
+      "A prescrição pode ser interrompida por uma interpelação extrajudicial formal, por ação judicial ou pelo reconhecimento da dívida pelo devedor (artigo 1973.º do Código Civil), o que torna importante agir cedo. Como o prazo aplicável depende da natureza do crédito, aconselha-se os credores a verificá-lo logo que surjam dificuldades de pagamento.",
+    ],
+    assist: "Confirmamos o prazo de prescrição aplicável a cada crédito e agimos a tempo para o interromper, normalmente através de um burofax documentado, antes de se perderem os direitos de recuperação.",
+  },
+  "masc-organic-law-1-2025": {
+    title: "Métodos adequados de resolução de litígios (MASC) ao abrigo da Lei Orgânica 1/2025",
+    nav: "Resolução alternativa de litígios (MASC) ao abrigo da Lei Orgânica 1/2025",
+    summary: "O que é o MASC; quando é condição de admissibilidade processual; os mecanismos reconhecidos; as exceções legais; como a IJ Creditor prova a tentativa.",
+    body: [
+      "Desde 3 de abril de 2025, a Lei Orgânica 1/2025 tornou a tentativa prévia de um método adequado de resolução de litígios (MASC) um requisito de admissibilidade para a maioria das ações cíveis e comerciais (artigo 5.º da lei e artigo 403.2 LEC): o autor deve, em regra, poder provar uma tentativa genuína de resolver o litígio antes da apresentação. Entre os mecanismos reconhecidos contam-se a negociação direta, a mediação, a conciliação, um parecer de perito independente e uma oferta vinculativa confidencial (oferta vinculante confidencial).",
+      "O requisito estende-se ao procedimento de injunção nacional, enquanto as ações executivas e certas matérias enumeradas na lei (como os processos relativos a direitos fundamentais, capacidade ou títulos cambiários) estão excecionadas. A falta de prova da tentativa pode levar à inadmissibilidade da ação. Para os credores, estes mecanismos podem também oferecer um resultado mais rápido e económico preservando as relações comerciais. Sendo a lei recente, os critérios jurisprudenciais sobre a sua aplicação estão ainda a desenvolver-se.",
+    ],
+    assist: "Tratamos da fase MASC para credores estrangeiros —normalmente através de um burofax espanhol documentado— para que a ação subsequente cumpra o requisito de admissibilidade.",
+  },
+  "brussels-i-bis-regulation": {
+    title: "Regulamento Bruxelas I bis (Regulamento UE 1215/2012)",
+    nav: "Regulamento Bruxelas I bis (UE 1215/2012)",
+    summary: "Competência e execução transfronteiriça de sentenças na UE; abolição do exequatur entre Estados-Membros; o certificado do artigo 53.º; motivos de oposição limitados.",
+    body: [
+      "O Regulamento Bruxelas I bis rege a competência, bem como o reconhecimento e a execução de sentenças em matéria civil e comercial em toda a União Europeia. Determina quais os tribunais competentes para um litígio e abole a declaração prévia de executoriedade (exequatur) entre Estados-Membros: uma sentença proferida num Estado-Membro é, em princípio, executória noutro sem um processo de reconhecimento intermédio.",
+      "A execução exige, contudo, um certificado emitido ao abrigo do artigo 53.º do Regulamento, e o devedor pode opor-se à execução pelos motivos limitados previstos no Regulamento (por exemplo, contrariedade manifesta à ordem pública). Para os credores que operam na União Europeia, continua a ser um dos instrumentos mais importantes para a recuperação transfronteiriça.",
+    ],
+    assist: "Executamos sentenças da UE em Espanha ao abrigo de Bruxelas I bis, obtendo o certificado necessário e conduzindo a execução perante o tribunal espanhol competente.",
+  },
+  "exequatur-foreign-judgments": {
+    title: "Reconhecimento e execução de sentenças estrangeiras (Exequatur)",
+    nav: "Exequatur ao abrigo da Lei 29/2015",
+    summary: "Reconhecimento e execução de sentenças de fora da UE em Espanha; Lei 29/2015; o tribunal competente; os requisitos verificados; execução após reconhecimento.",
+    body: [
+      "Quando uma sentença provém de um país fora do quadro de Bruxelas I bis e nenhum outro instrumento internacional aplicável rege a matéria, é geralmente exigido um processo de reconhecimento (exequatur) antes de poder ser executada em Espanha. A Lei 29/2015 sobre cooperação jurídica internacional em matéria civil regula este processo, julgado pelos tribunais de primeira instância.",
+      "O tribunal espanhol verifica um conjunto de requisitos processuais e de ordem pública —entre eles o respeito pelos direitos de defesa e a não contrariedade da sentença à ordem pública espanhola— sem reapreciar o mérito. Uma vez reconhecida, a sentença estrangeira pode ser executada em Espanha essencialmente como uma nacional, permitindo aos credores ir atrás de bens situados em território espanhol.",
+    ],
+    assist: "Conduzimos processos de exequatur para sentenças de fora da UE e, uma vez concedido o reconhecimento, executamos sobre os bens do devedor em Espanha.",
+  },
+  "insolvency-concurso": {
+    title: "Processos de insolvência em Espanha (Concurso de Acreedores)",
+    nav: "Concurso de acreedores",
+    summary: "A lei consolidada da insolvência; reestruturação e liquidação; reclamação dos créditos ao administrador da insolvência; perspetivas de recuperação para credores estrangeiros.",
+    body: [
+      "Quando um devedor se torna insolvente, os credores podem ter de participar num processo formal de insolvência, regulado pela lei consolidada da insolvência (Decreto Legislativo Real 1/2020), reformada pela Lei 16/2022 que transpõe a Diretiva da UE sobre reestruturação. O quadro prevê tanto a reestruturação de empresas viáveis como a liquidação das que não podem continuar.",
+      "Os credores devem acompanhar de perto as aberturas de insolvência, pois aplicam-se prazos rigorosos para reclamar os créditos ao administrador da insolvência (administración concursal) para efeitos de classificação e inclusão. Não agir a tempo pode prejudicar as perspetivas de recuperação. Embora a insolvência reduza muitas vezes o montante finalmente recuperado, o processo continua a ser um meio importante de proteger os direitos dos credores e de assegurar uma distribuição ordenada dos bens disponíveis.",
+    ],
+    assist: "Reclamamos e defendemos os créditos dos nossos clientes nos processos de insolvência espanhóis, acompanhamos o processo e exploramos as vias disponíveis para melhorar a recuperação.",
+  },
+  "directors-liability": {
+    title: "Responsabilidade dos administradores por dívidas da sociedade",
+    nav: "Responsabilidade dos administradores por dívidas da empresa em Espanha",
+    summary: "Quando os administradores podem ser pessoalmente responsáveis; a Lei das Sociedades de Capital; a responsabilidade do artigo 367.º por falta de dissolução; a ação individual de responsabilidade; insolvência culposa.",
+    body: [
+      "Em certas circunstâncias, os administradores podem ser pessoalmente responsáveis pelas dívidas da sociedade. Ao abrigo da Lei das Sociedades de Capital (Decreto Legislativo Real 1/2010), os administradores devem agir com diligência e tomar as medidas exigidas quando a sociedade se encontra numa causa legal de dissolução; em especial, o artigo 367.º torna-os solidariamente responsáveis pelas obrigações sociais surgidas após essa causa se não convocarem a assembleia geral ou não requererem a dissolução ou a insolvência no prazo legal.",
+      "Os credores podem também propor a ação individual de responsabilidade (artigo 241.º) pelo dano causado diretamente pela conduta dos administradores, e a conduta dos administradores pode ser apreciada no processo de insolvência (insolvência culposa). Tais ações podem melhorar as perspetivas de recuperação, em particular quando a própria sociedade carece de bens suficientes, e são frequentemente ponderadas em casos de sociedades insolventes, empresas abandonadas ou sinais de má gestão.",
+    ],
+    assist: "Avaliamos e propomos ações de responsabilidade dos administradores em Espanha quando os bens da sociedade são insuficientes, incluindo no âmbito da insolvência.",
+  },
+  "asset-tracing": {
+    title: "Investigação de bens e averiguação do devedor",
+    nav: "Averiguação do devedor e investigação de bens",
+    summary: "Como funciona a investigação de bens em Espanha; registos públicos; os instrumentos judiciais disponíveis na execução (artigos 589.º e 590.º LEC); avaliação das perspetivas de recuperação.",
+    body: [
+      "Uma recuperação bem-sucedida depende muitas vezes da identificação de bens contra os quais dirigir a execução, o que faz da investigação de bens um elemento-chave de qualquer estratégia. As investigações podem recorrer a dados societários no Registo Comercial, a bens no Registo Predial, a interesses comerciais, ao historial de litígios e a outra informação publicamente disponível.",
+      "No âmbito da execução, pode obter-se informação adicional por via judicial: o devedor pode ser obrigado a divulgar o seu património (artigo 589.º LEC) e o tribunal pode ordenar uma investigação ao património do devedor, solicitando informação a organismos públicos e instituições financeiras (artigo 590.º LEC). Uma investigação aprofundada permite muitas vezes aos credores avaliar as perspetivas de recuperação antes de incorrer em custos processuais substanciais.",
+    ],
+    assist: "Realizamos investigações patrimoniais e de solvência sobre devedores espanhóis e, na execução, usamos os instrumentos judiciais disponíveis para localizar bens.",
+  },
+  "bank-account-attachment": {
+    title: "Penhora de contas bancárias",
+    nav: "Penhora de contas bancárias em Espanha",
+    summary: "Como se processa a penhora uma vez obtido um título executivo (artigo 588.º LEC); o requisito de um título executivo; interação com outros credores e montantes impenhoráveis.",
+    body: [
+      "A penhora de contas bancárias é uma das medidas executivas mais eficazes ao abrigo do direito espanhol. Uma vez obtido um título executivo, o tribunal pode ordenar às instituições financeiras que congelem e transfiram os fundos detidos pelo devedor (artigo 588.º LEC). Como os fundos líquidos são em geral mais fáceis de realizar do que outros bens, as penhoras de contas podem produzir resultados rapidamente.",
+      "A medida só está disponível, contudo, quando o credor detém um título executivo —uma sentença, uma injunção não oposta ou outro instrumento de execução reconhecido— e é realizada no âmbito da execução, sujeita aos demais credores do devedor e às regras sobre montantes impenhoráveis. A disponibilidade desta medida é uma das vantagens práticas da recuperação judicial em Espanha.",
+    ],
+    assist: "Uma vez em vigor o título executivo, requeremos e prosseguimos a penhora das contas bancárias do devedor perante o tribunal de execução espanhol.",
+  },
+  "payment-terms-late-payment": {
+    title: "Prazos de pagamento e regras de atraso de pagamento em Espanha",
+    nav: "Prazos de pagamento em Espanha (Lei 3/2004, com alterações)",
+    summary: "Prazos de pagamento legais (30/60 dias); juros de mora legais; a indemnização fixa de 40 €; Lei 3/2004 e a Diretiva da UE sobre atrasos de pagamento.",
+    body: [
+      "As transações comerciais em Espanha estão sujeitas a regras de pagamento legais destinadas a proteger as empresas contra o atraso de pagamento, decorrentes principalmente da Lei 3/2004, que transpõe a Diretiva da UE sobre atrasos de pagamento (Diretiva 2011/7/UE). Em regra, o prazo de pagamento por defeito é de 30 dias, e o prazo acordado entre empresas não pode exceder 60 dias.",
+      "Quando as faturas permanecem por pagar para além do prazo aplicável, o credor pode ter direito a juros de mora legais —a taxa de referência do Banco Central Europeu acrescida de oito pontos percentuais— e a uma quantia fixa de 40 € a título de indemnização pelos custos de recuperação, sem prejuízo de custos razoáveis adicionais (artigos 7.º e 8.º da lei). Compreender estas disposições importa não só para a recuperação mas também para a redação de contratos e a gestão do risco de crédito.",
+    ],
+    assist: "Quantificamos o capital, os juros legais e a indemnização de recuperação devidos ao abrigo da Lei 3/2004 e reclamamo-los no âmbito da recuperação.",
+  },
+  "contract-clauses": {
+    title: "Cláusulas contratuais que facilitam a recuperação",
+    nav: "Cláusulas contratuais que ajudam à recuperação",
+    summary: "Cláusulas de jurisdição e de lei aplicável; juros de mora; reserva de propriedade (reserva de dominio); reconhecimentos de dívida; garantias; cláusulas de custos de recuperação.",
+    body: [
+      "Uma recuperação eficaz começa muitas vezes muito antes de surgir um litígio, e contratos bem redigidos podem melhorar significativamente a posição de um credor em caso de dificuldades de pagamento. Entre as estipulações particularmente úteis na prática espanhola contam-se as cláusulas de jurisdição e de lei aplicável, as cláusulas de juros de mora, as cláusulas de reserva de propriedade (reserva de dominio), os reconhecimentos de dívida escritos, as cláusulas de notificação válida, as garantias pessoais e as cláusulas de imputação de custos de recuperação.",
+      "A reserva de propriedade, em particular, pode ser oponível de forma mais eficaz a terceiros quando está documentada e, quando aplicável, registada. As empresas que negoceiam em ou com Espanha fazem bem em rever periodicamente a sua documentação contratual para reforçar a sua posição jurídica e reduzir o risco de recuperação.",
+    ],
+    assist: "Revemos e redigimos condições contratuais B2B para o comércio com Espanha, concentrando-nos nas cláusulas que mais reforçam a posição de um credor em caso de crédito.",
+  },
+  "power-of-attorney": {
+    title: "Procuração forense para litigar em Espanha",
+    nav: "Procuração forense para litigar em Espanha",
+    summary: "A procuração necessária para litigar em Espanha; os papéis do advogado e do representante judicial; requisitos de notarização, apostila e tradução.",
+    body: [
+      "Os credores estrangeiros que prosseguem créditos em Espanha precisam geralmente de nomear representantes legais locais, uma vez que os processos judiciais exigem habitualmente um advogado (abogado) e um representante judicial (procurador). Isto organiza-se normalmente através de uma procuração forense (poder para pleitos) que os autoriza a atuar em nome do credor.",
+      "O documento pode ser outorgado perante um notário na jurisdição de origem do credor e, consoante o país, pode exigir a apostila de Haia ou, na sua falta, a legalização diplomática, acompanhada de uma tradução ajuramentada quando adequado. Uma procuração devidamente preparada permite iniciar o processo sem atrasos processuais evitáveis e é, por isso, um dos primeiros passos práticos de qualquer recuperação transfronteiriça.",
+    ],
+    assist: "Fornecemos o modelo de procuração exigido para o contencioso espanhol e acompanhamos o credor na notarização, apostila e tradução, para que o processo fique pronto a avançar.",
+  },
+};
+
+const byLocale: Partial<Record<Locale, Record<string, Tr>>> = { pt, de, fr, it };
 
 export function getGuides(locale: Locale): KbGuide[] {
   const tr = byLocale[locale];
