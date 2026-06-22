@@ -63,6 +63,7 @@ export const fr: Dictionary = {
       "Lorsque le dossier l'exige, nous passons à la procédure judiciaire, selon un honoraire forfaitaire convenu par écrit à l'avance.",
     ],
     industriesWeKnow: "Les secteurs que nous connaissons",
+    membersOf: "Membre de",
     closing: "Parlez-nous de votre dossier. Vous recevrez une première évaluation confidentielle.",
   },
   services: {

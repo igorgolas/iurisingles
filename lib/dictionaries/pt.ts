@@ -63,6 +63,7 @@ export const pt: Dictionary = {
       "Quando o caso o exige, avançamos para o processo judicial, com um honorário fixo acordado por escrito antecipadamente.",
     ],
     industriesWeKnow: "Setores que conhecemos",
+    membersOf: "Membro de",
     closing: "Fale-nos do seu caso. Receberá uma primeira avaliação confidencial.",
   },
   services: {

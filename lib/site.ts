@@ -86,3 +86,10 @@ export const NAV: NavItem[] = [
   { label: "Knowledge Base", href: "/knowledge-base" },
   { label: "Contact", href: "/contact" },
 ];
+
+export type Association = { name: string; href: string };
+export const ASSOCIATIONS: Association[] = [
+  { name: "European Collectors Association (ECA)", href: "https://europeancollectors.com/" },
+  { name: "League International for Creditors (LIC International)", href: "https://lic-international.com/" },
+  { name: "American Lawyers Quarterly", href: "https://www.alqlist.com/" },
+];

@@ -63,6 +63,7 @@ export const it: Dictionary = {
       "Quando il caso lo richiede, passiamo al procedimento giudiziario, con un onorario forfettario concordato per iscritto in anticipo.",
     ],
     industriesWeKnow: "I settori che conosciamo",
+    membersOf: "Membro di",
     closing: "Raccontaci il tuo caso. Riceverai una prima valutazione riservata.",
   },
   services: {

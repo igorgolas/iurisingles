@@ -63,6 +63,7 @@ export const de: Dictionary = {
       "Wenn der Fall es erfordert, gehen wir zum Gerichtsverfahren über, zu einem im Voraus schriftlich vereinbarten Pauschalhonorar.",
     ],
     industriesWeKnow: "Branchen, die wir kennen",
+    membersOf: "Mitglied von",
     closing: "Schildern Sie uns Ihren Fall. Sie erhalten eine vertrauliche Ersteinschätzung.",
   },
   services: {

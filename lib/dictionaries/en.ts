@@ -61,6 +61,7 @@ export const en = {
       "When the case requires it, we move to court proceedings under a lump-sum fee agreed in writing in advance.",
     ],
     industriesWeKnow: "Industries we know",
+    membersOf: "Member of",
     closing: "Tell us about your case. You will receive a confidential first assessment.",
   },
   services: {

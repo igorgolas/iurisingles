@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Container from "@/components/Container";
 import { isLocale, withLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
+import { ASSOCIATIONS } from "@/lib/site";
 import { navServices, navIndustries } from "@/lib/nav-model";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
@@ -113,6 +114,20 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <Link key={s.href} href={s.href} className="border border-slate/10 bg-white p-5 text-sm font-medium text-ink transition-colors hover:border-accent/40 hover:text-accent">
                 {s.label}
               </Link>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Memberships */}
+      <section className="border-t border-slate/10 py-14">
+        <Container className="text-center">
+          <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-accent">{h.membersOf}</p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+            {ASSOCIATIONS.map((a) => (
+              <a key={a.href} href={a.href} target="_blank" rel="noopener noreferrer" className="font-serif text-sm italic text-slate transition-colors hover:text-accent">
+                {a.name}
+              </a>
             ))}
           </div>
         </Container>
