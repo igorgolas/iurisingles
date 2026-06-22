@@ -87,9 +87,9 @@ export const NAV: NavItem[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-export type Association = { name: string; href: string };
+export type Association = { name: string; href: string; logo: string };
 export const ASSOCIATIONS: Association[] = [
-  { name: "European Collectors Association (ECA)", href: "https://europeancollectors.com/" },
-  { name: "League International for Creditors (LIC International)", href: "https://lic-international.com/" },
-  { name: "American Lawyers Quarterly", href: "https://www.alqlist.com/" },
+  { name: "European Collectors Association (ECA)", href: "https://europeancollectors.com/", logo: "/badges/eca.png" },
+  { name: "League International for Creditors (LIC International)", href: "https://lic-international.com/", logo: "/badges/lic.png" },
+  { name: "American Lawyers Quarterly", href: "https://www.alqlist.com/", logo: "/badges/alq.png" },
 ];

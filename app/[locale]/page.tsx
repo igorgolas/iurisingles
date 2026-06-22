@@ -123,10 +123,18 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <section className="border-t border-slate/10 py-14">
         <Container className="text-center">
           <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-accent">{h.membersOf}</p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-5">
             {ASSOCIATIONS.map((a) => (
-              <a key={a.href} href={a.href} target="_blank" rel="noopener noreferrer" className="font-serif text-sm italic text-slate transition-colors hover:text-accent">
-                {a.name}
+              <a
+                key={a.href}
+                href={a.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={a.name}
+                className="flex h-20 w-48 items-center justify-center rounded-md border border-slate/15 bg-white px-6 transition-colors hover:border-accent/40"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={a.logo} alt={a.name} className="max-h-11 w-auto object-contain" />
               </a>
             ))}
           </div>
