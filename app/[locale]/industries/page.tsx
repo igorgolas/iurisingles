@@ -9,21 +9,23 @@ import CtaBand from "@/components/CtaBand";
 import { isLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 import { navIndustries } from "@/lib/nav-model";
+import { getIndustriesIndex } from "@/lib/content/indexes";
 
-export const metadata: Metadata = { title: "Industries" };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return { title: getDictionary(locale).nav.industries };
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const dict = getDictionary(locale);
+  const ii = getIndustriesIndex(locale);
   const industries = navIndustries(locale, dict);
   return (
     <>
-      <PageHeader
-        eyebrow="Industries"
-        title="Sectors where we recover for foreign creditors with debtors in Spain"
-        intro="IJ Creditor has handled unpaid claims for foreign creditors in virtually all economic sectors with debtors in Spain. It identifies the areas with recurrent experience and specific knowledge of the commercial customs, contractual standards and legal particularities that affect debt collection in Spain."
-      />
+      <PageHeader eyebrow={dict.nav.industries} title={ii.title} intro={ii.intro} />
       <Container className="py-16">
         <div className="grid gap-6 sm:grid-cols-2">
           {industries.map((s) => (
@@ -34,12 +36,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           ))}
         </div>
       </Container>
-      <Block>
-        <Prose paragraphs={[
-          "Each sector has its own default dynamics —debtor profile, invoice nature, customary payment terms, standard contractual guarantees and most efficient claim routes. Sector specialisation allows the firm to quickly recognise the specifics of each case and tailor the collection strategy without delay.",
-          "For sectors not listed here, IJ Creditor also handles files through its general service line. Sector specialisation is a complement that adds value where it applies, not a precondition for accessing the service.",
-        ]} />
-      </Block>
+      <Block><Prose paragraphs={ii.closing} /></Block>
       <CtaBand />
     </>
   );
