@@ -445,11 +445,155 @@ const fr: Record<ServiceSlug, ServicePage> = {
   },
 };
 
+const it: Record<ServiceSlug, ServicePage> = {
+  "out-of-court-debt-collection": {
+    intro: "La prima via che IJ Creditor tenta in ogni pratica: ottenere il pagamento prima dell'azione giudiziaria e, ove possibile, preservare il rapporto commerciale. Oltre l'80% delle pratiche affidate allo studio si risolve in questa fase, senza deposito di una causa.",
+    blocks: [
+      { t: "prose", title: "Onorari", paras: [
+        "Il servizio è prestato a success fee. Lo studio applica una commissione sull'importo effettivamente recuperato, calcolata secondo le condizioni concordate con il cliente nel contratto di mandato e in funzione dell'importo, dell'anzianità del credito, della complessità della pratica e delle informazioni disponibili sul debitore. Se non si recupera nulla, non si fatturano onorari variabili.",
+        "Determinate azioni o costi di terzi —come report di informazioni commerciali, burofax spagnoli certificati, certificazioni di registro o altri servizi esterni necessari alla gestione— possono comportare un costo aggiuntivo, in ogni caso con informazione preventiva al cliente e approvazione espressa.",
+      ] },
+      { t: "prose", title: "Supervisione legale del processo", paras: [
+        "Il lavoro stragiudiziale è svolto da un team composto principalmente da avvocati e, in ogni pratica, supervisionato caso per caso da un avvocato dello studio. È ciò che evita gli errori tipici del recupero gestito senza formazione giuridica: comunicazioni contrarie al GDPR, diffide mal redatte che non interrompono la prescrizione, decisioni che precludono una successiva azione giudiziaria o l'inosservanza dei termini e delle formalità previsti dal diritto spagnolo ed europeo.",
+      ] },
+      { t: "prose", title: "Due funzioni integrate", paras: [
+        "IJ Creditor combina all'interno del dipartimento stragiudiziale due funzioni specializzate, applicate congiuntamente e in successione a ciascuna pratica secondo le sue esigenze: la riconciliazione dei saldi e il recupero amichevole. In pratica non sono compartimenti separati: molte pratiche che arrivano come semplice fattura insoluta rivelano, una volta avviato il dialogo con il debitore, una situazione contabile che richiede una riconciliazione; e molte che iniziano come riconciliazioni si concludono come recupero amichevole degli importi confermati come esigibili.",
+      ] },
+      { t: "prose", title: "Riconciliazione dei saldi", paras: [
+        "Quando è necessario chiarire con il debitore l'effettiva composizione del credito prima di richiederne il pagamento —per dubbi su pagamenti già accreditati, note di credito in sospeso, sconti commerciali non ancora applicati, errori di imputazione, IVA conteggiata due volte o discrepanze di fatturazione— IJ Creditor agisce, per conto del creditore, come interlocutore tra le parti in modalità di chiarimento. Le comunicazioni con il debitore identificano sempre il creditore per conto del quale lo studio agisce e collocano il processo in modalità di chiarimento contabile, non di pressione.",
+        "I registri del cliente vengono incrociati con la documentazione giustificativa fornita dal debitore —ricevute di pagamento, note di credito, evidenze bancarie— e si reclama solo il saldo confermato come esigibile dopo la riconciliazione. La funzione si applica sia ai debitori aziendali (B2B) sia ai privati (B2C) ed è particolarmente utile quando il cliente desidera recuperare il credito preservando il rapporto commerciale: la riconciliazione riduce il conflitto e apre la strada a soluzioni rapide e ragionevoli per entrambe le parti.",
+      ] },
+      { t: "prose", title: "Recupero amichevole", paras: [
+        "Quando la composizione del credito è chiara e si richiede una gestione amichevole, lo studio cura il recupero diretto: comunicazioni con il debitore, diffide ove opportuno, negoziazione di piani di pagamento o rateizzazioni e chiusura della pratica con la soddisfazione del credito.",
+        "L'importo richiesto è quello comunicato dal cliente; lo studio non lo contesta di propria iniziativa. Se, durante la gestione, il debitore solleva di propria iniziativa contestazioni o discrepanze, IJ Creditor le registra, le trasmette al cliente con il parere professionale dello studio sulla loro coerenza, e la decisione su come procedere resta al cliente. Ogni proposta di accordo —piano di pagamento, rateizzazione o rinuncia ragionevole— è portata al creditore con tutte le informazioni necessarie per decidere; l'approvazione finale spetta sempre al creditore.",
+      ] },
+      { t: "bullets", title: "Come lavoriamo", items: [
+        "Acquisizione. Il cliente invia le pratiche nel formato più comodo —di solito file digitali: fogli di calcolo, esportazioni da ERP o altro supporto idoneo. Lo studio richiede, lungo il percorso, eventuali dati o documenti aggiuntivi necessari.",
+        "Esame interno e apertura della pratica. Il team valuta ogni caso, individua i rischi legali e apre la pratica sotto la corrispondente supervisione legale.",
+        "Comunicazioni con il debitore. Lettere di diffida, burofax spagnoli certificati, contatto elettronico o telefonico, a seconda del caso. Ogni comunicazione è esaminata da un avvocato per garantire valore probatorio, conformità al GDPR e, ove applicabile, l'effetto giuridico di interruzione della prescrizione.",
+        "Riconciliazione, negoziazione o accordo. Quando la pratica richiede di chiarire la composizione del credito, si avvia la riconciliazione dei saldi prima di richiederne il pagamento. Una volta confermato, lo studio lavora con il debitore verso una chiusura: pagamento integrale, piano di pagamento, rate o rinuncia ragionevole. Le proposte che richiedono l'approvazione del cliente sono presentate in modo motivato.",
+        "Incasso e rendicontazione. Gli importi recuperati sono custoditi su un conto bancario separato e versati al creditore con la cadenza e nel formato concordati. Per impostazione predefinita, la rendicontazione è mensile.",
+        "Chiusura o escalation. Se la via amichevole riesce, la pratica viene chiusa. In caso contrario, IJ Creditor redige una relazione di fattibilità giudiziaria e, in base al risultato, consiglia il cliente sui passi successivi.",
+      ] },
+      { t: "prose", title: "Informazioni che ci sono utili", paras: [
+        "Lo studio lavora con ciò che il cliente può fornire, richiedendo eventuali dati aggiuntivi lungo il percorso. Non è necessario fornire tutto in anticipo. Se il cliente può fornire fin dall'inizio, senza apprezzabile sforzo amministrativo, l'informazione completa di ciascun credito, la pratica si apre più rapidamente.",
+      ] },
+      { t: "bullets", items: [
+        "Fatture insolute con le relative scadenze e causali.",
+        "Contratto con il debitore, se presente.",
+        "Bolle di consegna o prove della prestazione del servizio o del prodotto.",
+        "Comunicazioni precedenti con il debitore.",
+        "Identificazione completa del debitore (CIF/NIF spagnolo o equivalente estero, sede, persona o ufficio di contatto, telefono ed e-mail).",
+        "Qualsiasi altra circostanza rilevante, come pagamenti parziali ricevuti o note di credito in sospeso.",
+      ] },
+      { t: "prose", title: "Tempistiche", paras: [
+        "Dopo la ricezione della pratica con i documenti, l'apertura e il primo contatto con il debitore avvengono in tempi brevi. La durata complessiva della fase amichevole dipende dalla complessità della pratica, dalla solvibilità e disponibilità del debitore e dalla funzione attivata: le pratiche più semplici si chiudono in poche settimane, mentre quelle che richiedono una riconciliazione contabile o la negoziazione di un piano di pagamento possono richiedere alcuni mesi.",
+        "Se, trascorso un periodo ragionevole, la via amichevole non consente di soddisfare il credito, si valuta con il cliente l'opportunità di passare in giudizio, sempre preceduta da una relazione di fattibilità giudiziaria.",
+      ] },
+    ],
+  },
+  "judicial-debt-collection": {
+    intro: "La via attivata quando la fase amichevole è esaurita, o quando non è percorribile fin dall'inizio. IJ Creditor assume la rappresentanza legale diretta nel procedimento più adatto a ciascuna situazione, fino a sentenza, esecuzione e recupero effettivo.",
+    blocks: [
+      { t: "prose", title: "Relazione di fattibilità giudiziaria", paras: [
+        "Prima di raccomandare un'azione giudiziaria, IJ Creditor redige —ove possibile— una relazione di fattibilità giudiziaria. La relazione valuta la solidità e la validità della documentazione, la solvibilità e la reperibilità del debitore, i termini di prescrizione applicabili e le prospettive realistiche di successo in giudizio. Il suo scopo è evitare di sottoporre il cliente al costo e all'impegno di un procedimento che, viste le circostanze, non dovrebbe essere avviato.",
+        "Se la relazione sconsiglia il deposito, ciò viene comunicato al cliente in modo motivato. Il lavoro intellettuale dell'avvocato sulla relazione non viene mai fatturato. Quando sono necessarie informazioni esterne a pagamento —report patrimoniali sul debitore, certificazioni di registro, ricerche specifiche in banche dati pubbliche o private— tale costo è ribaltato sul cliente, previa approvazione espressa.",
+      ] },
+      { t: "prose", title: "Onorari", paras: [
+        "Nella maggior parte dei casi, gli onorari giudiziali sono già coperti dalle tariffe concordate con il cliente nel contratto di mandato firmato all'inizio del rapporto. In tal caso, prima di avviare il procedimento è richiesta solo l'autorizzazione espressa del cliente a procedere; si applicano le tariffe già concordate e non serve un nuovo preventivo.",
+        "Quando gli onorari giudiziali non sono coperti dal contratto, IJ Creditor invia al cliente un preventivo forfettario per iscritto prima di qualsiasi azione, calcolato in base al procedimento, all'importo richiesto e alla complessità prevista, e chiede l'approvazione espressa per continuare.",
+        "In entrambi i casi, le voci accessorie legate al procedimento sono indicate in anticipo, comprese le spese di giudizio applicabili e gli esborsi prevedibili.",
+      ] },
+      { t: "prose", title: "Risoluzione alternativa delle controversie (MASC)", paras: [
+        "Dall'entrata in vigore della legge organica spagnola 1/2025, la maggior parte dei procedimenti civili e commerciali richiede la prova di un previo tentativo di un metodo alternativo di risoluzione delle controversie (MASC) —negoziazione, mediazione, conciliazione, offerta vincolante o qualsiasi altra forma prevista dalla legge— prima che si possa depositare una domanda. La legge prevede anche eccezioni: procedure di insolvenza, procedimenti cambiari, esecuzione, misure cautelari preventive e alcuni procedimenti di volontaria giurisdizione. Dove il requisito si applica, la domanda non è ammessa senza prova del previo tentativo MASC.",
+        "IJ Creditor gestisce questo requisito in ogni pratica in cui si applica. La forma abituale è una notifica formale al debitore, tipicamente tramite burofax spagnolo con una proposta di pagamento specifica. Il burofax consente di documentare sia l'invio sia, tramite la posta spagnola, la consegna e il contenuto integrale della comunicazione, provando così il tentativo richiesto dalla legge. Il costo è concordato con il cliente.",
+      ] },
+      { t: "subs", title: "Vie procedurali disponibili a seconda della materia", intro: "Il procedimento specifico che IJ Creditor avvierà in ciascun caso dipende dall'oggetto della domanda e dalle condizioni fissate dal codice di procedura civile spagnolo per ciascuna via. Non tutte le domande ammettono ogni procedimento —ad esempio, un'azione di risoluzione del contratto non ammette il procedimento d'ingiunzione (monitorio). Lo studio valuta, caso per caso, quale procedimento sia giuridicamente possibile e commercialmente più appropriato.", items: [
+        { h: "Procedimento d'ingiunzione (monitorio)", p: "Via standard per crediti pecuniari liquidi, determinati, esigibili e azionabili, senza limite massimo. Una volta ammesso, il tribunale ingiunge al debitore di pagare entro venti giorni o di opporsi. Se il debitore non risponde, il creditore ottiene un titolo esecutivo e la pratica passa direttamente all'esecuzione. Se il debitore si oppone, il procedimento si trasforma —a seconda dell'importo— in procedimento verbale od ordinario." },
+        { h: "Procedimento verbale (juicio verbal)", p: "Via applicabile a domande pecuniarie fino a 15.000 € e ad altre materie specifiche elencate dal codice di procedura civile. È più agile del procedimento ordinario; lo svolgimento di un'udienza dipende dalle richieste delle parti e da quanto il tribunale ritenga opportuno." },
+        { h: "Procedimento ordinario (procedimiento ordinario)", p: "Via applicabile a domande pecuniarie superiori a 15.000 € e ad altre materie riservate dalla legge. Consente una fase istruttoria più completa ed è la via abituale per pratiche di una certa complessità tecnica o giuridica." },
+        { h: "Esecuzione e pignoramento", p: "Una volta ottenuta una sentenza definitiva, un'ingiunzione monitoria o qualsiasi altro titolo esecutivo, IJ Creditor procede all'esecuzione: deposito dell'istanza esecutiva, richiesta al tribunale di indagare sul patrimonio del debitore e pignoramento di conti correnti, stipendi, veicoli, immobili o crediti verso terzi, fino all'asta pubblica se necessario —fino al recupero effettivo o a una dichiarazione di insolvenza." },
+        { h: "Procedura di insolvenza (concurso de acreedores)", p: "Quando il debitore entra in procedura di insolvenza, lo studio incanala la pratica nel quadro concorsuale: insinuazione del credito presso il curatore nominato entro il termine di legge, qualificazione del credito, monitoraggio del concordato o della liquidazione e impugnazione degli atti pregiudizievoli alla massa. Ove sussistano i presupposti di legge, IJ Creditor promuove anche azioni di estensione di responsabilità agli amministratori." },
+      ] },
+      { t: "bullets", title: "Come lavoriamo", items: [
+        "Valutazione della fattibilità giudiziaria. Si valutano le prospettive di successo e lo studio raccomanda la via appropriata o, se del caso, il non deposito della domanda.",
+        "Approvazione del cliente. Quando gli onorari giudiziali sono già coperti dal contratto, è sufficiente l'autorizzazione espressa del cliente. In caso contrario, si emette in anticipo un preventivo forfettario scritto che richiede approvazione. Nessuna azione procedurale è intrapresa senza l'approvazione del cliente.",
+        "Redazione e deposito della domanda. Gli avvocati dello studio redigono l'atto, raccolgono le prove documentali e, se opportuno, propongono prove testimoniali e peritali.",
+        "Gestione procedurale. Rappresentanza legale diretta per tutta la durata: udienze, repliche, impugnazioni ed eventuali incidenti.",
+        "Esecuzione e pignoramento. Ottenuta una sentenza o un provvedimento esecutivo, si avvia la fase esecutiva fino all'effettiva soddisfazione del credito.",
+        "Informazione e rendicontazione al cliente. Durante tutto il procedimento il cliente riceve aggiornamenti sullo stato della pratica e su qualsiasi sviluppo rilevante.",
+      ] },
+      { t: "bullets", title: "Documentazione che ci serve dal cliente", items: [
+        "Tutta la documentazione che prova il credito: fatture, contratti, bolle di consegna, prove della prestazione del servizio o del prodotto.",
+        "Comunicazioni precedenti con il debitore: corrispondenza, diffide, risposte.",
+        "Dati identificativi completi del debitore: CIF/NIF spagnolo o equivalente estero, sede, forma giuridica, amministratori.",
+        "Ove disponibili, informazioni sulla situazione patrimoniale del debitore o su eventuali circostanze procedurali precedenti (procedimenti pendenti, situazione di insolvenza, ecc.).",
+        "Procura generale alle liti a favore del procuratore (procurador) e degli avvocati designati dallo studio, o, se del caso, apud acta.",
+      ] },
+      { t: "prose", title: "Tempistiche", paras: [
+        "Le tempistiche giudiziarie dipendono dal procedimento, dal tribunale competente e dalla risposta del debitore. A titolo orientativo, un monitorio non opposto può risolversi in pochi mesi. Nei procedimenti contenziosi —verbale, ordinario, esecuzione— i tempi possono allungarsi a seconda delle fasi procedurali richieste e del carico di lavoro del tribunale.",
+        "All'avvio del procedimento, IJ Creditor fornisce al cliente una stima ragionevole dei tempi, basata sull'esperienza dello studio con il tribunale competente e sul tipo di procedimento previsto.",
+      ] },
+      { t: "prose", title: "Rete di avvocati locali", paras: [
+        "Sebbene la rappresentanza legale di ogni procedimento sia guidata da IJ Creditor a Madrid, lo studio mantiene una rete consolidata di avvocati locali con esperienza specifica nei rispettivi circondari giudiziari. Quando la natura del procedimento, l'ubicazione del debitore o la complessità tecnica della materia lo rendono opportuno, IJ Creditor si avvale di questi professionisti per assicurare la migliore rappresentanza in ciascun caso.",
+        "Il coordinamento è sempre mantenuto dalla sede centrale, così che il cliente conservi un unico punto di contatto per l'intera pratica.",
+      ] },
+    ],
+  },
+  "international-debt-collection": {
+    intro: "Per clienti esteri i cui debitori si trovano in Paesi diversi dalla Spagna. IJ Creditor coordina la pratica da Madrid e la esegue nel Paese del debitore tramite una rete di studi partner e corrispondenti.",
+    blocks: [
+      { t: "prose", paras: [
+        "I casi in cui un creditore estero ha un debitore situato in Spagna non sono gestiti tramite questo servizio. Quei casi sono il cuore dell'offerta dello studio per i creditori esteri e sono trattati nelle pagine di recupero stragiudiziale e giudiziale.",
+      ] },
+      { t: "prose", title: "Come opera la rete", paras: [
+        "Ogni pratica è gestita nel Paese del debitore da uno studio locale che conosce il contesto giuridico, gli usi commerciali e la lingua. Coordinamento, comunicazioni con il cliente e monitoraggio della pratica sono condotti da Madrid, in inglese, così che il cliente disponga di un unico punto di contatto per pratiche eseguite in diverse giurisdizioni. I corrispondenti sono selezionati per track record, per l'appartenenza alle stesse associazioni di settore e per la precedente esperienza di IJ Creditor con ciascuno studio.",
+      ] },
+      { t: "subs", title: "Quadro giuridico applicabile", items: [
+        { h: "All'interno dell'Unione europea", p: "Il riconoscimento e l'esecuzione delle sentenze spagnole in altri Stati membri dell'UE sono disciplinati, di regola, dal regolamento (UE) n. 1215/2012 (Bruxelles I bis): una sentenza spagnola è direttamente esecutiva in qualsiasi altro Stato membro senza una separata dichiarazione di esecutività. Per crediti transfrontalieri di importo modesto sono inoltre disponibili il procedimento europeo d'ingiunzione di pagamento (regolamento (CE) n. 1896/2006) e il procedimento europeo per le controversie di modesta entità (regolamento (CE) n. 861/2007), entrambi idonei a produrre un titolo esecutivo europeo direttamente efficace negli altri Stati membri." },
+        { h: "Al di fuori dell'Unione europea", p: "Per debitori situati in Stati non UE, il riconoscimento e l'esecuzione delle sentenze spagnole si ottengono tramite exequatur, secondo la convenzione internazionale applicabile ove esistente (Convenzione di Lugano per Svizzera, Norvegia e Islanda; trattati bilaterali con vari Paesi dell'America Latina; ecc.) e, in loro mancanza, ai sensi della legge spagnola 29/2015 sulla cooperazione giuridica internazionale in materia civile e del diritto dello Stato di esecuzione. Quando le circostanze lo consigliano, IJ Creditor può raccomandare di avviare il procedimento direttamente nella giurisdizione del debitore tramite lo studio corrispondente locale, spesso più efficiente rispetto ad agire in Spagna e poi chiedere l'esecuzione all'estero." },
+      ] },
+      { t: "bullets", title: "Tipi di azione coperti dal servizio", items: [
+        "Recupero stragiudiziale transfrontaliero. Comunicazioni e negoziazione con il debitore tramite il corrispondente locale, nella sua lingua e secondo gli usi commerciali locali. La prima via tentata e quella che più spesso porta al recupero senza azione giudiziaria.",
+        "Procedimenti giudiziari nel Paese del debitore. Quando la fase amichevole non produce risultato, IJ Creditor coordina con il corrispondente locale il deposito e il monitoraggio del procedimento applicabile, fino a sentenza ed esecuzione.",
+        "Procedimenti giudiziari in Spagna con esecuzione all'estero. Quando è più appropriato agire in Spagna (ad es. per i termini del contratto, una clausola di giurisdizione o beni del debitore in Spagna), lo studio assume la rappresentanza legale in Spagna e coordina il riconoscimento e l'esecuzione all'estero della decisione definitiva.",
+        "Insolvenza transfrontaliera. Se il debitore estero entra in insolvenza, IJ Creditor coordina con il corrispondente locale l'insinuazione del credito e il successivo monitoraggio, conformemente al regolamento (UE) 2015/848 ove applicabile.",
+      ] },
+    ],
+  },
+  "credit-solvency-reports": {
+    intro: "Report commerciali, patrimoniali e di solvibilità su imprese e privati, spagnoli ed esteri, redatti da fonti verificabili — perché chi decide disponga di informazioni sufficienti e riscontrate per decidere con criterio.",
+    blocks: [
+      { t: "bullets", title: "Quattro usi tipici", items: [
+        "Analisi pre-credito. Prima di accettare un nuovo cliente, aprire una linea a pagamento differito o concludere un'operazione di una certa dimensione, un report profila la situazione finanziaria, patrimoniale e di compliance della controparte, consentendo di fissare il limite di rischio o di richiedere garanzie.",
+        "Monitoraggio attivo del rischio del portafoglio clienti. Per imprese con portafogli B2B ampi o concentrati, report periodici consentono di anticipare il deterioramento patrimoniale, le aperture di insolvenza, i cambi di amministrazione o i primi segnali di insolvenza.",
+        "Valutazione di fattibilità prima del recupero. Prima di investire tempo e onorari in un'azione di recupero, un report profila la solvibilità e il patrimonio del debitore. Se sfavorevole, si risparmia al cliente il costo di un procedimento senza ritorno realistico.",
+        "Supporto a pratiche di recupero in corso. Quando IJ Creditor ha già una pratica aperta, un report specifico può sostenerla: verifica dello stato societario, localizzazione di imprese che hanno cambiato sede, identificazione di beni per garanzia o esecuzione. La richiesta è effettuata con previa autorizzazione del cliente e il costo è ribaltato con preventivo preventivo.",
+      ] },
+      { t: "subs", title: "Tipi di report", items: [
+        { h: "Report commerciale di base", p: "Dati identificativi e di registro dell'impresa, forma giuridica, capitale sociale, amministratori attuali e storia recente, attività e, ove disponibile, l'ultimo bilancio depositato. Utile come verifica iniziale della solvibilità formale di una controparte." },
+        { h: "Report patrimoniale", p: "Identificazione dei beni registrati del debitore: immobili al registro immobiliare, veicoli, imbarcazioni, partecipazioni, marchi e altri beni. Essenziale per valutare le prospettive di esecuzione e pignoramento in caso di insolvenza." },
+        { h: "Report esteso e verifiche specifiche", p: "Combina quanto sopra con verifiche specifiche richieste dal cliente: presenza in sistemi di informazione creditizia ai sensi dell'articolo 20 LOPDGDD, precedenti procedure di insolvenza, collegamenti a gruppi societari, identificazione del titolare effettivo ove sussista un interesse legittimo, esposizione a sanzioni internazionali o qualsiasi altro punto rilevante." },
+        { h: "Report di fattibilità del recupero", p: "Sintesi, in chiave giuridica, di quanto sopra, applicata a una pratica di recupero specifica: prospettive realistiche di incasso, vie consigliate e, se del caso, raccomandazione di non agire. È il report che precede ogni azione giudiziaria gestita dallo studio." },
+      ] },
+      { t: "prose", title: "Fonti utilizzate", paras: ["Ogni report è redatto da informazioni riscontrate provenienti da due tipi di fonti:"] },
+      { t: "bullets", items: [
+        "Registri pubblici accessibili ai sensi della legge applicabile: Registro delle imprese spagnolo, Registro immobiliare, Registro dei beni mobili, BORME, Gazzetta ufficiale dello Stato e altri registri amministrativi. Dove la consultazione richiede di dimostrare un interesse legittimo —come per il Registro immobiliare— IJ Creditor richiede le informazioni nel rispetto della normativa corrispondente.",
+        "Fornitori specializzati di informazioni commerciali, spagnoli e internazionali, che aggregano dati riscontrati su imprese e privati e li mettono a disposizione dei professionisti del settore tramite contratti di servizio.",
+      ] },
+      { t: "prose", paras: [
+        "IJ Creditor non mantiene proprie banche dati di informazioni commerciali su imprese o privati. Le informazioni fornite provengono in ogni caso dalle fonti sopra indicate e sono identificate in ciascun report.",
+        "Quando oggetto del report è un privato o i dati richiesti sono soggetti a particolari restrizioni di accesso —in particolare quelle relative alla solvibilità patrimoniale ai sensi dell'articolo 20 della legge organica 3/2018 (LOPDGDD) e della giurisprudenza del Tribunale supremo spagnolo sui registri creditizi, o la consultazione del Registro centrale spagnolo dei titolari effettivi— il servizio è prestato solo in presenza di una base giuridica, una finalità legittima e un accesso autorizzato dalle norme applicabili. In tali casi, lo studio verifica preventivamente la legittimità della consultazione e la porta al cliente prima di procedere.",
+      ] },
+    ],
+  },
+};
+
 const content: Partial<Record<Locale, Partial<Record<ServiceSlug, ServicePage>>>> = {
   en,
   de,
   fr,
-  // it added incrementally; falls back to English until translated.
+  it,
 };
 
 export function getServicePage(locale: Locale, slug: ServiceSlug): ServicePage {
