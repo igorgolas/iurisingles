@@ -3,17 +3,35 @@ import { notFound } from "next/navigation";
 import ServiceDetail from "@/components/ServiceDetail";
 import { isLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
+import { pageMeta, SITE_URL } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { serviceLd, breadcrumbLd } from "@/lib/jsonld";
 
 const SLUG = "credit-solvency-reports" as const;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: getDictionary(locale).services[SLUG].label };
+  const x = getDictionary(locale).services[SLUG];
+  return pageMeta({ locale, path: `/services/${SLUG}`, title: x.label, description: x.summary });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  return <ServiceDetail locale={locale} slug={SLUG} />;
+  const x = getDictionary(locale).services[SLUG];
+  const url = `${SITE_URL}/${locale}/services/${SLUG}`;
+  return (
+    <>
+      <JsonLd data={[
+        serviceLd({ name: x.label, description: x.summary, url }),
+        breadcrumbLd([
+          { name: "Home", url: `${SITE_URL}/${locale}` },
+          { name: getDictionary(locale).nav.services, url: `${SITE_URL}/${locale}/services` },
+          { name: x.label, url },
+        ]),
+      ]} />
+      <ServiceDetail locale={locale} slug={SLUG} />
+    </>
+  );
 }

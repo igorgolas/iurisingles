@@ -1,9 +1,9 @@
 import type { MetadataRoute } from "next";
 import { SERVICES, INDUSTRIES } from "@/lib/site";
 import { KB_GUIDES } from "@/lib/kb";
-import { locales } from "@/lib/i18n";
+import { locales, defaultLocale } from "@/lib/i18n";
 
-const base = "https://ijcreditor.com";
+const base = "https://www.ijcreditor.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -23,6 +23,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...KB_GUIDES.map((g) => `/knowledge-base/${g.slug}`),
   ];
   return locales.flatMap((l) =>
-    paths.map((p) => ({ url: `${base}/${l}${p}`, lastModified: now }))
+    paths.map((p) => ({
+      url: `${base}/${l}${p}`,
+      lastModified: now,
+      alternates: {
+        languages: Object.fromEntries([
+          ...locales.map((x) => [x, `${base}/${x}${p}`]),
+          ["x-default", `${base}/${defaultLocale}${p}`],
+        ]),
+      },
+    }))
   );
 }

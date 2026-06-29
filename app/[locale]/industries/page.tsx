@@ -10,11 +10,13 @@ import { isLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 import { navIndustries } from "@/lib/nav-model";
 import { getIndustriesIndex } from "@/lib/content/indexes";
+import { pageMeta, clamp } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: getDictionary(locale).nav.industries };
+  const ii = getIndustriesIndex(locale);
+  return pageMeta({ locale, path: "/industries", title: getDictionary(locale).nav.industries, description: clamp(ii.intro) });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

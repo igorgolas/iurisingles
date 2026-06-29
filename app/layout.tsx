@@ -4,6 +4,8 @@ import { Playfair_Display } from "next/font/google";
 import { headers } from "next/headers";
 import { defaultLocale, isLocale } from "@/lib/i18n";
 import { SITE } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { organizationLd, websiteLd } from "@/lib/jsonld";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -14,7 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ijcreditor.com"),
+  metadataBase: new URL("https://www.ijcreditor.com"),
   title: {
     default: `${SITE.shortName} — Debt collection in Spain for foreign creditors`,
     template: `%s — ${SITE.shortName}`,
@@ -28,7 +30,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const lang = isLocale(xl) ? xl : defaultLocale;
   return (
     <html lang={lang} className={playfair.variable}>
-      <body>{children}</body>
+      <body>
+        <JsonLd data={[organizationLd(), websiteLd()]} />
+        {children}
+      </body>
     </html>
   );
 }

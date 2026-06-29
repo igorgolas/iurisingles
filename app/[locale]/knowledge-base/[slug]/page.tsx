@@ -7,6 +7,7 @@ import Prose from "@/components/Prose";
 import CtaBand from "@/components/CtaBand";
 import { getGuideL } from "@/lib/content/kb";
 import { isLocale, withLocale } from "@/lib/i18n";
+import { pageMeta } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -14,9 +15,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const guide = isLocale(locale) ? getGuideL(locale, slug) : getGuideL("en", slug);
+  if (!isLocale(locale)) return { title: "Knowledge Base" };
+  const guide = getGuideL(locale, slug);
   if (!guide) return { title: "Knowledge Base" };
-  return { title: guide.title, description: guide.summary };
+  return pageMeta({ locale, path: `/knowledge-base/${slug}`, title: guide.title, description: guide.summary });
 }
 
 export default async function Page({

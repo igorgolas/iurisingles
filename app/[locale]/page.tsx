@@ -2,9 +2,18 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Container from "@/components/Container";
 import { isLocale, withLocale } from "@/lib/i18n";
+import type { Metadata } from "next";
 import { getDictionary } from "@/lib/dictionaries";
+import { pageMeta } from "@/lib/seo";
 import { ASSOCIATIONS } from "@/lib/site";
 import { navServices, navIndustries } from "@/lib/nav-model";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const h = getDictionary(locale).home;
+  return pageMeta({ locale, path: "/", description: h.intro });
+}
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

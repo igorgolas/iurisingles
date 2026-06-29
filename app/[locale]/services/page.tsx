@@ -9,12 +9,14 @@ import { SERVICES } from "@/lib/site";
 import { isLocale, withLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 import { getServicesIndex } from "@/lib/content/indexes";
+import { pageMeta, clamp } from "@/lib/seo";
 import type { ServiceSlug } from "@/lib/content/services";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: getDictionary(locale).nav.services };
+  const si = getServicesIndex(locale);
+  return pageMeta({ locale, path: "/services", title: getDictionary(locale).nav.services, description: clamp(si.intro) });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

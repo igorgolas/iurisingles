@@ -6,11 +6,13 @@ import LeadForm from "@/components/LeadForm";
 import { SITE } from "@/lib/site";
 import { isLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
+import { pageMeta, clamp } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: getDictionary(locale).nav.contact };
+  const c = getDictionary(locale).contact;
+  return pageMeta({ locale, path: "/contact", title: getDictionary(locale).nav.contact, description: clamp(c.intro) });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

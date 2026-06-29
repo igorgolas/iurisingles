@@ -7,11 +7,13 @@ import Container from "@/components/Container";
 import LeadForm from "@/components/LeadForm";
 import { isLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
+import { pageMeta, clamp } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: getDictionary(locale).request.title };
+  const r = getDictionary(locale).request;
+  return pageMeta({ locale, path: "/request-a-proposal", title: r.title, description: clamp(r.intro) });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

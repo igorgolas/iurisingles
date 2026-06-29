@@ -8,8 +8,19 @@ import Container from "@/components/Container";
 import CtaBand from "@/components/CtaBand";
 import { getGuides } from "@/lib/content/kb";
 import { isLocale, withLocale } from "@/lib/i18n";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Knowledge Base" };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return pageMeta({
+    locale,
+    path: "/knowledge-base",
+    title: "Knowledge Base",
+    description:
+      "Permanent guides on Spanish debt collection law for foreign creditors: how recovery works, timeframes, documents needed and cross-border enforcement.",
+  });
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
