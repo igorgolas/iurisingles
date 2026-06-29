@@ -43,9 +43,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <Link href={withLocale(locale, "/request-a-proposal")} className="rounded-sm bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90">
               {dict.common.requestProposal}
             </Link>
-            <Link href={withLocale(locale, "/services")} className="rounded-sm border border-slate/25 px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-slate/5">
-              {dict.common.submitYourCase}
-            </Link>
           </div>
         </Container>
       </section>
