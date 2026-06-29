@@ -12,8 +12,8 @@ const SLUG = "international-debt-collection" as const;
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  const x = getDictionary(locale).services[SLUG];
-  return pageMeta({ locale, path: `/services/${SLUG}`, title: x.label, description: x.summary });
+  const d = getDictionary(locale).seo[SLUG];
+  return pageMeta({ locale, path: `/services/${SLUG}`, title: d.title, description: d.description });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

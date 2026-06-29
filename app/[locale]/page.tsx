@@ -11,8 +11,8 @@ import { navServices, navIndustries } from "@/lib/nav-model";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  const h = getDictionary(locale).home;
-  return pageMeta({ locale, path: "/", description: h.intro });
+  const d = getDictionary(locale).seo.home;
+  return pageMeta({ locale, path: "/", title: d.title, description: d.description });
 }
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {

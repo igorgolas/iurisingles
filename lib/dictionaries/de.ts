@@ -251,4 +251,12 @@ export const de: Dictionary = {
     afterTitle: "Was nach dem Absenden geschieht",
     afterText: "IJ Creditor antwortet innerhalb einer angemessenen Frist, in der Regel innerhalb von zwei Werktagen, mit einer ersten Falleinschätzung, dem empfohlenen Weg und gegebenenfalls einem Honorarvorschlag, damit der Mandant über die Begründung des Mandats entscheiden kann.",
   },
+  seo: {
+    home: { title: "Inkasso in Spanien", description: "Forderungseinzug in Spanien für ausländische Gläubiger. Anwaltlich betreute außergerichtliche und gerichtliche Beitreibung aus Madrid." },
+    services: { title: "Forderungseinzug in Spanien", description: "Leistungen für Inkasso, gerichtliche Durchsetzung, Bonitätsprüfung und branchenspezifische Fälle gegen spanische Schuldner." },
+    "out-of-court-debt-collection": { title: "Außergerichtliches Inkasso in Spanien", description: "Offene Forderungen in Spanien außergerichtlich und anwaltlich betreut geltend machen, auf Erfolgsbasis. Über 80% der Fälle vor Gericht gelöst." },
+    "judicial-debt-collection": { title: "Gerichtliches Inkasso in Spanien", description: "Gerichtliche Durchsetzung in Spanien — spanisches Mahnverfahren (proceso monitorio) und Zwangsvollstreckung — nach kostenloser Erfolgsprüfung." },
+    "international-debt-collection": { title: "Internationales Inkasso", description: "Für ausländische Gläubiger mit Schuldnern außerhalb Spaniens: grenzüberschreitender Einzug über unser Korrespondentennetz, koordiniert aus Madrid." },
+    "credit-solvency-reports": { title: "Bonitäts- und Solvenzauskünfte (Spanien)", description: "Wirtschafts-, Vermögens- und Bonitätsauskünfte zu spanischen Schuldnern, als Grundlage für Verhandlung, Klage oder Vollstreckung." },
+  },
 };

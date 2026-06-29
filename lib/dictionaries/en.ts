@@ -249,6 +249,14 @@ export const en = {
     afterTitle: "What happens after submission",
     afterText: "IJ Creditor will respond within a reasonable timeframe, normally within two business days, with a first case assessment, the recommended route and, where appropriate, a fee proposal for the client to decide whether to formalise the engagement.",
   },
+  seo: {
+    home: { title: "Debt Collection in Spain", description: "Recover unpaid invoices in Spain for foreign creditors. Lawyer-supervised amicable and judicial recovery from Madrid since 1992." },
+    services: { title: "Debt Recovery Services in Spain", description: "Out-of-court collection, judicial recovery, solvency reports and sector-specific support for foreign creditors with Spanish debtors." },
+    "out-of-court-debt-collection": { title: "Out-of-court Debt Collection in Spain", description: "Amicable, success-fee recovery of unpaid invoices in Spain, supervised file by file by a lawyer. Over 80% of cases resolved before court." },
+    "judicial-debt-collection": { title: "Judicial Debt Collection in Spain", description: "Court recovery in Spain — the Spanish payment order procedure (proceso monitorio) and enforcement — after a no-cost feasibility review." },
+    "international-debt-collection": { title: "International Debt Collection", description: "For foreign creditors with debtors outside Spain: cross-border recovery through our correspondent network, coordinated from Madrid." },
+    "credit-solvency-reports": { title: "Credit & Solvency Reports on Spanish Debtors", description: "Check a Spanish debtor's commercial, asset and solvency position before deciding whether to negotiate, sue or enforce." },
+  },
 };
 
 export type Dictionary = typeof en;

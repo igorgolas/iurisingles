@@ -251,4 +251,12 @@ export const fr: Dictionary = {
     afterTitle: "Ce qui se passe après l'envoi",
     afterText: "IJ Creditor répondra dans un délai raisonnable, normalement sous deux jours ouvrés, par une première évaluation du dossier, la voie recommandée et, le cas échéant, une proposition d'honoraires permettant au client de décider de formaliser ou non le mandat.",
   },
+  seo: {
+    home: { title: "Recouvrement de créances en Espagne", description: "Recouvrez vos factures impayées en Espagne. Cabinet d'avocats à Madrid, intervention amiable et judiciaire pour créanciers étrangers." },
+    services: { title: "Services de recouvrement en Espagne", description: "Recouvrement amiable, judiciaire, international et vérification de solvabilité de débiteurs espagnols, avec supervision d'avocat." },
+    "out-of-court-debt-collection": { title: "Recouvrement amiable en Espagne", description: "Démarches amiables pour factures impayées en Espagne, sous contrôle d'avocat, au succès. Plus de 80% des dossiers résolus sans procès." },
+    "judicial-debt-collection": { title: "Recouvrement judiciaire en Espagne", description: "Action judiciaire en Espagne — procédure d'injonction de payer espagnole (proceso monitorio) et exécution — après examen de la faisabilité." },
+    "international-debt-collection": { title: "Recouvrement international", description: "Pour créanciers étrangers avec débiteurs hors d'Espagne : recouvrement transfrontalier via notre réseau de correspondants, coordonné depuis Madrid." },
+    "credit-solvency-reports": { title: "Rapports de solvabilité (Espagne)", description: "Informations commerciales, patrimoniales et de solvabilité sur les débiteurs espagnols, pour décider comment agir." },
+  },
 };

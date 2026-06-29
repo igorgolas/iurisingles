@@ -251,4 +251,12 @@ export const pt: Dictionary = {
     afterTitle: "O que acontece após o envio",
     afterText: "A IJ Creditor responderá num prazo razoável, normalmente até dois dias úteis, com uma primeira avaliação do caso, a via recomendada e, quando adequado, uma proposta de honorários para que o cliente decida se formaliza o mandato.",
   },
+  seo: {
+    home: { title: "Recuperação de crédito em Espanha", description: "Recuperação de faturas não pagas em Espanha para credores estrangeiros, com acompanhamento jurídico a partir de Madrid." },
+    services: { title: "Serviços de cobrança em Espanha", description: "Cobrança extrajudicial e judicial, recuperação internacional e relatórios de solvência sobre devedores espanhóis." },
+    "out-of-court-debt-collection": { title: "Cobrança extrajudicial em Espanha", description: "Recuperação amigável de faturas em Espanha, com supervisão de advogado, por êxito. Mais de 80% dos casos resolvidos sem ir a tribunal." },
+    "judicial-debt-collection": { title: "Cobrança judicial em Espanha", description: "Ação judicial em Espanha — procedimento monitório espanhol (proceso monitorio) e execução — após análise de viabilidade." },
+    "international-debt-collection": { title: "Cobrança internacional", description: "Para credores estrangeiros com devedores fora de Espanha: cobrança transfronteiriça através da rede de correspondentes, coordenada de Madrid." },
+    "credit-solvency-reports": { title: "Relatórios de solvência (Espanha)", description: "Informação comercial, patrimonial e de solvência sobre devedores espanhóis, para decidir como avançar." },
+  },
 };

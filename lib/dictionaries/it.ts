@@ -251,4 +251,12 @@ export const it: Dictionary = {
     afterTitle: "Cosa succede dopo l'invio",
     afterText: "IJ Creditor risponderà entro un termine ragionevole, normalmente entro due giorni lavorativi, con una prima valutazione del caso, il percorso consigliato e, se del caso, una proposta di onorari affinché il cliente decida se formalizzare l'incarico.",
   },
+  seo: {
+    home: { title: "Recupero crediti in Spagna", description: "Recupero di fatture insolute in Spagna per creditori esteri. Assistenza legale da Madrid, in via stragiudiziale e giudiziale." },
+    services: { title: "Servizi di recupero crediti in Spagna", description: "Recupero stragiudiziale, giudiziale, internazionale e report di solvibilità su debitori e società spagnole." },
+    "out-of-court-debt-collection": { title: "Recupero crediti stragiudiziale in Spagna", description: "Recupero bonario di fatture insolute in Spagna, con gestione legale e compenso legato al recuperato. Oltre l'80% dei casi risolto senza causa." },
+    "judicial-debt-collection": { title: "Recupero crediti giudiziale in Spagna", description: "Azione giudiziale in Spagna — procedimento monitorio spagnolo (proceso monitorio) ed esecuzione forzata — dopo valutazione del caso." },
+    "international-debt-collection": { title: "Recupero crediti internazionale", description: "Per creditori esteri con debitori fuori dalla Spagna: recupero transfrontaliero tramite la rete di corrispondenti, coordinato da Madrid." },
+    "credit-solvency-reports": { title: "Report di solvibilità (Spagna)", description: "Informazioni commerciali, patrimoniali e di solvibilità sui debitori spagnoli, per decidere se negoziare, agire in giudizio o eseguire." },
+  },
 };
