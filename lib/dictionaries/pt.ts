@@ -53,7 +53,7 @@ export const pt: Dictionary = {
     why: [
       { t: "Tratado diretamente, sem intermediários.", d: "O seu caso é conduzido pela própria sociedade, por advogados habilitados em Espanha. Sem cadeias de subcontratação, sem perda de informação entre níveis." },
       { t: "Advogados locais em toda a Espanha.", d: "Atuamos perante o devedor onde quer que esteja, através da nossa própria rede de advogados locais em todo o país, não apenas em Madrid." },
-      { t: "Direito processual espanhol, no seu idioma.", d: "Coordenamos o caso consigo em inglês e atuamos perante o devedor espanhol em espanhol. A mesma equipa trata a fase amigável e qualquer processo judicial subsequente." },
+      { t: "Direito processual espanhol, em inglês.", d: "Coordenamos o caso consigo em inglês e atuamos perante o devedor espanhol em espanhol. A mesma equipa trata a fase amigável e qualquer processo judicial subsequente." },
       { t: "Supervisão jurídica de todo o processo.", d: "Cada interpelação formal e cada burofax é revisto por um advogado da sociedade para assegurar a validade probatória, a conformidade com o RGPD e, quando aplicável, a interrupção dos prazos de prescrição." },
     ],
     whatWeDo: "O que fazemos",

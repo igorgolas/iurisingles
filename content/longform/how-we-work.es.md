@@ -32,7 +32,7 @@ Un abogado de la firma revisa el caso y le envía una propuesta confidencial con
 
 El contrato determina el alcance del encargo, las condiciones económicas y el seguimiento.
 
-Ante el deudor español actuamos en español.
+La relación con usted se gestiona en español o en inglés; ante el deudor español actuamos en español.
 
 ## 3. Gestión amistosa y revisión del saldo
 

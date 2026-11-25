@@ -51,7 +51,7 @@ export const en = {
     why: [
       { t: "Handled directly, not through intermediaries.", d: "Your case is run by the firm itself, by Spanish-qualified lawyers. No subcontracting chains, no information loss between layers." },
       { t: "Local lawyers anywhere in Spain.", d: "We act before the debtor wherever they are, through our own network of local lawyers across the country, not only in Madrid." },
-      { t: "Spanish procedural law, in your language.", d: "We coordinate the case with you in English and act before the Spanish debtor in Spanish. The same team handles the amicable phase and any subsequent court proceedings." },
+      { t: "Spanish procedural law, handled in English.", d: "We coordinate the case with you in English and act before the Spanish debtor in Spanish. The same team handles the amicable phase and any subsequent court proceedings." },
       { t: "Legal supervision of the entire process.", d: "Every formal demand and burofax is reviewed by a lawyer of the firm to ensure evidentiary validity, GDPR compliance and, where applicable, interruption of limitation periods." },
     ],
     whatWeDo: "What we do",

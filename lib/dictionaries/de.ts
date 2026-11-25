@@ -53,7 +53,7 @@ export const de: Dictionary = {
     why: [
       { t: "Direkt bearbeitet, nicht über Vermittler.", d: "Ihr Fall wird von der Kanzlei selbst bearbeitet, durch in Spanien zugelassene Anwälte. Keine Subunternehmerketten, kein Informationsverlust zwischen den Ebenen." },
       { t: "Lokale Anwälte überall in Spanien.", d: "Wir treten gegenüber dem Schuldner auf, wo immer er sich befindet, über unser eigenes Netz lokaler Anwälte im ganzen Land, nicht nur in Madrid." },
-      { t: "Spanisches Verfahrensrecht, in Ihrer Sprache.", d: "Wir koordinieren den Fall mit Ihnen auf Englisch und treten gegenüber dem spanischen Schuldner auf Spanisch auf. Dasselbe Team betreut die außergerichtliche Phase und ein etwaiges anschließendes Gerichtsverfahren." },
+      { t: "Spanisches Verfahrensrecht, auf Englisch betreut.", d: "Wir koordinieren den Fall mit Ihnen auf Englisch und treten gegenüber dem spanischen Schuldner auf Spanisch auf. Dasselbe Team betreut die außergerichtliche Phase und ein etwaiges anschließendes Gerichtsverfahren." },
       { t: "Juristische Begleitung des gesamten Prozesses.", d: "Jede förmliche Mahnung und jedes Burofax wird von einem Anwalt der Kanzlei geprüft, um Beweiskraft, DSGVO-Konformität und gegebenenfalls die Unterbrechung von Verjährungsfristen sicherzustellen." },
     ],
     whatWeDo: "Was wir tun",

@@ -53,7 +53,7 @@ export const fr: Dictionary = {
     why: [
       { t: "Traité directement, sans intermédiaires.", d: "Votre dossier est géré par le cabinet lui-même, par des avocats habilités en Espagne. Aucune chaîne de sous-traitance, aucune perte d'information entre les niveaux." },
       { t: "Des avocats locaux partout en Espagne.", d: "Nous agissons face au débiteur où qu'il se trouve, grâce à notre propre réseau d'avocats locaux dans tout le pays, pas seulement à Madrid." },
-      { t: "Le droit procédural espagnol, dans votre langue.", d: "Nous coordonnons le dossier avec vous en anglais et agissons face au débiteur espagnol en espagnol. La même équipe gère la phase amiable et toute procédure judiciaire ultérieure." },
+      { t: "Le droit procédural espagnol, en anglais.", d: "Nous coordonnons le dossier avec vous en anglais et agissons face au débiteur espagnol en espagnol. La même équipe gère la phase amiable et toute procédure judiciaire ultérieure." },
       { t: "Supervision juridique de tout le processus.", d: "Chaque mise en demeure et chaque burofax est examiné par un avocat du cabinet afin d'en assurer la valeur probante, la conformité au RGPD et, le cas échéant, l'interruption des délais de prescription." },
     ],
     whatWeDo: "Ce que nous faisons",

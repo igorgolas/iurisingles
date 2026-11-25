@@ -53,7 +53,7 @@ export const it: Dictionary = {
     why: [
       { t: "Gestito direttamente, non tramite intermediari.", d: "Il vostro caso è seguito dallo studio stesso, da avvocati abilitati in Spagna. Nessuna catena di subappalti, nessuna perdita di informazioni tra i livelli." },
       { t: "Avvocati locali in tutta la Spagna.", d: "Agiamo nei confronti del debitore ovunque si trovi, attraverso la nostra rete di avvocati locali in tutto il paese, non solo a Madrid." },
-      { t: "Diritto processuale spagnolo, nella vostra lingua.", d: "Coordiniamo il caso con voi in inglese e agiamo nei confronti del debitore spagnolo in spagnolo. Lo stesso team segue la fase stragiudiziale e l'eventuale successivo procedimento giudiziario." },
+      { t: "Diritto processuale spagnolo, in inglese.", d: "Coordiniamo il caso con voi in inglese e agiamo nei confronti del debitore spagnolo in spagnolo. Lo stesso team segue la fase stragiudiziale e l'eventuale successivo procedimento giudiziario." },
       { t: "Supervisione legale dell'intero processo.", d: "Ogni diffida formale e ogni burofax è esaminato da un avvocato dello studio per garantirne la validità probatoria, la conformità al GDPR e, ove applicabile, l'interruzione dei termini di prescrizione." },
     ],
     whatWeDo: "Cosa facciamo",
