@@ -8,7 +8,8 @@ import { withLocale, type Locale } from "@/lib/i18n";
 // GA4 property "ijcreditor" in the firm account (IJC). Public ID, not a secret.
 // Fixed here on purpose: the old NEXT_PUBLIC_GA_ID in Vercel points to a property in another Google account.
 const GA = "G-XFBXPT1NW5";
-const CLARITY = process.env.NEXT_PUBLIC_CLARITY_ID;
+// Clarity project "ijcreditor.com" in the firm account. Public ID, not a secret.
+const CLARITY = "zj287hheog";
 const KEY = "ijc_consent";
 
 type Consent = "granted" | "denied" | "pending" | "init";
