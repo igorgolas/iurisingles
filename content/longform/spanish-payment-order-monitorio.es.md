@@ -18,7 +18,7 @@ Además de revisar la competencia, el domicilio y la prescripción, debe acredit
 
 La negociación directa entre las partes o sus abogados es una de las vías admitidas. Un burofax con propuesta de pago puede documentarla cuando contiene una verdadera invitación a negociar o una propuesta de solución y permite acreditar la recepción y el acceso al contenido íntegro.
 
-El requerimiento europeo de pago está expresamente excluido de este requisito español. Véanse los [artículos 5 y 10 de la Ley Orgánica 1/2025](https://www.boe.es/eli/es/lo/2025/01/02/1/con).
+El requerimiento europeo de pago está expresamente excluido de este requisito español. Véase el [artículo 5.3 de la Ley Orgánica 1/2025](https://www.boe.es/eli/es/lo/2025/01/02/1/con).
 
 ## Cómo se tramita
 

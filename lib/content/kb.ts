@@ -13,7 +13,17 @@ const de: Record<string, Tr> = {
       "Seit dem 3. April 2025 ist nach Artikel 5 des Organgesetzes 1/2025 und Artikel 403.2 LEC ein vorheriger Versuch einer angemessenen Streitbeilegungsmethode (MASC) in der Regel eine Zulässigkeitsvoraussetzung für das nationale Mahnverfahren, wobei sich die Rechtsprechung zu seinem genauen Umfang noch festigt (das Europäische Mahnverfahren ist ausgenommen). Wenn der Schuldner die Kommunikation eingestellt hat und keinen ernsthaften Einwand erhebt, ist das Verfahren häufig der direkteste Weg, in Spanien einen Vollstreckungstitel zu erlangen.",
     ],
     assist: "Wir prüfen die urkundliche Grundlage der Forderung, erledigen die vorherige MASC-Anforderung und reichen das Mahnverfahren beim zuständigen spanischen Gericht ein und begleiten es.",
+  },  "european-payment-order-spain": {
+    title: "Das Europäische Mahnverfahren in Spanien",
+    nav: "Europäisches Mahnverfahren",
+    summary: "Verordnung (EG) 1896/2006: Anwendungsbereich, zuständiges Gericht, Formblätter, die 30-tägige Einspruchsfrist, Vollstreckung und Unterschiede zum spanischen Mahnverfahren.",
+    body: [
+      "Das Europäische Mahnverfahren nach der Verordnung (EG) Nr. 1896/2006 ermöglicht es einem Gläubiger, mit Standardformularen einen Vollstreckungstitel gegen einen Schuldner in einem anderen Mitgliedstaat zu erlangen. Es gilt für grenzüberschreitende, bezifferte und fällige Geldforderungen in Zivil- und Handelssachen, ohne Höchstbetrag.",
+      "Der Schuldner hat dreißig Tage ab Zustellung, um zu zahlen oder Einspruch einzulegen. Ohne Einspruch wird der Zahlungsbefehl für vollstreckbar erklärt und kann in den anderen teilnehmenden Mitgliedstaaten ohne Exequatur vollstreckt werden. Artikel 5.3 des Organgesetzes 1/2025 nimmt es von der spanischen Pflicht zur vorherigen Verhandlung (MASC) aus.",
+    ],
+    assist: "Wir prüfen, ob das europäische oder das spanische Mahnverfahren für den jeweiligen Fall geeignet ist, reichen den Antrag in Spanien ein und übernehmen die Vollstreckung oder, bei Einspruch, das Erkenntnisverfahren.",
   },
+
   "verbal-proceedings": {
     title: "Verbales Verfahren (Juicio Verbal)",
     nav: "Verbales Verfahren (juicio verbal) für Forderungen unter 15.000 €",
@@ -87,7 +97,7 @@ const de: Record<string, Tr> = {
   "insolvency-concurso": {
     title: "Insolvenzverfahren in Spanien (Concurso de Acreedores)",
     nav: "Concurso de acreedores",
-    summary: "Das konsolidierte Insolvenzgesetz; Sanierung und Liquidation; Anmeldung der Forderungen beim Insolvenzverwalter; Beitreibungsaussichten für ausländische Gläubiger.",
+    summary: "Wie man von der Insolvenz erfährt; die Monatsfrist; Forderungsanmeldung beim Insolvenzverwalter; Rang; die Gläubigerliste und ihre Anfechtung; Gläubiger aus anderen Mitgliedstaaten.",
     body: [
       "Wird ein Schuldner insolvent, müssen Gläubiger unter Umständen an einem förmlichen Insolvenzverfahren teilnehmen, geregelt durch das konsolidierte Insolvenzgesetz (Königliches Gesetzesdekret 1/2020), reformiert durch das Gesetz 16/2022 zur Umsetzung der EU-Restrukturierungsrichtlinie. Der Rahmen sieht sowohl die Sanierung lebensfähiger Unternehmen als auch die Liquidation derjenigen vor, die nicht fortbestehen können.",
       "Gläubiger sollten Insolvenzanträge genau verfolgen, da für die Anmeldung der Forderungen beim Insolvenzverwalter (administración concursal) zwecks Einstufung und Aufnahme strenge Fristen gelten. Wird nicht rechtzeitig gehandelt, kann dies die Beitreibungsaussichten beeinträchtigen. Obwohl die Insolvenz den letztlich beigetriebenen Betrag häufig verringert, bleibt das Verfahren ein wichtiges Mittel zum Schutz der Gläubigerrechte und zur geordneten Verteilung des verfügbaren Vermögens.",
@@ -166,7 +176,17 @@ const fr: Record<string, Tr> = {
       "Depuis le 3 avril 2025, en vertu de l'article 5 de la loi organique 1/2025 et de l'article 403.2 LEC, une tentative préalable de méthode adéquate de résolution des litiges (MASC) est, en règle générale, une condition de recevabilité de l'injonction de payer nationale, bien que la jurisprudence sur sa portée exacte se précise encore (l'injonction de payer européenne est exceptée). Lorsque le débiteur a cessé toute communication et ne soulève aucune contestation réelle, la procédure est souvent le moyen le plus direct d'obtenir un titre exécutoire en Espagne.",
     ],
     assist: "Nous évaluons la base documentaire de la créance, traitons l'exigence préalable de MASC, et déposons et suivons l'injonction de payer devant le tribunal espagnol compétent.",
+  },  "european-payment-order-spain": {
+    title: "La procédure européenne d'injonction de payer en Espagne",
+    nav: "Injonction de payer européenne",
+    summary: "Règlement (CE) 1896/2006 : champ d'application, juridiction compétente, formulaires, délai d'opposition de 30 jours, exécution et différences avec l'injonction de payer espagnole.",
+    body: [
+      "La procédure européenne d'injonction de payer, régie par le règlement (CE) n° 1896/2006, permet à un créancier d'obtenir un titre exécutoire contre un débiteur établi dans un autre État membre au moyen de formulaires types. Elle s'applique aux créances pécuniaires transfrontières, civiles et commerciales, d'un montant déterminé et exigibles, sans montant maximal.",
+      "Le débiteur dispose de trente jours à compter de la signification pour payer ou former opposition. En l'absence d'opposition, l'injonction est déclarée exécutoire et peut être exécutée dans les autres États membres participants sans exequatur. L'article 5.3 de la loi organique 1/2025 l'exclut de l'obligation espagnole de négociation préalable (MASC).",
+    ],
+    assist: "Nous évaluons si l'injonction européenne ou l'injonction espagnole convient à chaque dossier, présentons la demande en Espagne et assurons l'exécution ou, en cas d'opposition, la procédure au fond.",
   },
+
   "verbal-proceedings": {
     title: "Procédure verbale (Juicio Verbal)",
     nav: "Procédure verbale (juicio verbal) pour les créances inférieures à 15 000 €",
@@ -240,7 +260,7 @@ const fr: Record<string, Tr> = {
   "insolvency-concurso": {
     title: "Procédures d'insolvabilité en Espagne (Concurso de Acreedores)",
     nav: "Concurso de acreedores",
-    summary: "La loi consolidée sur l'insolvabilité ; restructuration et liquidation ; déclaration des créances à l'administrateur judiciaire ; perspectives de recouvrement pour les créanciers étrangers.",
+    summary: "Comment savoir que le débiteur est en procédure collective ; le délai d'un mois ; la déclaration de créance auprès de l'administrateur judiciaire ; le rang ; la liste des créanciers et sa contestation ; créanciers d'autres États membres.",
     body: [
       "Lorsqu'un débiteur devient insolvable, les créanciers peuvent devoir participer à une procédure formelle d'insolvabilité, régie par la loi consolidée sur l'insolvabilité (décret législatif royal 1/2020), réformée par la loi 16/2022 transposant la directive européenne sur la restructuration. Le cadre prévoit à la fois la restructuration des entreprises viables et la liquidation de celles qui ne peuvent continuer.",
       "Les créanciers doivent suivre de près les ouvertures d'insolvabilité, car des délais stricts s'appliquent à la déclaration des créances à l'administrateur judiciaire (administración concursal) en vue de leur classification et de leur inscription. Ne pas agir à temps peut nuire aux perspectives de recouvrement. Bien que l'insolvabilité réduise souvent le montant finalement recouvré, la procédure reste un moyen important de protéger les droits des créanciers et d'assurer une distribution ordonnée des actifs disponibles.",
@@ -318,7 +338,17 @@ const it: Record<string, Tr> = {
       "Dal 3 aprile 2025, ai sensi dell'articolo 5 della legge organica 1/2025 e dell'articolo 403.2 LEC, un tentativo preventivo di metodo adeguato di risoluzione delle controversie (MASC) è, di regola, una condizione di ammissibilità del procedimento d'ingiunzione nazionale, sebbene la giurisprudenza sulla sua portata esatta sia ancora in via di consolidamento (l'ingiunzione di pagamento europea è esclusa). Quando il debitore ha cessato le comunicazioni e non solleva una reale contestazione, il procedimento è spesso il modo più diretto per ottenere un titolo esecutivo in Spagna.",
     ],
     assist: "Valutiamo la base documentale del credito, gestiamo il requisito preventivo del MASC e depositiamo e seguiamo il procedimento d'ingiunzione dinanzi al tribunale spagnolo competente.",
+  },  "european-payment-order-spain": {
+    title: "Il procedimento europeo d'ingiunzione di pagamento in Spagna",
+    nav: "Ingiunzione di pagamento europea",
+    summary: "Regolamento (CE) 1896/2006: ambito di applicazione, giudice competente, moduli, termine di opposizione di 30 giorni, esecuzione e differenze con l'ingiunzione spagnola.",
+    body: [
+      "Il procedimento europeo d'ingiunzione di pagamento, disciplinato dal regolamento (CE) n. 1896/2006, consente a un creditore di ottenere un titolo esecutivo nei confronti di un debitore di un altro Stato membro mediante moduli standard. Si applica ai crediti pecuniari transfrontalieri in materia civile e commerciale, di importo determinato ed esigibili, senza importo massimo.",
+      "Il debitore ha trenta giorni dalla notifica per pagare o opporsi. In assenza di opposizione, l'ingiunzione viene dichiarata esecutiva e può essere eseguita negli altri Stati membri partecipanti senza exequatur. L'articolo 5.3 della legge organica 1/2025 lo esclude dall'obbligo spagnolo di negoziazione preventiva (MASC).",
+    ],
+    assist: "Valutiamo se per ogni pratica sia adatta l'ingiunzione europea o quella spagnola, presentiamo la domanda in Spagna e seguiamo l'esecuzione o, in caso di opposizione, il procedimento di cognizione.",
   },
+
   "verbal-proceedings": {
     title: "Procedimento verbale (Juicio Verbal)",
     nav: "Procedimento verbale (juicio verbal) per crediti inferiori a 15.000 €",
@@ -392,7 +422,7 @@ const it: Record<string, Tr> = {
   "insolvency-concurso": {
     title: "Procedure di insolvenza in Spagna (Concurso de Acreedores)",
     nav: "Concurso de acreedores",
-    summary: "La legge consolidata sull'insolvenza; ristrutturazione e liquidazione; insinuazione dei crediti al curatore; prospettive di recupero per i creditori esteri.",
+    summary: "Come sapere che il debitore è in procedura concorsuale; il termine di un mese; l'insinuazione del credito presso l'amministratore concorsuale; la graduazione; l'elenco dei creditori e la sua impugnazione; creditori di altri Stati membri.",
     body: [
       "Quando un debitore diventa insolvente, i creditori potrebbero dover partecipare a una procedura formale di insolvenza, disciplinata dalla legge consolidata sull'insolvenza (regio decreto legislativo 1/2020), riformata dalla legge 16/2022 di recepimento della direttiva UE sulla ristrutturazione. Il quadro prevede sia la ristrutturazione delle imprese sostenibili sia la liquidazione di quelle che non possono proseguire.",
       "I creditori dovrebbero monitorare attentamente le aperture di insolvenza, poiché si applicano termini rigorosi per l'insinuazione dei crediti al curatore (administración concursal) ai fini della classificazione e dell'inserimento. Non agire in tempo può pregiudicare le prospettive di recupero. Sebbene l'insolvenza riduca spesso l'importo infine recuperato, la procedura resta un mezzo importante per tutelare i diritti dei creditori e assicurare un'ordinata distribuzione dei beni disponibili.",
@@ -471,7 +501,17 @@ const pt: Record<string, Tr> = {
       "Desde 3 de abril de 2025, ao abrigo do artigo 5.º da Lei Orgânica 1/2025 e do artigo 403.2 LEC, uma tentativa prévia de método adequado de resolução de litígios (MASC) é, em regra, condição de admissibilidade da injunção nacional, embora a jurisprudência sobre o seu âmbito exato esteja ainda a consolidar-se (a injunção de pagamento europeia está excecionada). Quando o devedor cessou as comunicações e não levanta qualquer contestação genuína, o procedimento é frequentemente o modo mais direto de obter um título executivo em Espanha.",
     ],
     assist: "Avaliamos a base documental do crédito, tratamos o requisito prévio de MASC e apresentamos e acompanhamos a injunção no tribunal espanhol competente.",
+  },  "european-payment-order-spain": {
+    title: "O procedimento europeu de injunção de pagamento em Espanha",
+    nav: "Injunção de pagamento europeia",
+    summary: "Regulamento (CE) 1896/2006: âmbito, tribunal competente, formulários, prazo de oposição de 30 dias, execução e diferenças face à injunção espanhola.",
+    body: [
+      "O procedimento europeu de injunção de pagamento, regulado pelo Regulamento (CE) n.º 1896/2006, permite a um credor obter um título executivo contra um devedor de outro Estado-Membro através de formulários normalizados. Aplica-se a créditos pecuniários transfronteiriços em matéria civil e comercial, de montante determinado, vencidos e exigíveis, sem montante máximo.",
+      "O devedor dispõe de trinta dias a contar da notificação para pagar ou deduzir oposição. Sem oposição, a injunção é declarada executória e pode ser executada nos restantes Estados-Membros participantes sem exequatur. O artigo 5.3 da Lei Orgânica 1/2025 exclui-o da obrigação espanhola de negociação prévia (MASC).",
+    ],
+    assist: "Avaliamos se a injunção europeia ou a espanhola é adequada a cada processo, apresentamos o requerimento em Espanha e asseguramos a execução ou, se houver oposição, a ação declarativa.",
   },
+
   "verbal-proceedings": {
     title: "Processo verbal (Juicio Verbal)",
     nav: "Processo verbal (juicio verbal) para créditos inferiores a 15 000 €",
@@ -545,7 +585,7 @@ const pt: Record<string, Tr> = {
   "insolvency-concurso": {
     title: "Processos de insolvência em Espanha (Concurso de Acreedores)",
     nav: "Concurso de acreedores",
-    summary: "A lei consolidada da insolvência; reestruturação e liquidação; reclamação dos créditos ao administrador da insolvência; perspetivas de recuperação para credores estrangeiros.",
+    summary: "Como saber que o devedor está insolvente; o prazo de um mês; a reclamação do crédito junto do administrador da insolvência; a graduação; a lista de credores e a sua impugnação; credores de outros Estados-Membros.",
     body: [
       "Quando um devedor se torna insolvente, os credores podem ter de participar num processo formal de insolvência, regulado pela lei consolidada da insolvência (Decreto Legislativo Real 1/2020), reformada pela Lei 16/2022 que transpõe a Diretiva da UE sobre reestruturação. O quadro prevê tanto a reestruturação de empresas viáveis como a liquidação das que não podem continuar.",
       "Os credores devem acompanhar de perto as aberturas de insolvência, pois aplicam-se prazos rigorosos para reclamar os créditos ao administrador da insolvência (administración concursal) para efeitos de classificação e inclusão. Não agir a tempo pode prejudicar as perspetivas de recuperação. Embora a insolvência reduza muitas vezes o montante finalmente recuperado, o processo continua a ser um meio importante de proteger os direitos dos credores e de assegurar uma distribuição ordenada dos bens disponíveis.",

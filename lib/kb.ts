@@ -18,7 +18,18 @@ export const KB_GUIDES: KbGuide[] = [
       "Since 3 April 2025, under Article 5 of Organic Law 1/2025 and Article 403.2 LEC, a prior attempt at an adequate means of dispute resolution (MASC) is, as a general rule, a condition of admissibility for the national payment order, although case law on its precise scope is still settling (the European order for payment is excepted). Where the debtor has ceased communications and raises no genuine dispute, the procedure is frequently the most direct way to obtain an enforceable title in Spain.",
     ],
     assist: "We assess the documentary basis of the claim, address the prior MASC requirement, and file and follow the payment order before the competent Spanish court.",
+  },  {
+    slug: "european-payment-order-spain",
+    title: "The European Order for Payment Procedure in Spain",
+    nav: "European order for payment",
+    summary: "Regulation (EC) 1896/2006: when it can be used, competent court, forms, the 30-day opposition period, enforcement and differences from the Spanish monitorio.",
+    body: [
+      "The European order for payment procedure, governed by Regulation (EC) No 1896/2006, allows a creditor to obtain an enforceable title against a debtor in another Member State by means of standard forms. It applies to cross-border civil and commercial money claims of a specific amount that are due and payable, with no maximum amount.",
+      "The debtor has thirty days from service to pay or oppose. Without opposition, the order is declared enforceable and can be enforced in the other participating Member States without exequatur. Article 5.3 of Organic Law 1/2025 excludes it from the Spanish prior negotiation (MASC) requirement.",
+    ],
+    assist: "We assess whether the European or the Spanish order for payment suits each file, file the application in Spain and handle enforcement, or the declaratory proceedings if the debtor opposes.",
   },
+
   {
     slug: "verbal-proceedings",
     title: "Verbal Proceedings (Juicio Verbal)",
@@ -100,7 +111,7 @@ export const KB_GUIDES: KbGuide[] = [
     slug: "insolvency-concurso",
     title: "Insolvency Proceedings in Spain (Concurso de Acreedores)",
     nav: "Concurso de acreedores",
-    summary: "The consolidated Insolvency Act; restructuring and liquidation; communicating claims to the insolvency administrator; recovery prospects for foreign creditors.",
+    summary: "How to find out about the insolvency; the one-month time limit; lodging the claim with the insolvency administrator; ranking; the list of creditors and how to challenge it; creditors from other Member States.",
     body: [
       "Where a debtor becomes insolvent, creditors may need to take part in formal insolvency proceedings, governed by the consolidated Insolvency Act (Royal Legislative Decree 1/2020), as reformed by Law 16/2022 transposing the EU Restructuring Directive. The framework provides both for restructuring viable businesses and for liquidating those that cannot continue.",
       "Creditors should monitor insolvency filings closely, since strict deadlines apply to communicating claims to the insolvency administrator (administración concursal) for their classification and inclusion. Failing to act in time can adversely affect recovery prospects. Although insolvency frequently reduces the amount ultimately recovered, the proceedings remain an important means of protecting creditors' rights and securing an orderly distribution of the available assets.",
