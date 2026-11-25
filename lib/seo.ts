@@ -4,6 +4,8 @@ import { SITE } from "@/lib/site";
 
 export const SITE_URL = "https://www.ijcreditor.com";
 
+const OG_LOCALE: Record<Locale, string> = { en: "en_GB", pt: "pt_PT", de: "de_DE", fr: "fr_FR", it: "it_IT" };
+
 export function clamp(s: string, n = 160): string {
   if (s.length <= n) return s;
   const cut = s.slice(0, n);
@@ -46,12 +48,14 @@ export function pageMeta(opts: {
       siteName: SITE.name,
       ...titleField,
       description: opts.description,
-      images: ["/logo.png"],
+      locale: OG_LOCALE[opts.locale],
+      images: [{ url: `/og-${opts.locale}.png`, width: 1200, height: 630, alt: `${SITE.name}: ${SITE.tagline}` }],
     },
     twitter: {
       card: "summary_large_image",
       ...titleField,
       description: opts.description,
+      images: [`/og-${opts.locale}.png`],
     },
   };
 }

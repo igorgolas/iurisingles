@@ -1,4 +1,4 @@
-import { SITE, ASSOCIATIONS } from "@/lib/site";
+import { SITE, ASSOCIATIONS, SERVICES } from "@/lib/site";
 import { SITE_URL } from "@/lib/seo";
 import { locales } from "@/lib/i18n";
 
@@ -13,11 +13,28 @@ export function organizationLd() {
     alternateName: SITE.shortName,
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
-    image: `${SITE_URL}/logo.png`,
+    image: `${SITE_URL}/og-en.png`,
     email: SITE.email,
     telephone: SITE.phone,
     foundingDate: String(SITE.since),
+    legalName: "Iuris Justitia Creditor, S.L.",
     vatID: SITE.nif,
+    taxID: SITE.nif,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      email: SITE.email,
+      telephone: SITE.phone,
+      availableLanguage: ["en", "es", "pt", "de", "fr", "it"],
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Debt collection services in Spain",
+      itemListElement: SERVICES.map((sv) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: sv.label, description: sv.summary, url: `${SITE_URL}/en${sv.href}` },
+      })),
+    },
     description:
       "Madrid law firm specialised in commercial debt collection in Spain for creditors based outside Spain. Out-of-court and judicial recovery, supervised by lawyers, operating since 1992.",
     address: {
