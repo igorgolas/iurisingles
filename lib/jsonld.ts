@@ -30,7 +30,7 @@ export function organizationLd() {
     areaServed: { "@type": "Country", name: "Spain" },
     serviceType: "Commercial debt collection",
     knowsLanguage: ["en", "es", "pt", "de", "fr", "it"],
-    sameAs: ASSOCIATIONS.map((a) => a.href),
+    memberOf: ASSOCIATIONS.map((a) => ({ "@type": "Organization", name: a.name, url: a.href })),
   };
 }
 
@@ -81,5 +81,22 @@ export function faqLd(items: { q: string; a: string[] }[]) {
       name: it.q,
       acceptedAnswer: { "@type": "Answer", text: it.a.join(" ") },
     })),
+  };
+}
+
+// Knowledge Base guides. Dates reflect the June 2026 legal review stated on the index page.
+export function articleLd(opts: { headline: string; description: string; url: string; inLanguage: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: opts.headline,
+    description: opts.description,
+    url: opts.url,
+    mainEntityOfPage: opts.url,
+    inLanguage: opts.inLanguage,
+    datePublished: "2026-06-17",
+    dateModified: "2026-06-17",
+    author: { "@id": ORG_ID },
+    publisher: { "@id": ORG_ID },
   };
 }

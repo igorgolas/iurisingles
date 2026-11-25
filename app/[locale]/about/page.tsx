@@ -7,13 +7,14 @@ import { isLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 import { getAbout } from "@/lib/content/about";
 import { pageMeta, clamp } from "@/lib/seo";
+import { pageTitle } from "@/lib/content/kb-ui";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const a = getAbout(locale);
   const first = a.blocks[0] && "paras" in a.blocks[0] ? (a.blocks[0].paras?.[0] ?? "") : "";
-  return pageMeta({ locale, path: "/about", title: getDictionary(locale).nav.about, description: clamp(first) });
+  return pageMeta({ locale, path: "/about", title: pageTitle(locale, "about"), description: clamp(first) });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

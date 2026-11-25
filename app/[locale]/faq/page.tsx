@@ -8,6 +8,7 @@ import { isLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 import { getFaq } from "@/lib/content/faq";
 import { pageMeta, clamp } from "@/lib/seo";
+import { pageTitle } from "@/lib/content/kb-ui";
 import JsonLd from "@/components/JsonLd";
 import { faqLd } from "@/lib/jsonld";
 
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const faq = getFaq(locale);
-  return pageMeta({ locale, path: "/faq", title: getDictionary(locale).nav.faq, description: clamp(faq.intro) });
+  return pageMeta({ locale, path: "/faq", title: pageTitle(locale, "faq"), description: clamp(faq.intro) });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

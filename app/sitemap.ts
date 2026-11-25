@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/legal-notice",
     "/privacy",
+    "/cookies",
     ...SERVICES.map((s) => s.href),
     ...INDUSTRIES.map((i) => i.href),
     ...KB_GUIDES.map((g) => `/knowledge-base/${g.slug}`),

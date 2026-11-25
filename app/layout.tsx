@@ -21,6 +21,13 @@ export const metadata: Metadata = {
     default: `${SITE.shortName} — Debt collection in Spain for foreign creditors`,
     template: `%s — ${SITE.shortName}`,
   },
+  // Search Console / Bing Webmaster verification. Set the codes as env vars in Vercel and redeploy.
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+    other: process.env.BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION }
+      : undefined,
+  },
   description:
     "IJ Creditor is a Madrid law firm recovering debts owed by Spanish debtors for creditors based outside Spain. Out-of-court and judicial debt collection, supervised by lawyers, operating since 1992.",
 };

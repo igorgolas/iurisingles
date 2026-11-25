@@ -7,7 +7,10 @@ import Prose from "@/components/Prose";
 import CtaBand from "@/components/CtaBand";
 import { getGuideL } from "@/lib/content/kb";
 import { isLocale, withLocale } from "@/lib/i18n";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, canonicalUrl, SITE_URL } from "@/lib/seo";
+import { getKbUi } from "@/lib/content/kb-ui";
+import JsonLd from "@/components/JsonLd";
+import { articleLd, breadcrumbLd } from "@/lib/jsonld";
 
 export async function generateMetadata({
   params,
@@ -30,15 +33,27 @@ export default async function Page({
   if (!isLocale(locale)) notFound();
   const guide = getGuideL(locale, slug);
   if (!guide) notFound();
+  const ui = getKbUi(locale);
+  const url = canonicalUrl(locale, `/knowledge-base/${slug}`);
 
   return (
     <>
-      <PageHeader eyebrow="Knowledge Base" title={guide.title} intro={guide.summary} />
+      <JsonLd
+        data={[
+          articleLd({ headline: guide.title, description: guide.summary, url, inLanguage: locale }),
+          breadcrumbLd([
+            { name: "IJ Creditor", url: `${SITE_URL}/${locale}` },
+            { name: ui.eyebrow, url: canonicalUrl(locale, "/knowledge-base") },
+            { name: guide.title, url },
+          ]),
+        ]}
+      />
+      <PageHeader eyebrow={ui.eyebrow} title={guide.title} intro={guide.summary} />
       <Block><Prose paragraphs={guide.body} /></Block>
-      <Block title="How IJ Creditor Can Assist"><Prose paragraphs={[guide.assist]} /></Block>
+      <Block title={ui.assistTitle}><Prose paragraphs={[guide.assist]} /></Block>
       <Block>
         <Link href={withLocale(locale, "/knowledge-base")} className="text-sm font-medium text-accent transition-opacity hover:opacity-80">
-          ← All guides
+          {ui.allGuides}
         </Link>
       </Block>
       <CtaBand />
