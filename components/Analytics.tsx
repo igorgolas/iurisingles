@@ -5,7 +5,9 @@ import Script from "next/script";
 import Link from "next/link";
 import { withLocale, type Locale } from "@/lib/i18n";
 
-const GA = process.env.NEXT_PUBLIC_GA_ID;
+// GA4 property "ijcreditor" in the firm account (IJC). Public ID, not a secret.
+// Fixed here on purpose: the old NEXT_PUBLIC_GA_ID in Vercel points to a property in another Google account.
+const GA = "G-XFBXPT1NW5";
 const CLARITY = process.env.NEXT_PUBLIC_CLARITY_ID;
 const KEY = "ijc_consent";
 
