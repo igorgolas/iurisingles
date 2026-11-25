@@ -26,6 +26,7 @@ function industries(locale: Locale, dict: Dictionary): NavLink[] {
 export function buildNav(locale: Locale, dict: Dictionary): NavEntry[] {
   return [
     { label: dict.nav.about, href: withLocale(locale, "/about") },
+    { label: dict.nav.howWeWork, href: withLocale(locale, "/how-we-work") },
     { label: dict.nav.services, href: withLocale(locale, "/services"), children: services(locale, dict) },
     { label: dict.nav.industries, href: withLocale(locale, "/industries"), children: industries(locale, dict) },
     { label: dict.nav.requestProposal, href: withLocale(locale, "/request-a-proposal"), cta: true },

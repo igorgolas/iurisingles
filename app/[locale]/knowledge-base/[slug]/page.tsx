@@ -9,6 +9,8 @@ import { getGuideL } from "@/lib/content/kb";
 import { isLocale, withLocale } from "@/lib/i18n";
 import { pageMeta, canonicalUrl, SITE_URL } from "@/lib/seo";
 import { getKbUi } from "@/lib/content/kb-ui";
+import { LONGFORM } from "@/lib/content/longform";
+import Markdown from "@/components/Markdown";
 import JsonLd from "@/components/JsonLd";
 import { articleLd, breadcrumbLd } from "@/lib/jsonld";
 
@@ -49,8 +51,14 @@ export default async function Page({
         ]}
       />
       <PageHeader eyebrow={ui.eyebrow} title={guide.title} intro={guide.summary} />
-      <Block><Prose paragraphs={guide.body} /></Block>
-      <Block title={ui.assistTitle}><Prose paragraphs={[guide.assist]} /></Block>
+      {LONGFORM[slug]?.[locale] ? (
+        <Markdown source={LONGFORM[slug]![locale]!} />
+      ) : (
+        <>
+          <Block><Prose paragraphs={guide.body} /></Block>
+          <Block title={ui.assistTitle}><Prose paragraphs={[guide.assist]} /></Block>
+        </>
+      )}
       <Block>
         <Link href={withLocale(locale, "/knowledge-base")} className="text-sm font-medium text-accent transition-opacity hover:opacity-80">
           {ui.allGuides}

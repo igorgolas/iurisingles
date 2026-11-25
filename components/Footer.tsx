@@ -8,6 +8,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
   const services = navServices(locale, dict);
   const industries = navIndustries(locale, dict);
   const more = [
+    { label: dict.footer.howWeWork, href: withLocale(locale, "/how-we-work") },
     { label: dict.footer.knowledgeBase, href: withLocale(locale, "/knowledge-base") },
     { label: dict.footer.faq, href: withLocale(locale, "/faq") },
     { label: dict.footer.contact, href: withLocale(locale, "/contact") },

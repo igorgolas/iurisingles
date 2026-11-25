@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     "",
     "/about",
+    "/how-we-work",
     "/services",
     "/industries",
     "/request-a-proposal",

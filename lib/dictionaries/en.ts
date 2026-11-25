@@ -6,6 +6,7 @@ export const en = {
     menu: "Menu",
   },
   nav: {
+    howWeWork: "How We Work",
     about: "About Us",
     services: "Services",
     industries: "Industries",
@@ -15,6 +16,7 @@ export const en = {
     contact: "Contact",
   },
   footer: {
+    howWeWork: "How We Work",
     services: "Services",
     industries: "Industries",
     more: "More",

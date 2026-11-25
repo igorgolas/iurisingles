@@ -2,8 +2,7 @@
 
 > Independent Madrid law firm specialised in commercial debt collection in Spain
 > for creditors based outside Spain. Out-of-court and judicial recovery,
-> supervised by lawyers, operating since 1992. Service in English, German,
-> French, Italian and Portuguese; action before Spanish debtors in Spanish.
+> supervised by lawyers, operating since 1992. Action before Spanish debtors in Spanish.
 
 Last updated: 2026-11-25.
 
@@ -27,6 +26,7 @@ devices, construction & public suppliers, textile, travel & car rental, equipmen
 
 ## Key pages
 - Home: https://www.ijcreditor.com/en
+- How we work (process, fees, MASC prior negotiation): https://www.ijcreditor.com/en/how-we-work
 - Services: https://www.ijcreditor.com/en/services
 - Out-of-court debt collection: https://www.ijcreditor.com/en/services/out-of-court-debt-collection
 - Judicial debt collection: https://www.ijcreditor.com/en/services/judicial-debt-collection

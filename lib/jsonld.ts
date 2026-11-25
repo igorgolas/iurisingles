@@ -25,7 +25,6 @@ export function organizationLd() {
       contactType: "customer service",
       email: SITE.email,
       telephone: SITE.phone,
-      availableLanguage: ["en", "es", "pt", "de", "fr", "it"],
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -46,7 +45,6 @@ export function organizationLd() {
     },
     areaServed: { "@type": "Country", name: "Spain" },
     serviceType: "Commercial debt collection",
-    knowsLanguage: ["en", "es", "pt", "de", "fr", "it"],
     memberOf: ASSOCIATIONS.map((a) => ({ "@type": "Organization", name: a.name, url: a.href })),
   };
 }
@@ -112,7 +110,7 @@ export function articleLd(opts: { headline: string; description: string; url: st
     mainEntityOfPage: opts.url,
     inLanguage: opts.inLanguage,
     datePublished: "2026-06-17",
-    dateModified: "2026-06-17",
+    dateModified: "2026-11-25",
     author: { "@id": ORG_ID },
     publisher: { "@id": ORG_ID },
   };

@@ -8,6 +8,7 @@ export const pt: Dictionary = {
     menu: "Menu",
   },
   nav: {
+    howWeWork: "Como trabalhamos",
     about: "Quem somos",
     services: "Serviços",
     industries: "Setores",
@@ -17,6 +18,7 @@ export const pt: Dictionary = {
     contact: "Contacto",
   },
   footer: {
+    howWeWork: "Como trabalhamos",
     services: "Serviços",
     industries: "Setores",
     more: "Mais",

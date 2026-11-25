@@ -30,7 +30,7 @@ const ui: Record<Locale, KbUi> = {
     assistTitle: "How IJ Creditor Can Assist",
     allGuides: "← All guides",
     disclaimer:
-      "These guides provide general information on debt recovery in Spain and do not constitute legal advice. Content updated as of June 2026; recent rules, such as the MASC requirement under Organic Law 1/2025 and procedural thresholds, may change. For advice on a specific case, request a proposal.",
+      "These guides provide general information on debt recovery in Spain and do not constitute legal advice. Content updated as of November 2026; recent rules, such as the MASC requirement under Organic Law 1/2025 and procedural thresholds, may change. For advice on a specific case, request a proposal.",
   },
   pt: {
     eyebrow: "Base de conhecimento",
@@ -46,7 +46,7 @@ const ui: Record<Locale, KbUi> = {
     assistTitle: "Como a IJ Creditor pode ajudar",
     allGuides: "← Todos os guias",
     disclaimer:
-      "Estes guias contêm informação geral sobre a recuperação de dívidas em Espanha e não constituem aconselhamento jurídico. Conteúdo atualizado a junho de 2026; normas recentes, como o requisito MASC da Lei Orgânica 1/2025 e os limiares processuais, podem mudar. Para aconselhamento sobre um caso concreto, peça uma proposta.",
+      "Estes guias contêm informação geral sobre a recuperação de dívidas em Espanha e não constituem aconselhamento jurídico. Conteúdo atualizado a novembro de 2026; normas recentes, como o requisito MASC da Lei Orgânica 1/2025 e os limiares processuais, podem mudar. Para aconselhamento sobre um caso concreto, peça uma proposta.",
   },
   de: {
     eyebrow: "Wissensdatenbank",
@@ -62,7 +62,7 @@ const ui: Record<Locale, KbUi> = {
     assistTitle: "Wie IJ Creditor unterstützen kann",
     allGuides: "← Alle Ratgeber",
     disclaimer:
-      "Diese Ratgeber enthalten allgemeine Informationen zur Forderungsbeitreibung in Spanien und stellen keine Rechtsberatung dar. Stand: Juni 2026; neue Vorschriften, etwa das MASC-Erfordernis nach dem Organgesetz 1/2025 und verfahrensrechtliche Schwellenwerte, können sich ändern. Für die Beratung in einem konkreten Fall fordern Sie bitte ein Angebot an.",
+      "Diese Ratgeber enthalten allgemeine Informationen zur Forderungsbeitreibung in Spanien und stellen keine Rechtsberatung dar. Stand: November 2026; neue Vorschriften, etwa das MASC-Erfordernis nach dem Organgesetz 1/2025 und verfahrensrechtliche Schwellenwerte, können sich ändern. Für die Beratung in einem konkreten Fall fordern Sie bitte ein Angebot an.",
   },
   fr: {
     eyebrow: "Base de connaissances",
@@ -78,7 +78,7 @@ const ui: Record<Locale, KbUi> = {
     assistTitle: "Comment IJ Creditor peut vous aider",
     allGuides: "← Tous les guides",
     disclaimer:
-      "Ces guides fournissent des informations générales sur le recouvrement de créances en Espagne et ne constituent pas un conseil juridique. Contenu à jour en juin 2026 ; les règles récentes, comme l'exigence MASC de la loi organique 1/2025 et les seuils procéduraux, peuvent évoluer. Pour un conseil sur un dossier précis, demandez une proposition.",
+      "Ces guides fournissent des informations générales sur le recouvrement de créances en Espagne et ne constituent pas un conseil juridique. Contenu à jour en novembre 2026 ; les règles récentes, comme l'exigence MASC de la loi organique 1/2025 et les seuils procéduraux, peuvent évoluer. Pour un conseil sur un dossier précis, demandez une proposition.",
   },
   it: {
     eyebrow: "Knowledge base",
@@ -94,7 +94,7 @@ const ui: Record<Locale, KbUi> = {
     assistTitle: "Come può aiutarla IJ Creditor",
     allGuides: "← Tutte le guide",
     disclaimer:
-      "Queste guide offrono informazioni generali sul recupero crediti in Spagna e non costituiscono consulenza legale. Contenuto aggiornato a giugno 2026; le norme recenti, come il requisito MASC della legge organica 1/2025 e le soglie processuali, possono cambiare. Per una consulenza su un caso specifico, richieda una proposta.",
+      "Queste guide offrono informazioni generali sul recupero crediti in Spagna e non costituiscono consulenza legale. Contenuto aggiornato a novembre 2026; le norme recenti, come il requisito MASC della legge organica 1/2025 e le soglie processuali, possono cambiare. Per una consulenza su un caso specifico, richieda una proposta.",
   },
 };
 
